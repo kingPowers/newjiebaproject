@@ -1,0 +1,133 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<script type="text/javascript">
+$(function(){
+	$(".sub").click(function(){
+		var data = {};
+		data.result = $("select[name='result']").val();
+		data.remark = $(".remarks").val();
+		data.order_id = $("input[name='order_id']").val();
+		data.allot_id = $("input[name='loan_allot_id']").val();
+		data.is_urgent = 1;//console.log(data);
+		top.jdbox.alert(2,"正在提交。。。");
+		$.post("{:U('/Overdue/operate')}",data,function(F){
+			console.log(F);
+			top.jdbox.alert(F.status,F.info);
+			if (F.status) {
+				window.location.href = "/Overdue/index";
+			}
+		},'json')
+	})
+})
+</script>
+<div class="w98 bgf">
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>基本信息</span>
+		</div>
+		<div class="tablediv" style="margin-top: 0;">
+			<table class="member_table">
+				<tr>
+					<th>贷款编号</th>
+					<th>用户ID</th>
+					<th>产品</th>
+					<th>申请时间</th>
+					<th>利率</th>	
+					<th>逾期利率</th>
+					<th>贷款金额</th>
+					<th>费用</th>
+					<th>到账金额</th>	
+					<th>姓名</th>
+					<th>手机号</th>
+					<th>到期时间</th>									
+				</tr>
+				<tr>
+					<td>{$order_info['tender_number']}</td>
+					<td>{$order_info['memberid']}</td>
+					<td>{$order_info['bus_l_name']}</td>
+					<td>{$order_info['timeadd']}</td>
+					<td>{$order_info['periode_rate']}%</td>
+					<td>{$order_info['late_periode_rate']}%</td>
+					<td>{$order_info['money']}</td>
+					<td>{$order_info['total_fee']}</td>
+					<td>{$order_info['pay_money']}</td>
+					<td>{$order_info['names']}</td>
+					<td>{$order_info['mobile']}</td>
+					<td>{$order_info['end_time']}</td>
+				</tr>
+			</table>
+		</div>			
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>预售信额度</span>
+		</div>
+		<div class="tablediv" style="margin-top: 0;">
+			<table class="member_table">
+				<tr>
+					<th>逾期本金</th>
+					<th>逾期天数</th>
+					<th>逾期费用</th>													
+				</tr>
+				<tr>
+					<td>{$order_info['money']}</td>
+					<td>{$order_info['late_days']}</td>
+					<td>{$order_info['late_fee']}</td>					
+				</tr>
+			</table>
+		</div>	
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>催收历史</span>
+		</div>
+		<div class="tablediv" style="margin-top: 0;">
+			<table class="member_table">
+				<tr>
+					<th>催收时间</th>
+					<th>催收人</th>
+					<th>催收结果</th>
+					<th>催收备注</th>													
+				</tr>
+				<foreach name="urgent_his" item="uh">
+				<tr>
+					<td>{$uh['timeadd']}</td>
+					<td>{$uh['author']}</td>
+					<td>{$status[$uh['urge_type']]}</td>
+					<td>{$uh['content']}</td>					
+				</tr>
+				</foreach>
+			</table>
+		</div>	
+	</div>
+	<div class="tit_box">
+		<notempty name="_GET['is_sub']">
+		<div class="t_box">			
+			<span>催收处理</span>
+		</div>
+		<div class="selectdiv">
+			<font>催收结果:</font>
+				<span class="input_text box_round w190">
+				<select name="result">
+				    <foreach name="status" item="s">
+				    	<option value="{$key}" <if condition="$_GET['is_sub'] eq 0"> <eq name="key" value="$order_info['urgeStatus']">selected=""</eq></if>>{$s}</option>
+				    </foreach>
+				</select>
+			</span>		
+		</div>
+		<div class="selectdiv">
+			<font>催收备注:</font>
+			<textarea class="remarks box_round input_text" style="resize: none;">
+							
+			</textarea>	
+		</div>
+		<input type="hidden" name="order_id" value="{$_GET['id']}">
+		<input type="hidden" name="loan_allot_id" value="{$order_info['loan_allot_id']}">
+		
+			<input type="submit" name="" value="提交" class="btn_submit box_round head_blue sub">
+		<else/>
+			<a href="/Overdue/index" class="btn_submit box_round head_blue">返回</a>
+		</notempty>
+	</div>
+</div>
+<include file="Public:pageFooter"/>

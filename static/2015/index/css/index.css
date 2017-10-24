@@ -1,0 +1,42 @@
+/*channelmanager*/
+.index_list{width: 100%; overflow: hidden;}
+.index_list li{float: left; width: 49%;}
+.in_bg{width: 100%;}
+.in_bg01{background: url(../image/index_01.jpg) no-repeat; background-size: 100% 100%;}
+.in_bg02{background: url(../image/index_02.jpg) no-repeat; background-size: 100% 100%;}
+.in_bg03{background: url(../image/index_03.jpg) no-repeat; background-size: 100% 100%;}
+.in_bg04{background: url(../image/index_04.jpg) no-repeat; background-size: 100% 100%;}
+.w480{width: 60%; text-align: center; padding: 36px 0;}
+@media (max-width: 1400px){
+	.w480 h3,p{font-size: 18px;}
+	.w480 h1{font-size: 36px; font-weight: bold; margin:25px 0;}	
+}
+@media (min-width: 1600px){
+	.w480 h3,p{font-size: 30px;}
+	.w480 h1{font-size: 60px; font-weight: bold; margin:25px 0;}
+}
+
+/*member*/
+.selectdiv{height: auto; overflow: hidden; padding: 18px 0 2px; font-size: 16px;}
+.w238{width: 238px;}
+.w190{width: 190px; margin-right: 35px;}
+.w170{width: 170px; margin-right: 15px;}
+.input_text{padding-left: 20px; height: 38px; line-height: 38px; background:none; display: inline-block;}
+.input_text select{border: 0; width: 180px; text-align: center; font-size: 16px; cursor: pointer;}
+.btn_css{cursor: pointer; display: inline-block; font-size: 16px; color: #fff;  width: 100px; height: 42px; line-height: 42px; text-align: center; margin-left: 38px;}
+.input_text:hover{box-shadow: 0px 0px 5px 0px #40a7ff;  border: 1px #40a7ff solid;}
+.btn_css:active{background: #ddd; color: #40a7ff; border: 1px #fff solid;}
+.member_table{width: 100%; text-align: center; margin-top: 30px; border:1px solid #ddd; }
+.member_table th{border: 1px solid #ddd; background: #4f606b; color: #fff; font-size: 16px; font-weight: normal; height: 48px; line-height: 48px;}
+.member_table td{height: 48px; line-height: 48px; border: 1px solid #ddd;}
+.member_table a{color: #40a7ff; cursor: pointer;}
+
+/*deal*/
+.nav ul li{cursor: pointer; width: 200px; text-align: center; float: left; color: #40a7ff;}
+.nav ul li a{text-decoration: none; width: 200px; height:37px; line-height: 37px; display: inline-block;}
+
+/*profit*/
+.blue_box{width: 510px; height: 170px; overflow: hidden; color: #fff; margin-right: 25px; float: left; text-align: center;}
+.blue_box:nth-child(3){margin-right: 0;}
+.blue_box p{font-size: 30px; margin-top: 30px;}
+.blue_box h1{font-size: 60px; font-weight: bold; margin:10px 0;}

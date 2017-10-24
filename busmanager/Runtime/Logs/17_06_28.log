@@ -1,0 +1,16 @@
+[ 2017-06-28T17:34:11+08:00 ]  127.0.0.1 /favicon.ico | ERR: (ThinkException) 无法加载模块favicon.ico
+[ 2017-06-28T17:34:11+08:00 ]  127.0.0.1 /favicon.ico | ERR: (ThinkException) 无法加载模块favicon.ico
+[ 2017-06-28T17:34:15+08:00 ] 127.0.0.1 /Public/doLogin.html
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `auth_group` [ RunTime:0.008017s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SELECT * FROM `auth_group` WHERE status=1  [ RunTime:0.006886s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007617s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SELECT * FROM `user` WHERE username='baidu' LIMIT 1   [ RunTime:0.008062s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007689s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008173s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: UPDATE `user` SET `lasttime`='2017-06-28 17:34:15',`lastip`='127.0.0.1' WHERE username='baidu' [ RunTime:0.007293s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: UPDATE `user` SET `logincount`=logincount+1,`lasttime`='2017-06-28 17:34:15',`lastip`='127.0.0.1' WHERE username='baidu' [ RunTime:0.007078s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `user_token` [ RunTime:0.008050s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SELECT * FROM `user_token` WHERE username='baidu' LIMIT 1   [ RunTime:0.008950s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: UPDATE `user_token` SET `token`='4590b11cac3a100189444a23f7b90dce',`username`='baidu',`logintime`='2017-06-28 17:34:15' WHERE username='baidu' [ RunTime:0.007146s ]
+[ 2017-06-28T17:34:15+08:00 ] /Public/doLogin.html | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007677s ]
+

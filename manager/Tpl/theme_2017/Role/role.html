@@ -1,0 +1,165 @@
+<include file="Public:header" />
+<script type="text/javascript">
+$(function(){
+  $("select[name='group']").change(function(){
+     var groupid = $(this).find("option:selected").attr("gid");
+     switch (groupid)
+     {
+          case '1':admin(groupid);
+              break;
+          case '2':channel(groupid);
+              break;
+          case '3':business(groupid);
+              break;
+     }
+  })
+})
+function admin(groupid)
+{
+  $("select[name='user_belong']").html("<option choseid='1'>管理员</option>");
+  getAuthList(groupid);
+}
+function channel(groupid)
+{
+  $.post("/Public/getAllChannel",{},function(F){
+    console.log(F);
+    var channel_list = '';
+    channel_list += "<option choseid=''>--请选择渠道--</option>"
+    $.each(F.data,function(i,item){
+        channel_list += "<option choseid='" + item.id +"'>" + item.companyname + "</option>";
+    })
+    $("select[name='user_belong']").html('').removeAttr("disabled").append(channel_list);
+  },'json')
+  getAuthList(groupid);
+}
+function business(groupid)
+{
+  $.post("/Public/getAllBusiness",{},function(F){
+    console.log(F);
+    var business_list = '';
+    business_list += "<option choseid=''>--请选择商户--</option>"
+    $.each(F.data,function(i,item){
+        business_list += "<option choseid='" + item.id +"'>" + item.companyname + "</option>";
+    })
+    $("select[name='user_belong']").html('').removeAttr("disabled").append(business_list);
+  },'json')
+  //$("select[name='user_belong']").html("<option choseid='0'>管理员</option>");
+  getAuthList(groupid);
+}
+function getAuthList(groupid)
+{
+  $.post("/Public/getAuthList",{"groupid":groupid},function(F){
+      //console.log(F);
+      if (F.status == 0)
+      {
+        top.jdbox.alert(0,F.info);
+        return false;
+      }
+      var auth_str = '';
+      $.each(F.data,function(i,item){
+          auth_str += "<li><label class='checkbox inline'><input type='checkbox' disabled='disabled' />" + item.title +"</label><ul>";
+          for (var key in item.child)
+          {
+            auth_str += "<li><label class='checkbox inline'><input type='checkbox'  name='node[]' value='" + item.child[key].id + "'/>" + item.child[key].title +"</label></li>";
+          } 
+          auth_str += "</ul></li>";
+      })
+      $(".auth_list").html('').append(auth_str);
+  },'json')
+}
+</script>
+<form id="roleForm" class="definewidth m20">
+  <table class="table table-bordered table-hover definewidth m10">
+    <tr>
+      <td width="10%" class="tableleft">角色类型</td>
+      <td>
+        <select name="group">
+              <option gid=''>请选择角色类型</option>
+        <foreach name="group_list" item="v">
+          <option gid="{$v['id']}" <eq name="v['id']" value="$role['groupid']">selected=''</eq>>{$v['title']}</option>
+        </foreach>  
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">用户所属</td>
+      <td>
+        <select name="user_belong" disabled="">
+              <empty name="user_belong">
+                <option choseid=''>--所属--</option>
+              <else/>
+                <option choseid="{$user_belong['id']}">{$user_belong['companyname']}</option>
+              </empty>
+              
+        </select>(默认不修改)
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">角色名称</td>
+      <td><input type="text" name="title" jschecktitle="角色名称" jscheckrule="null=0" value="{$role['title']}"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">状态</td>
+      <td><input type="radio" name="status" value="1" <eq name="role['status']" value="1">checked="checked"</eq>/> 启用 
+      <input type="radio" name="status" value="0" <eq name="role['status']" value="0">checked="checked"</eq>/> 禁用 </td>
+    </tr>
+    <tr>
+      <td class="tableleft">权限</td>
+      <td>
+      <ul class="auth_list">
+          <foreach name="list" item="vo">
+          <li>
+          	<label class='checkbox inline'><input type='checkbox' disabled="disabled" />{$vo['title']}</label>
+            <ul>
+            <foreach name="vo['child']" item="v">
+                <li><label class='checkbox inline'><input type='checkbox'  name='node[]' value="{$v['id']}" <in name="v['id']" value="$role['rule']">checked="checked" </in>/>{$v['title']}</label></li>
+            </foreach>
+            </ul>
+          </li>
+          </foreach>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft"></td>
+      <td><button class="btn btn-primary" type="button">保存</button>
+        <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button></td>
+    </tr>
+  </table>
+</form>
+<script language="javascript">
+var rid = "{$role['id']}";
+$(function(){
+	$('button.btn-primary').click(function(){
+    var group = $("select[name='group']").find("option:selected").attr("gid");
+    if(group == '')return top.jdbox.alert(0,"请选择角色类型");
+    var choseid = $("select[name='user_belong']").find("option:selected").attr("choseid");
+		var data={},check=[];
+		var p = check_form('#roleForm');
+		if(p){
+			$("input[name='node[]']").each(function(){
+				if( $(this).is(':checked') ){
+					check.push($(this).val());
+				}
+			});
+		}
+		$(data).attr('rid',rid);
+		$(data).attr('title',$("input[name='title']").val());
+		$(data).attr('status',$("input[name='status']:checked").val());
+    $(data).attr('group',group);
+    $(data).attr('choseid',choseid);
+		$(data).attr('rule',check.join(','));
+		top.jdbox.alert(2);
+		$.post('/Role/edit.html',data,function(F){
+			top.jdbox.alert(F.status,F.info);
+			if(F.status){
+				window.location.href="{:U('Role/index')}";
+			}
+		},'json');
+	})
+	$('button#backid').click(function(){
+		window.location.href= "{:U('Role/index')}";
+	})
+})
+</script> 
+<include file="Public:footer" />

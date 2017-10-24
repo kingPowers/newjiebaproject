@@ -1,0 +1,50 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+<script type="text/javascript">
+function addDeposit()
+{
+    return top.jdbox.iframe("/Fund/addManagerDeposit");
+}
+</script>
+<form class="form-inline definewidth m20" action="/Fund/managerFund" method="get">
+    <span>资金方名称：</span>
+    <input type="text" name="channelname" value="{$_GET['channelname']}">&nbsp;&nbsp;
+    <span>平台名称：</span>
+    <input type="text" name="managername" value="{$_GET['managername']}">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<a class="btn btn-primary" onclick="addDeposit();" style="margin-left: 20px;">新增保证金信息</a>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>资金方编号</th>
+        <th>资金方名称</th>
+        <th>公司名称</th>
+        <th>保证金比例</th>
+		<th>授信额度</th>
+		<th>实际额度</th>
+        <th>贷款余额</th>
+        <th>实际可用额度</th>
+        <th>保证金余额</th>
+        <th>保证金头寸</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td><a>查看</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

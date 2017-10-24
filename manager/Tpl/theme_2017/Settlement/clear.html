@@ -1,0 +1,62 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+
+<form class="form-inline definewidth m20" action="/Settlement/clear" method="get">
+    <span>交易日期：</span>
+    <input type="text" name="starttime" id="starttime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['starttime']}">&nbsp;&nbsp;
+    <input type="text" name="endtime" id="endtime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['endtime']}">&nbsp;
+    
+    <span>渠道：</span>
+    <select name="channel_name" class="short">
+		<option>全部</option>
+		<foreach name="channel_list" item="vo">
+			<option value="{$vo['companyname']}" <eq name="vo['companyname']" value="$_GET['channel_name']">selected=""</eq>>{$vo['companyname']}</option>
+		</foreach>.
+    </select>
+    <span>合作公司：</span>
+    <select name="businessname" class="short">
+		<option>全部</option>
+		<foreach name="business_list" item="v">
+			<option value="{$v['companyname']}" <eq name="v['companyname']" value="$_GET['businessname']">selected=""</eq>>{$v['companyname']}</option>
+		</foreach>.
+    </select>
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>结算时间</th>
+        <th>贷款编号</th>
+        <th>贷款时间</th>
+        <th>贷款金额</th>
+		<th>贷款费用</th>
+		<th>资金成本</th>
+        <th>到账金额</th>
+        <th>一级渠道结算金额</th>
+        <th>二级渠道结算金额</th>
+        <th>三级渠道结算金额</th>
+        <th>合作公司结算金额</th>
+        <th>结算状态</th>
+    </tr>
+    </thead>
+    <tbody>
+    <foreach name="list" item="vo">
+    <tr> 
+    	<td>{$vo['clear_time']}</td>
+    	<td>{$vo['tender_number']}</td>
+    	<td>{$vo['timeadd']}</td>
+    	<td>{$vo['money']}</td>
+    	<td>{$vo['total_fee']}</td>
+    	<td>{$vo['capital_money']}</td>
+    	<td>{$vo['pay_money']}</td>
+    	<td>{$vo['first_channel_profit']}</td>
+    	<td>{$vo['second_channel_profit']}</td>
+    	<td>{$vo['third_channel_profit']}</td>
+    	<td>{$vo['business_clear_fee']}</td>
+    	<td><eq name="vo.clear_status" value="1">已结算<else/>未结算</eq></td>       
+    </tr>
+    </foreach>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

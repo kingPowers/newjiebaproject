@@ -1,0 +1,111 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<div class="selectdiv">
+		<form id="member_form" method="get" action="/Member/index">
+		<font>姓名:</font>
+		<input type="text" name="names" value="{$_GET['names']}" class="input_text box_round w170">	
+		<font>手机号:</font>
+		<input type="text" name="mobile" value="{$_GET['mobile']}" class="input_text box_round w170">		
+		<font>状态:</font>
+		<span class="input_text box_round w190">
+		<select name="status">
+			<option value="0">全部</option>
+			<foreach name="status" item="v">
+				<option value="{$key}" <eq name='key' value="$_GET['status']">selected=""</eq>>{$v}</option>
+			</foreach>
+		</select>
+		</span>
+		<input type="submit" name="sub" value="查询" class="btn_css box_round head_blue">
+		<a class="file"><input type="file" name="member_import">导入用户</a>
+		</form>
+	</div>	
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>用户ID</th>
+				<th>姓名</th>
+				<th>身份证号</th>
+				<th>银行卡号</th>
+				<th>手机号</th>	
+				<th>状态</th>
+				<th>预授信额度</th>
+				<th>创建时间</th>
+				<th>状态</th>
+				<th>操作</th>				
+			</tr>
+			<foreach name="list" item="vo">
+			<tr>
+				<td>{$vo['id']}</td>
+				<td>{$vo['names']}</td>
+				<td>{$vo['certiNumber']}</td>
+				<td>{$vo['acc_no']}</td>
+				<td>{$vo['mobile']}</td>
+				<td><php>echo $status[$vo['status']];</php></td>
+				<td>{$vo['promise_money']}</td>
+				<td>{$vo['timeadd']}</td>
+				<td>
+					<if condition="$vo['status'] eq 1">
+					正常
+					<elseif condition="$vo['status'] eq 9"/>
+					冻结
+					</if>
+				</td>	
+				<td>
+					<a href="/Member/detail/id/{$vo['id']}">明细</a>
+					<a onclick="javascript:top.jdbox.iframe('/Member/operate/id/{$vo.id}/status/{$vo.status}')">
+						<if condition="$vo['status'] eq 1">
+						冻结
+						<elseif condition="$vo['status'] eq 9"/>
+						解冻
+						</if>
+					</a>
+					<if condition="$vo['member_import_id'] neq 0">
+					<a onclick="javascript:top.jdbox.iframe('/Member/adjustMoney/id/{$vo.member_import_id})/old/{$vo.promise_money}')">调额</a>
+					</if>
+				</td>						
+			</tr>
+			</foreach>		
+		</table>
+		{$page}
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$("input[name='member_import']").change(function(){
+		var formData = new FormData($( "#member_form" )[0]);
+                //console.log(formData);   
+                $.ajax({  
+                  url: '/Member/importMember.html' ,  
+                  type: 'POST',  
+                  data: formData,  
+                  async: false,  
+                  cache: false,  
+                  contentType: false,  
+                  processData: false,  
+                  success: function (json) { 
+                  console.log(json);  	
+                    var json = eval("(" + json + ")"); 
+                    console.log(json);
+                    alert(json.info);
+                  }  
+                }); 
+	})
+})
+var operate = function (id,status) {
+	if (!id) return top.jdbox.alert(0,"用户ＩＤ错误");
+	if (!confirm('是否确认冻结该用户')) return false;
+	top.jdbox.alert(2);
+	var data = {};
+	data.mid = id;
+	data.mstatus = status;
+	data.is_free = 1;
+	$.post("/Member/operate.html",data,function (F) {
+		top.jdbox.alert(F.status,F.info);
+		if (F.status) {
+			window.location.reload();
+		}
+	})
+}
+</script>

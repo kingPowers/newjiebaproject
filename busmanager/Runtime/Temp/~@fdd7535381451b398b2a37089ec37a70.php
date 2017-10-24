@@ -1,0 +1,3 @@
+<?php
+//000000086400a:18:{s:2:"id";s:1:"9";s:8:"username";s:5:"baidu";s:8:"password";s:32:"7b2869de17692ceee74d4a1d9af7ad56";s:5:"names";s:6:"百度";s:6:"mobile";s:11:"18952732577";s:7:"groupid";s:1:"3";s:14:"headquartersid";s:1:"0";s:9:"channelid";s:1:"0";s:10:"businessid";s:2:"25";s:6:"typeid";s:2:"14";s:6:"status";s:1:"1";s:7:"adduser";s:1:"1";s:5:"regip";s:9:"127.0.0.1";s:6:"lastip";s:9:"127.0.0.1";s:7:"timeadd";s:19:"2017-06-16 15:19:32";s:8:"lasttime";s:19:"2017-06-21 13:57:01";s:10:"logincount";s:1:"4";s:7:"timeout";N;}
+?>

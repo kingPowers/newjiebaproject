@@ -1,0 +1,55 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/2015/index/css/index.css">
+
+<div class="w98 bgf">
+	<div class="selectdiv">	
+		<form method="get" action="/Profit/index">	
+		<font>时间:</font>
+		<input type="text" name="starttime" id="starttime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['starttime']}" class="input_text box_round w170">
+		<input type="text" name="endtime" id="endtime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['endtime']}" class="input_text box_round w170">		
+		<font>公司名称:</font>
+		<input type="text" name="businessname" value="{$_GET['businessname']}" class="input_text box_round w190">
+		<input type="submit" name="btn" value="查询" class="btn_css box_round head_blue">
+		</form>
+		<div class="w100" style="margin-top: 30px;">
+			<div class="blue_box head_blue">
+				<p>当前交易总笔数</p>
+				<h1>{$data['count']}</h1>
+			</div>
+			<div class="blue_box head_blue">
+				<p>当前交易总金额</p>
+				<h1>{$data['totalMoney']}</h1>
+			</div>
+			<div class="blue_box head_blue">
+				<p>分润总额</p>
+				<h1>{$data['totalProfitMoney']}</h1>
+			</div>
+		</div>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>交易时间</th>
+				<th>合作公司编号</th>
+				<th>合作公司名称</th>
+				<th>贷款编号</th>
+				<th>贷款金额</th>
+				<th>费用</th>
+				<th>到账金额</th>
+				<th>分润金额</th>
+			</tr>
+			<foreach name="data['list']" item="vo">
+			<tr>
+				<td>{$vo['timeadd']}</td>
+				<td>{$vo['business_number']}</td>
+				<td>{$vo['business_companyname']}</td>	
+				<td>{$vo['tender_number']}</td>
+				<td>{$vo['money']}</td>
+				<td>{$vo['total_fee']}</td>
+				<td>{$vo['pay_money']}</td>	
+				<td>{$vo['cost_money']}</td>				
+			</tr>
+			</foreach>			
+		</table>
+	</div>
+</div>

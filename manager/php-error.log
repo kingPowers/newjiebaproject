@@ -1,0 +1,441 @@
+[11-Apr-2017 14:01:19 PRC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting function (T_FUNCTION) in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 4
+[11-Apr-2017 16:13:16 PRC] PHP Parse error:  syntax error, unexpected '5' (T_LNUMBER) in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 51
+[11-Apr-2017 16:13:16 PRC] PHP Parse error:  syntax error, unexpected '5' (T_LNUMBER) in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 51
+[11-Apr-2017 17:28:54 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 77
+[12-Apr-2017 09:41:22 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 62
+[12-Apr-2017 10:12:28 PRC] PHP Parse error:  syntax error, unexpected '=' in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 79
+[12-Apr-2017 10:12:28 PRC] PHP Parse error:  syntax error, unexpected '=' in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 79
+[12-Apr-2017 10:35:41 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MemberAction.class.php on line 45
+[12-Apr-2017 14:55:49 PRC] PHP Parse error:  syntax error, unexpected 'pic_info' (T_STRING), expecting variable (T_VARIABLE) in E:\project\www.dhgj.com\manager\Lib\Action\OrderAction.class.php on line 35
+[12-Apr-2017 15:07:55 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\www.dhgj.com\ThinkPHP\Lib\Core\Action.class.php on line 177
+[12-Apr-2017 15:09:14 PRC] PHP Fatal error:  Call to a member function assign() on a non-object in E:\project\www.dhgj.com\ThinkPHP\Lib\Core\Action.class.php on line 158
+[12-Apr-2017 15:09:40 PRC] PHP Fatal error:  Call to a member function assign() on a non-object in E:\project\www.dhgj.com\ThinkPHP\Lib\Core\Action.class.php on line 158
+[12-Apr-2017 15:10:31 PRC] PHP Parse error:  syntax error, unexpected '(', expecting ',' or ';' in E:\project\www.dhgj.com\manager\Lib\Action\OrderAction.class.php on line 9
+[12-Apr-2017 15:11:03 PRC] PHP Parse error:  syntax error, unexpected '(', expecting ',' or ';' in E:\project\www.dhgj.com\manager\Lib\Action\OrderAction.class.php on line 9
+[14-Apr-2017 13:39:49 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\www.dhgj.com\manager\Lib\Action\OrderAction.class.php on line 70
+[14-Apr-2017 15:04:07 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 19
+[14-Apr-2017 16:02:14 PRC] PHP Fatal error:  Class 'EditorUpload' not found in E:\project\www.dhgj.com\manager\Lib\Action\PublicAction.class.php on line 78
+[17-Apr-2017 09:57:47 PRC] PHP Fatal error:  Function name must be a string in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 45
+[17-Apr-2017 09:59:37 PRC] PHP Fatal error:  Function name must be a string in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 45
+[17-Apr-2017 10:01:35 PRC] PHP Fatal error:  Function name must be a string in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 45
+[17-Apr-2017 10:03:35 PRC] PHP Fatal error:  Function name must be a string in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 45
+[17-Apr-2017 10:06:29 PRC] PHP Fatal error:  Function name must be a string in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 45
+[17-Apr-2017 10:11:55 PRC] PHP Parse error:  syntax error, unexpected '$where' (T_VARIABLE) in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 17
+[17-Apr-2017 10:45:34 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 89
+[17-Apr-2017 15:07:42 PRC] PHP Parse error:  syntax error, unexpected '=' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 54
+[17-Apr-2017 15:08:04 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 57
+[17-Apr-2017 15:08:04 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 57
+[17-Apr-2017 15:08:05 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 57
+[17-Apr-2017 15:08:05 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 57
+[17-Apr-2017 15:08:05 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 57
+[17-Apr-2017 15:33:10 PRC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in E:\project\www.dhgj.com\manager\Runtime\Cache\0cf354fa9af367ba39e08d737ec4e4ce.php on line 117
+[17-Apr-2017 16:22:41 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 160
+[17-Apr-2017 16:22:48 PRC] PHP Fatal error:  Cannot use try without catch or finally in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 160
+[17-Apr-2017 16:22:50 PRC] PHP Fatal error:  Cannot use try without catch or finally in E:\project\www.dhgj.com\manager\Lib\Action\MediaAction.class.php on line 160
+[19-Apr-2017 15:45:59 PRC] PHP Fatal error:  Call to undefined function sum() in E:\project\www.dhgj.com\manager\Runtime\Cache\7fc85e91c05745bc5ac88324be530b0f.php on line 64
+[19-Apr-2017 15:58:08 PRC] PHP Parse error:  syntax error, unexpected ';' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 17
+[19-Apr-2017 15:59:28 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 15:59:39 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 15:59:49 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 15:59:59 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:09 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:19 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:29 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:39 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:49 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:00:59 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:09 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:19 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:29 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:39 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:49 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:01:59 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:09 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:19 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:29 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:39 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:49 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:02:59 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:09 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:18 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:28 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:38 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:48 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:03:58 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:08 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:18 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:28 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:38 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:48 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:04:58 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:08 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:18 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:28 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:29 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:38 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:48 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:05:58 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:06:08 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[19-Apr-2017 16:06:18 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 22
+[15-May-2017 16:12:48 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\www.dhgj.com\manager\Lib\Action\IndexAction.class.php on line 50
+[27-May-2017 11:11:53 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 53
+[27-May-2017 11:12:43 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 53
+[27-May-2017 11:41:45 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 46
+[27-May-2017 11:41:55 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 46
+[27-May-2017 11:42:05 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 46
+[27-May-2017 11:44:35 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 93
+[27-May-2017 11:44:55 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 94
+[27-May-2017 11:45:05 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:45:15 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:45:25 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:45:35 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:45:45 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:45:55 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 95
+[27-May-2017 11:49:35 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 41
+[27-May-2017 11:49:45 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 41
+[27-May-2017 13:13:11 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 24
+[27-May-2017 13:49:43 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 54
+[27-May-2017 13:57:17 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 111
+[27-May-2017 15:03:31 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 114
+[01-Jun-2017 09:39:26 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 9
+[01-Jun-2017 09:39:41 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:36 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:37 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:38 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:38 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:38 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:38 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:39 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:39 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:39 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:39 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:41:40 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 11
+[01-Jun-2017 09:45:38 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 13
+[01-Jun-2017 14:21:49 PRC] PHP Fatal error:  Class 't1' not found in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 14
+[01-Jun-2017 14:23:08 PRC] PHP Fatal error:  Class 'T1' not found in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 14
+[01-Jun-2017 14:26:11 PRC] PHP Fatal error:  Class 'v\T1' not found in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 15
+[01-Jun-2017 14:55:59 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Action\RoleAction.class.php on line 30
+[02-Jun-2017 09:23:39 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 75
+[02-Jun-2017 09:30:33 PRC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in E:\project\newjieba1\manager\Lib\Action\ChannelAction.class.php on line 7
+[02-Jun-2017 09:32:36 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 64
+[02-Jun-2017 09:32:46 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 64
+[02-Jun-2017 09:52:21 PRC] PHP Parse error:  syntax error, unexpected ',' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 99
+[02-Jun-2017 10:38:24 PRC] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) in E:\project\newjieba1\manager\Lib\Action\ChannelAction.class.php on line 12
+[02-Jun-2017 10:56:10 PRC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting identifier (T_STRING) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 107
+[02-Jun-2017 10:57:00 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 109
+[02-Jun-2017 10:57:50 PRC] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 111
+[02-Jun-2017 10:58:00 PRC] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 111
+[02-Jun-2017 10:58:10 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 111
+[02-Jun-2017 10:58:30 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 112
+[02-Jun-2017 10:59:10 PRC] PHP Fatal error:  Cannot redeclare CommonAction::getProvince() in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 113
+[02-Jun-2017 10:59:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 10:59:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:00:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:01:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:02:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:03:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:04:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:05:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:10 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:20 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:30 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:40 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:06:50 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:07:00 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:07:10 PRC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:07:20 PRC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:07:30 PRC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:08:00 PRC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 11:08:10 PRC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\CommonAction.class.php on line 118
+[02-Jun-2017 14:40:45 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\ChannelAction.class.php on line 40
+[02-Jun-2017 15:10:31 PRC] PHP Parse error:  syntax error, unexpected '"', expecting ']' in E:\project\newjieba1\service\Lib\Model\ChannelCompanyModel.class.php on line 32
+[02-Jun-2017 15:10:38 PRC] PHP Parse error:  syntax error, unexpected '"', expecting ']' in E:\project\newjieba1\service\Lib\Model\ChannelCompanyModel.class.php on line 32
+[02-Jun-2017 15:11:28 PRC] PHP Parse error:  syntax error, unexpected '"', expecting ']' in E:\project\newjieba1\service\Lib\Model\ChannelCompanyModel.class.php on line 32
+[02-Jun-2017 15:11:31 PRC] PHP Parse error:  syntax error, unexpected '"', expecting ']' in E:\project\newjieba1\service\Lib\Model\ChannelCompanyModel.class.php on line 32
+[05-Jun-2017 10:23:26 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Action\ChannelAction.class.php on line 17
+[05-Jun-2017 10:24:00 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Action\ChannelAction.class.php on line 17
+[05-Jun-2017 11:10:54 PRC] PHP Parse error:  syntax error, unexpected 'province' (T_STRING), expecting ']' in E:\project\newjieba1\manager\Runtime\Cache\3479f3d307ef73fd72061c4f212cc744.php on line 97
+[06-Jun-2017 09:59:07 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\FundpartAction.class.php on line 24
+[06-Jun-2017 13:36:49 PRC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\project\newjieba1\manager\Runtime\Cache\b84b0c584629e2c9e0bebe7038dd0eea.php on line 40
+[06-Jun-2017 17:57:39 PRC] PHP Fatal error:  Allowed memory size of 1342177280 bytes exhausted (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 351
+[06-Jun-2017 17:58:20 PRC] PHP Fatal error:  Allowed memory size of 1342177280 bytes exhausted (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 351
+[06-Jun-2017 17:58:29 PRC] PHP Fatal error:  Allowed memory size of 1342177280 bytes exhausted (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 351
+[08-Jun-2017 10:13:26 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:26 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:26 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:35 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:37 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:40 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:42 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:50 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:51 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:52 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:52 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:52 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 10:13:52 PRC] PHP Fatal error:  Cannot redeclare PublicAction::getCapitalList() in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 250
+[08-Jun-2017 14:07:10 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\ProductAction.class.php on line 34
+[09-Jun-2017 10:03:20 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:03:30 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:03:40 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:03:50 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:00 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:10 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:20 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:30 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:40 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:04:50 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:05:00 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:05:10 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:05:20 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:05:30 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 80
+[09-Jun-2017 10:05:40 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 81
+[09-Jun-2017 13:58:36 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\FundAction.class.php on line 31
+[09-Jun-2017 13:58:36 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\FundAction.class.php on line 31
+[09-Jun-2017 15:24:19 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\manager\Lib\Model\UserModel.class.php on line 14
+[09-Jun-2017 16:37:40 PRC] PHP Fatal error:  Class 'CommonModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:37:50 PRC] PHP Fatal error:  Class 'CommonModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:00 PRC] PHP Fatal error:  Class 'CommonModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:10 PRC] PHP Fatal error:  Class 'CommonModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:20 PRC] PHP Fatal error:  Class 'CommonModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:30 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:40 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:50 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:38:54 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:00 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:10 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:20 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:30 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:40 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:42 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:42 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:42 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:43 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:43 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:39:50 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:40:00 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:40:10 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:40:20 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:40:30 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[09-Jun-2017 16:40:40 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[12-Jun-2017 10:17:34 PRC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR) or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[12-Jun-2017 10:17:44 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:17:54 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:04 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:14 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:24 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:34 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:44 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:18:54 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:19:04 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:19:14 PRC] PHP Parse error:  syntax error, unexpected '/', expecting \\ (T_NS_SEPARATOR) or ';' or '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 2
+[12-Jun-2017 10:19:24 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:34 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:44 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:54 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 16:07:59 PRC] PHP Fatal error:  Allowed memory size of 1342177280 bytes exhausted (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:09:00 PRC] PHP Fatal error:  Allowed memory size of 1342177280 bytes exhausted (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:10:43 PRC] PHP Fatal error:  Out of memory (allocated 2045771776) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:12:14 PRC] PHP Fatal error:  Out of memory (allocated 1949302784) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:13:30 PRC] PHP Fatal error:  Out of memory (allocated -1413742592) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:15:05 PRC] PHP Fatal error:  Out of memory (allocated -1421869056) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:23:50 PRC] PHP Fatal error:  Out of memory (allocated -1632632832) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[12-Jun-2017 16:24:10 PRC] PHP Parse error:  syntax error, unexpected '$names' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\LoanAction.class.php on line 19
+[12-Jun-2017 16:24:10 PRC] PHP Parse error:  syntax error, unexpected '$names' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\LoanAction.class.php on line 19
+[12-Jun-2017 16:24:11 PRC] PHP Parse error:  syntax error, unexpected '$names' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\LoanAction.class.php on line 19
+[12-Jun-2017 16:24:11 PRC] PHP Parse error:  syntax error, unexpected '$names' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\LoanAction.class.php on line 19
+[13-Jun-2017 09:35:18 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:35:28 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:35:38 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:35:48 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:35:58 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:08 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:18 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:28 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:38 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:48 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:36:58 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:08 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:18 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:25 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:25 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:27 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:37 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:47 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:37:57 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:07 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:17 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:27 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:37 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:47 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:38:57 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 09:39:07 Asia/Shanghai] PHP Fatal error:  Cannot redeclare gen_password() (previously declared in E:\project\newjieba1\ThinkPHP\Common\common.php:703) in E:\project\newjieba1\manager\Common\common.php on line 46
+[13-Jun-2017 11:22:17 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 78
+[13-Jun-2017 11:22:27 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 79
+[13-Jun-2017 11:22:37 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 79
+[13-Jun-2017 11:22:47 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 79
+[13-Jun-2017 11:22:57 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 78
+[13-Jun-2017 11:23:07 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 79
+[13-Jun-2017 11:23:17 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 78
+[13-Jun-2017 11:23:37 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 78
+[13-Jun-2017 11:23:47 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 78
+[13-Jun-2017 11:31:17 PRC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 74
+[13-Jun-2017 11:32:57 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 86
+[13-Jun-2017 13:50:17 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Auth.class.php on line 11
+[13-Jun-2017 13:51:38 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:52:44 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:53:12 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:54:02 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:54:02 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:54:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:54:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 13:54:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[13-Jun-2017 14:15:20 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 22
+[13-Jun-2017 14:27:08 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 28
+[13-Jun-2017 14:27:24 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:27:25 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:04 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:05 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:05 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:16 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:16 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:28:42 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:29:38 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:29:39 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:29:39 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:30:26 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:31:28 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:31:29 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:31:35 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:36:23 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:36:23 PRC] PHP Fatal error:  Call to a member function getMenuData() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 27
+[13-Jun-2017 14:44:09 PRC] PHP Fatal error:  Function name must be a string in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 28
+[13-Jun-2017 16:14:30 PRC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 41
+[13-Jun-2017 16:30:19 PRC] PHP Fatal error:  Call to a member function getGroups() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 65
+[13-Jun-2017 16:31:49 PRC] PHP Fatal error:  Call to a member function getGroups() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 66
+[13-Jun-2017 16:33:10 PRC] PHP Fatal error:  Call to a member function getGroups() on a non-object in E:\project\newjieba1\manager\Lib\Action\MenuAction.class.php on line 66
+[13-Jun-2017 17:40:08 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 15
+[14-Jun-2017 10:41:24 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:26 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:36 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:41 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:42 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:42 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:43 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:44 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:44 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:44 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:53 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 10:41:54 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 254
+[14-Jun-2017 11:51:16 PRC] PHP Fatal error:  Function name must be a string in E:\project\newjieba1\manager\Lib\Action\RoleAction.class.php on line 46
+[14-Jun-2017 15:54:07 PRC] PHP Parse error:  syntax error, unexpected ':' in E:\project\newjieba1\manager\Lib\Action\UserAction.class.php on line 26
+[16-Jun-2017 09:49:02 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 157
+[16-Jun-2017 09:50:34 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 158
+[16-Jun-2017 09:51:17 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 159
+[16-Jun-2017 09:51:28 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 159
+[16-Jun-2017 09:51:52 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 159
+[16-Jun-2017 09:51:55 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 159
+[16-Jun-2017 10:47:52 Asia/Shanghai] PHP Parse error:  syntax error, unexpected '$output' (T_VARIABLE) in E:\project\newjieba1\ThinkPHP\Common\functions.php on line 92
+[16-Jun-2017 16:32:14 PRC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' in E:\project\newjieba1\manager\Runtime\Cache\491a2c9bbcc0a71b8c4a5f4949af47ef.php on line 63
+[19-Jun-2017 09:37:28 PRC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 18
+[19-Jun-2017 15:48:42 PRC] PHP Fatal error:  Function name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 181
+[19-Jun-2017 15:48:54 PRC] PHP Fatal error:  Function name must be a string in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 181
+[19-Jun-2017 16:53:29 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 181
+[19-Jun-2017 17:01:57 PRC] PHP Parse error:  syntax error, unexpected ':' in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 184
+[19-Jun-2017 17:01:57 PRC] PHP Parse error:  syntax error, unexpected ':' in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 184
+[19-Jun-2017 17:05:20 PRC] PHP Parse error:  syntax error, unexpected '$p' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 185
+[19-Jun-2017 17:05:20 PRC] PHP Parse error:  syntax error, unexpected '$p' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\BusinessCompanyAction.class.php on line 185
+[20-Jun-2017 09:28:10 PRC] PHP Parse error:  syntax error, unexpected '[', expecting ')' in E:\project\newjieba1\manager\Runtime\Cache\e92ae9d4889c4445ec437d47a9727ed2.php on line 44
+[20-Jun-2017 10:09:17 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:10:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:10:21 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:10:21 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:20 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:54 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:54 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:55 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:55 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 10:32:55 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[20-Jun-2017 17:34:00 PRC] PHP Parse error:  syntax error, unexpected '[' in E:\project\newjieba1\manager\Runtime\Cache\e3b4959c569453853f1e5be7ec6eda4b.php on line 63
+[22-Jun-2017 17:05:25 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_STATIC_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\manager\Conf\config.php on line 19
+[22-Jun-2017 17:05:25 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_STATIC_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\manager\Conf\config.php on line 19
+[23-Jun-2017 09:27:55 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 330
+[26-Jun-2017 13:59:31 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\manager\Lib\Action\LoanAction.class.php on line 73
+[03-Jul-2017 14:23:09 PRC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in E:\project\newjieba1\manager\Lib\Action\RoleAction.class.php on line 26
+[05-Jul-2017 14:31:16 PRC] PHP Parse error:  syntax error, unexpected '"managerStat"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\manager\Lib\Action\IndexAction.class.php on line 44
+[05-Jul-2017 16:41:46 PRC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' in E:\project\newjieba1\manager\Runtime\Cache\c61398c0b7d08476411976f99d0ec3ea.php on line 74
+[07-Jul-2017 10:27:24 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in E:\project\newjieba1\manager\Lib\Action\PublicAction.class.php on line 33
+[07-Jul-2017 16:15:47 PRC] PHP Fatal error:  Class 'version\add' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[07-Jul-2017 16:16:07 PRC] PHP Fatal error:  Class 'version\add' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[07-Jul-2017 16:16:08 PRC] PHP Fatal error:  Class 'version\add' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[07-Jul-2017 16:16:08 PRC] PHP Fatal error:  Class 'version\add' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[07-Jul-2017 16:16:08 PRC] PHP Fatal error:  Class 'version\add' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[07-Jul-2017 17:26:02 PRC] PHP Fatal error:  Class 'version\BusinessCompany' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 198
+[10-Jul-2017 11:15:36 PRC] PHP Fatal error:  Class 'logins' not found in E:\project\newjieba1\manager\Lib\Action\TestAction.class.php on line 27
+[10-Jul-2017 11:22:15 PRC] PHP Fatal error:  Class 'T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:22:47 PRC] PHP Parse error:  syntax error, unexpected '"version"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:22:47 PRC] PHP Parse error:  syntax error, unexpected '"version"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:22:55 PRC] PHP Parse error:  syntax error, unexpected '"version\\"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:22:56 PRC] PHP Parse error:  syntax error, unexpected '"version\\"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:23:16 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:23:42 PRC] PHP Fatal error:  Class 'T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:24:08 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:24:09 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:24:09 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:24:10 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:25:41 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:25:41 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:25:41 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:25:42 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:25:42 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:25:42 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:20 PRC] PHP Fatal error:  Class 'ersion\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:21 PRC] PHP Fatal error:  Class 'ersion\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:21 PRC] PHP Fatal error:  Class 'ersion\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:21 PRC] PHP Fatal error:  Class 'ersion\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:21 PRC] PHP Fatal error:  Class 'ersion\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 11
+[10-Jul-2017 11:31:53 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:31:54 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:31:54 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:31:54 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:31:54 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:30 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:31 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:31 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:31 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:31 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:33:31 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:34:23 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:34:24 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 11:34:24 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10
+[10-Jul-2017 13:59:21 PRC] PHP Fatal error:  Class 'version\T1' not found in E:\project\newjieba1\manager\Lib\Model\TestModel.class.php on line 10

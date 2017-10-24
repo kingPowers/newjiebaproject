@@ -1,0 +1,21 @@
+[ 2017-05-18T13:14:08+08:00 ]  127.0.0.1 / | ERR: (ThinkException) 模板不存在[E:/project/newjieba1/www/Tpl/theme_2017/Index/index.html]
+[ 2017-05-18T13:14:08+08:00 ] 127.0.0.1 /
+[ 2017-05-18T13:14:08+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-05-18T13:14:08+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000568s ]
+[ 2017-05-18T13:14:08+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000681s ]
+[ 2017-05-18T13:14:08+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: class ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: type ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: class ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: type ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: file ThinkException.class.php 第 78 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: line ThinkException.class.php 第 78 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: class ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: type ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Array to string conversion ThinkException.class.php 第 80 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: class ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: type ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: class ThinkException.class.php 第 79 行.
+[ 2017-05-18T13:14:08+08:00 ] / | NOTIC: [8] Undefined index: type ThinkException.class.php 第 79 行.
+
+[ 2017-05-18T13:14:09+08:00 ]  127.0.0.1 /favicon.ico | ERR: (ThinkException) 无法加载模块favicon.ico

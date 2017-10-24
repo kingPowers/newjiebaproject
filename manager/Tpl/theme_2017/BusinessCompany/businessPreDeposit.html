@@ -1,0 +1,43 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+<form class="form-inline definewidth m20" action="{:U('/BusinessCompany/businessPreDeposit')}" method="get">
+	<span>合作公司名称：</span>
+    <input type="text" name="companyname"   value="{$_GET['companyname']}"/>&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;&nbsp; 
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>合作公司编号</th>
+            <th>所属渠道</th>
+            <th>合作公司名称</th>
+            <th>预存款金额</th>
+            <th>预存款余额</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <foreach name="list" item="vo" key="k">
+          <tr>
+            <td>{$vo['business_number']}</td>
+            <td>{$vo['channel_companyname']}</td>
+            <td>{$vo['business_companyname']}</td>
+            <td>{$vo['totalMoney']}</td>
+            <td>{$vo['total_balance']}</td> 
+            <td>
+                <a href="{:U('/BusinessCompany/depositeDetail',array('company_id'=>$vo['business_company_id']))}"> 预存款明细 </a>
+				<a style="cursor: pointer;" onclick="add({$vo['business_company_id']},'{$vo.business_companyname}');"> 新增 </a>
+            </td>
+        </tr>
+       </foreach>
+     </tbody>
+</table>
+{$page}
+<script type="text/javascript">
+function add(company_id,companyname)
+{
+    if (!company_id)return top.jdbox.alert(0,"合作公司ID错误");
+    return top.jdbox.iframe("/BusinessCompany/addDeposit/company_id/"+company_id+"/companyname/"+companyname);
+}
+</script>
+<include file="Public:footer" />

@@ -1,0 +1,97 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+a{text-decoration:none;}
+ul, ol, li{list-style: none;}
+.fl{float:left;}
+.fr{float:right;}
+.dbl{display: block;}
+img {width:100%; display:block;}
+body {font: normal 100% Helvetica, Arial, sans-serif; font-family:'微软雅黑'; background: #efefef;}
+header{width:100%; height: 40px; position:fixed; top:0; left: 0; background-color:#5495e6; z-index:10;  display: -webkit-box;}
+header a{position: absolute; z-index: 11; color: #fff;}
+header img{width:22%; height:20px; display:block; vertical-align:middle; overflow:hidden; padding:10px 0 0 8px; position:absolute;}
+header font{height: 40px; line-height: 40px; display: block; margin-left: 28px;}
+header h1{color:#fff; display:block; text-align:center; height:40px; line-height:40px; -webkit-box-flex: 1.0; font-size:18px; overflow:hidden; font-weight:normal; font-family:'微软雅黑'; position: relative; width: 100%;}
+footer{background: #fff; display: -webkit-box; width:100%; height: 50px; line-height: 50px; border-top: 1px #efefef solid; bottom: 0; position: fixed; z-index: 99;}
+footer a{position: relative; height: 50px; width: 50%; display: inline-block; float: left; text-align: center; padding: 2px 0 0;}
+footer #sy{background: url(../image/account/ico_index.png)no-repeat; background-size: 100%;}
+footer #zh{background: url(../image/account/ico_man.png)no-repeat; background-size: 100%;}
+footer #in{background: url(../image/index/ico_index.png)no-repeat; background-size: 100%;}
+footer #ac{background: url(../image/index/ico_man.png)no-repeat; background-size: 100%;}
+.ico_footer{display: inline-block; width: 27px; height: 48px; margin:0 auto;}
+.btn{width: 94%; position: absolute; border-radius: 5px; text-align: center; letter-spacing: 1px; font-size: 18px; display: block; height: 40px; line-height: 40px; left: 50%; margin: 10% 0 0 -47%; -webkit-appearance:none; border: 0;}
+.bgl{background: #5495e6; color: #fff;}
+#bgl{background: #5495e6; color: #fff;}
+.bgb{background: #63abe8; color: #fff;}
+.bgf{background: #fff; color: #4c4c4c;}
+.fb{color: #5495e6;}
+.fg{color: #b4b4b4; font-size: 14px;}
+.f12{font-size: 12px;}
+.c100_div{width: 100%; overflow:hidden; position: relative;}
+.con_div{width: 98%; overflow:hidden;}
+.p_center{padding: 2% 3%; width: 94%; overflow:hidden; position: relative;}
+.mui-con-view{position: relative; background: #fff;}
+.mui-con-li{position: relative; border-bottom: 1px #e3e3e3 solid;  padding: 15px 10px 15px 0; margin-left: 10px;}
+.mui-con-li font{display: inline-block; color: #000; width: 30%;}
+.mui-con-li span{display: inline-block; float: right; margin-right: 10%;}
+.mui-con-li input{display: inline-block; border: 0; outline: none; font-size: 14px; width: 60%; font-family: '微软雅黑';}
+.mui-con-li i{width: 10px; height: 10px; background: #5495e6; display: inline-block; border-radius: 50%; margin-right: 10px;}
+.mui-con-li time{display: inline-block; float: right; color: #b1b1b1;}
+.mui-con-li p{width: 100%; height: 20px; overflow: hidden; color: #b1b1b1; font-size: 14px; padding-top:5px;}
+#input_yzm{width: 30%;}
+.btn_yzm{width: 30%; display: inline-block; border-left: 1px solid #ddd; color: #5495e6; position: absolute; height: 52px; text-align: center; margin-top: -15px; line-height: 52px; right: 0;}
+.mt50{margin-top: 50px;}
+.mt40{margin-top: 40px;}
+.mt15{margin-top: 15%;}
+.ta_center{text-align: center;}
+
+/*login*/
+.bg_login{overflow:hidden; position: relative;}
+.bg_login img{width: 100%;}
+.login_div{top: 13%; position: absolute; z-index: 10; margin-left: -49%; left: 50%;}
+.logo_div{width: 22%; margin: 0 auto 10%;}
+.username{width: 80%; z-index: 10; margin:0 auto; border-bottom: 1px #fff solid; padding:2%;}
+.username img{width: 8%; display: inline-block; vertical-align: middle;}
+.username input{color: #fff; width: 86%; display: inline-block; outline: none; background: transparent; height: 40px; border: none; font-size: 18px; margin-left: 4%;}
+.btn_login{margin-top: -87%;  z-index: 10;}
+.btn_reg{margin-top: -73%;  z-index: 10;}
+.for_div{margin-top: -58%; z-index: 10; position: absolute; color: #5495e6; right: 3%; font-size: 14px;}
+
+/*reg*/
+.btn_pwd{width: 7%; display: inline-block; position: absolute; margin-top: 1%;}
+.agree{width: 94%; margin:10px auto 0;}
+.agree input{width: 20px; height: 20px;}
+.agree font{margin-left: 5%;}
+.agree font a{color: #5495e6;}
+
+/*recoverpwd*/
+.tkgrayBg{ background: #000; opacity: 0.5; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 100;}
+.tkjin_bg{ z-index: 101; width: 88%; border-radius: 8px; position: fixed; top: 25%; left: 50%; margin-left:-44%;}
+.tkjin_bg h1{font-size: 18px; margin: 5% auto 0; text-align: center;}
+.tkjin_bg h2{font-size: 18px; margin: 10% auto 0; text-align: center;}
+.tkjin_bg p{font-size: 14px; margin: 3% auto 10%; text-align: center;}
+.tkjin_bg li{width: 90%; text-align: left; padding: 5px 5%; font-size: 14px;}
+.tkjin_bg li font{float: right;}
+.tkbtm_bg{ z-index: 101; width: 100%; position: fixed; bottom: 0;}
+.tkbtm_bg a{width: 100%; display: block; text-align: center; background: #fff; padding: 15px 0; border-bottom: 1px #ddd solid;}
+.btn_ture{width: 100%; text-align: center; color: #5495e6; font-size: 20px; border-top: 1px #ddd solid; padding: 3% 0;}
+
+/*account*/
+.bg_info{width: 94%; position: absolute; top: 12%; left: 50%; margin-left:-47%; overflow:hidden;}
+.name_div{position: absolute; width: 100%; height: 100%; margin-top: -60%;}
+.name_div img{width: 20%; margin:3% auto 2%; border:1px solid #ddd; border-radius: 50%;}
+.name_div p{text-align: center; font-size: 14px;}
+.a_money{width: 100%; position: absolute; bottom: 11%;}
+.a_money>.ney{width: 50%; float: left; text-align: center;}
+.a_money>.ney h2{color: #5495e7;font-size: 15px; font-weight: normal;}
+.a_money>.ney font{color: #b4b4b4;font-size: 12px;}
+.account-ul li{height: 50px; position: relative; background: url(../image/account/jticon.jpg) no-repeat center right; background-origin: content-box; background-size: 10px 15px; }
+.account-ul li font{width: 45px; height: 45px; display: block; float: left;}
+.account-ul li span{width: 85%; display: inline-block; float: right; border-bottom: 1px #efefef solid; height: 50px; line-height: 50px;}
+.a_img{width: 25px; vertical-align: middle; margin:16px auto 0; display: -webkit-box;}
+.tel{width: 100%; font-size: 14px; color: #b4b4b4; text-align: center; overflow: hidden; height: 30px; line-height: 30px;}
+.tel a{color: #b4b4b4;}
+
+/*realname*/
+.order-gray-li{display: none;}
+.order-gray-li li{position: relative;border-bottom: 1px #fff solid; padding: 15px 10px; vertical-align: middle; background: #ececec;
+    color: #4c4c4c;  opacity: 0.9; text-align: center;}

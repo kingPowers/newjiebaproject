@@ -1,0 +1,57 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>基本信息</span>
+		</div>
+		<ul class="info_list">
+			<li>姓名:{$info['names']}</li>
+			<li>身份证号:{$info['certiNumber']}</li>
+			<li>手机号:{$info['mobile']}</li>
+			<li>银行卡号:{$info['acc_no']}</li>
+		</ul>				
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>预售信额度</span>
+		</div>
+		<ul class="info_list">
+			<li>预售信额度:{$info['promise_money']}</li>	
+		</ul>		
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>贷款信息</span>
+		</div>
+		<div class="tablediv" style="margin-top: 0;">
+			<table class="member_table">
+				<tr>
+					<th>编号</th>
+					<th>贷款金额</th>
+					<th>贷款利息</th>
+					<th>贷款时间</th>
+					<th>已还本金</th>	
+					<th>已还利息</th>
+					<th>逾期次数</th>
+					<th>逾期金额</th>								
+				</tr>
+				<foreach name="loan_info" item="vo">
+				<tr>
+					<td>{$vo['tender_number']}</td>
+					<td>{$vo['money']}</td>
+					<td>{$vo['total_fee']}</td>
+					<td>{$vo['timeadd']}</td>
+					<td>{$vo['money']}</td>
+					<td>1000</td>
+					<td>{$vo['lateCount']}次</td>
+					<td>{$vo['late_fee']}</td>			
+				</tr>	
+				</foreach>	
+			</table>
+			{$page}
+		</div>
+	</div>
+</div>
+
+<include file="Public:pageFooter"/>

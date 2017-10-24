@@ -1,0 +1,140 @@
+<include file="Public:header" />
+<style type="text/css">
+.tableright{width: 200px;text-align: center;padding-left:100px; }
+.search-div{border:1px solid #bbb;width: 207px;margin-top: 0px;position: absolute;top:32px;z-index: 100;background: #fff;border-radius: 2px;display: none;}
+.search-div p{cursor: pointer;margin: 0 auto;padding: 5px 10px;}
+.search-div p:hover{background: #ccc}
+.close{display: inline-block;float: right;font-size: 5px;color: #666;padding-right: 10px;}
+label{display: inline-block;}
+</style>
+<script type="text/javascript">
+</script>
+<form class="definewidth m20" id="editForm">
+  <table class="table table-bordered table-hover m10">
+    <tr>
+      <input type="hidden" name="capitalid" value="{$info['id']}">
+      <td class="tableleft" style="text-align: center;" colspan="4">基本信息</td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">资金方名称：</td>
+      <td class="tableright"><input type="text" name="companyname" value="{$info['companyname']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">资金方主体：</td>
+      <td class="tableright">
+        <select name="subject"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>>
+          <foreach name="subject" item="v">
+            <option <eq name="v" value="$info['subjectname']">selected="" </eq>>{$v}</option>
+          </foreach>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">资金方类型：</td>
+      <td class="tableright">
+       <select name="capital_type" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>>
+          <foreach name="capital_type" item="v">
+            <option <eq name="v" value="$info['typename']">selected="" </eq>>{$v}</option>
+          </foreach>
+        </select>
+      </td>
+      <td width="10%" class="tableleft">法人姓名：</td>
+      <td class="tableright"><input type="text" name="legal_name" value="{$info['legal_name']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">法人身份证号：</td>
+      <td class="tableright"><input type="text" name="legal_certinumber" value="{$info['legal_certinumber']}"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">组织机构代码证：</td>
+      <td class="tableright"><input type="text" name="organize_code" value="{$info['organize_code']}"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">地址：</td>
+      <td class="tableright"><input type="text" name="company_address" value="{$info['company_address']}"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">营业执照号：</td>
+      <td class="tableright"><input type="text" name="license_number" value="{$info['license_number']}"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">联系人姓名：</td>
+      <td class="tableright"><input type="text" name="contact_name" value="{$info['contact_name']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">税务登记证：</td>
+      <td class="tableright"><input type="text" name="tax_certificate" value="{$info['tax_certificate']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">联系人手机号：</td>
+      <td class="tableright"><input type="text" name="contact_mobile" value="{$info['contact_mobile']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">联系人邮箱：</td>
+      <td class="tableright"><input type="text" name="contact_email" value="{$info['contact_email']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+    <tr>
+      <td class="tableleft" style="text-align: center;" colspan="4">银行卡信息</td>
+    </tr>
+     <tr>
+      <td width="10%" class="tableleft">开户名称：</td>
+      <td class="tableright"><input type="text" name="legal_openname" value="{$info['legal_openname']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">开户账号：</td>
+      <td class="tableright"><input type="text" name="legal_accno" value="{$info['legal_accno']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+    </tr>
+     <tr>
+      <td width="10%" class="tableleft">开户银行：</td>
+      <td class="tableright"><input type="text" name="legal_bank" value="{$info['legal_bank']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">账号类型：</td>
+      <td class="tableright">
+       <select name="open_type" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>>
+          <foreach name="open_type" item="v">
+            <option <eq name="v" value="$info['legal_opentype']">selected="" </eq>>{$v}</option>
+          </foreach>
+        </select>
+      </td>
+    </tr> 
+    <tr>
+      <td class="tableleft" style="text-align: center;" colspan="4">资金方启用</td>
+    </tr>
+     <tr>
+      <td class="tableleft">是否启用：</td>
+      <td><label><input type="radio" name="status" value="1" <eq name="info['status']" value="1">checked="" </eq>>启用</label><label><input type="radio" name="status" value="2" <eq name="info['status']" value="2">checked="" </eq>>停用</label></td>
+    </tr>
+    <tr>
+      <td class="tableleft" style="text-align: center;" colspan="4">保证金信息</td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">保证金比率：</td>
+      <td colspan="3" class="tableright"><input type="text" name="deposit_percent"  value="{$info['deposit_percent']}" <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq>>%</td>
+    </tr>
+    <tr><td colspan="4" style="text-align: center;width: 50px"><notempty name="is_sub"><a class="btn btn-success" id="sub_info">提交</a></notempty><a class="btn btn-error" href="/Capital/index" style="margin-left: 20px;">返回</a></td>
+      </tr>
+  </table>
+</form>
+<script type="text/javascript">
+$(function(){
+  $("#sub_info").click(function(){
+    var data = {};
+    data.capitalid = $("input[name='capitalid']").val();
+    data.companyname = $("input[name='companyname']").val();
+    data.contact_name = $("input[name='contact_name']").val();
+    data.subject = $("select[name='subject']").find("option:selected").html();
+    data.legal_name = $("input[name='legal_name']").val();
+    data.capital_type = $("select[name='capital_type']").find("option:selected").html();
+    data.legal_certinumber = $("input[name='legal_certinumber']").val();
+    data.license_number = $("input[name='license_number']").val();
+    data.organize_code = $("input[name='organize_code']").val();
+    data.company_address = $("input[name='company_address']").val();
+    data.tax_certificate = $("input[name='tax_certificate']").val();
+    data.contact_mobile = $("input[name='contact_mobile']").val();
+    data.legal_openname = $("input[name='legal_openname']").val();
+    data.contact_email = $("input[name='contact_email']").val();
+    data.legal_accno = $("input[name='legal_accno']").val();
+    data.legal_bank = $("input[name='legal_bank']").val();
+    data.status = $("input[name='status']:checked").val();
+    data.open_type = $("select[name='open_type']").find("option:selected").html();
+    data.deposit_percent = $("input[name='deposit_percent']").val();
+    top.jdbox.alert(2);
+    $.post("/Capital/edit.html",data,function(F){
+        console.log(F);
+        top.jdbox.alert(F.status,F.info);
+        if(F.status)
+        {
+          window.location.href = "/Capital/index";
+        }
+    },'json')
+  })
+})
+</script>
+<include file="Public:footer" />

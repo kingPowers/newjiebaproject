@@ -1,0 +1,3 @@
+06/26/17 13:29:52,009589 [LoanOrder.class.php:0329][ERROR] tender_3 - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`='',`lasttime`='2017-06-26 13:29:51' WHERE ( `id` = '3' )
+06/26/17 13:30:01,884378 [LoanOrder.class.php:0329][ERROR] tender_3 - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`='',`lasttime`='2017-06-26 13:30:01' WHERE ( `id` = '3' )
+06/26/17 13:30:05,007683 [LoanOrder.class.php:0329][ERROR] tender_3 - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`='',`lasttime`='2017-06-26 13:30:04' WHERE ( `id` = '3' )

@@ -1,0 +1,28 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2017/js/wdate/WdatePicker.js"></script>
+
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>资金方编号</th>
+            <th>资金方名称</th>
+            <th>资金方产品</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <foreach name="capital" item="vo" key="k">
+          <tr>
+            <td>{$vo['capital_number']}</td>
+            <td>{$vo['companyname']}</td>
+            <td>{$vo['name']}</td>    
+        </tr>
+       </foreach>
+       <tr><td colspan="3" style="text-align: center;"><a href="/BusinessCompany/allCompanyList" class="btn btn-success">返回</a></td></tr>
+     </tbody>
+</table>
+
+<script type="text/javascript">
+
+</script>
+<include file="Public:footer" />

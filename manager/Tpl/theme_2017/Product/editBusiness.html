@@ -1,0 +1,251 @@
+<include file="Public:header" />
+<style type="text/css">
+.tableright{width: 200px;text-align: center;padding-left:100px; }
+.search-div{border:1px solid #bbb;width: 207px;margin-top: 0px;position: absolute;top:32px;left: 8px;z-index: 100;background: #fff;border-radius: 2px;display:none;}
+.search-div p{cursor: pointer;margin: 0 auto;padding: 5px 10px;}
+.search-div p:hover{background: #ccc}
+.close{display: inline-block;float: right;font-size: 5px;color: #666;padding-right: 10px;}
+label{display: inline-block;}
+</style>
+<script type="text/javascript">
+$(function(){
+  //查询商户和渠道
+  $("input[name='business_company_id']").keyup(function(F){
+     $keywords = $(this).val();
+     if($keywords == '')return false;
+     $(this).attr('choseid','');
+     var searchNode = $(this).next(".search-div");
+     var url = '';
+     $.post("{:U('/Public/getBusinessList')}",{"name":$keywords},function(F){
+        var search = F.data;console.log(F);
+        var searchStr = '';
+        searchNode.html('');
+        if(search != '')searchNode.show();
+        for (var i = 0;i < search.length;i ++)
+        {
+          searchStr += "<p channelid='" + search[i].channel_company_id + "' channelname='" + search[i].channel_companyname + "' onclick='chose(this);' choseid='" + search[i].id + "'>" + search[i].companyname + "</p>";
+        }
+        if(searchStr != '')searchStr += "<a class='close' onclick='closes(this);'>关闭</a>";
+        searchNode.append(searchStr);
+     },'json')
+  })
+  $("input[name='business_company_id']").blur(function(){
+    $(this).val('').attr("choseid",'');
+    $("input[name='channelid']").val('').attr("cid",'');
+  })
+  //查询资金方及其产品
+  $("input[name='capitalid']").keyup(function(){
+      $keywords = $(this).val();
+     if($keywords == '')return false;
+     $(this).attr('choseid','');
+     var searchNode = $(this).next(".search-div");
+     var url = '';
+     $.post("{:U('/Public/getCapitalList')}",{"name":$keywords},function(F){
+        var search = F.data;console.log(F);
+        var searchStr = '';
+        searchNode.html('');
+        if(search != '')searchNode.show();
+        for (var i = 0;i < search.length;i ++)
+        {
+          searchStr += "<p  onclick='chosecap(this);' choseid='" + search[i].id + "'>" + search[i].companyname + "</p>";
+        }
+        if(searchStr != '')searchStr += "<a class='close' onclick='closes(this);'>关闭</a>";
+        searchNode.append(searchStr);
+       
+     },'json')
+  })
+  $("input[name='capitalid']").blur(function(){
+    $(this).val('').attr("choseid","");
+    $("select[name='loan_list']").html("<option>-- 请选择资金方 --</option>").attr("disabled","disabled");
+  })
+})
+function chosecap(_this)
+{
+  var id = $(_this).attr("choseid");
+  var capname = $(_this).html();
+  $("input[name='capitalid']").val(capname);
+  $("input[name='capitalid']").attr("choseid",id)
+  $.post("{:U('Public/getCapitalLoan')}",{"id":id},function(F){
+    console.log(F);
+    var loan_list = F.data;
+    var loan_str = '';
+    if(loan_list == '')
+    {
+      $("select[name='loan_list']").html("<option>该资金方尚未添加产品</option>")
+      return false;
+    }
+    $("select[name='loan_list']").html("<option>--请选择资金方产品--</option>");
+    $("select[name='loan_list']").removeAttr("disabled");
+    for(var i = 0;i < loan_list.length;i ++)
+    {
+      loan_str += "<option  loanid='" + loan_list[i].id + "'>" + loan_list[i].name + "</option>";    
+    }
+     $("select[name='loan_list']").append(loan_str);
+  },'json');
+  $(_this).parent(".search-div").hide()
+}
+$("select[name='loan_list']").live("change",function(){
+  choseloan($(this).find("option:selected"));
+});
+
+function choseloan(_this)
+{
+  var loan_name = _this.text();
+  var loan_id = _this.attr("loanid");
+  if(loan_id == '')return false;
+  $("input[name='loan_name']").val(loan_name);
+}
+function chose(_this)
+{
+  var choseid = $(_this).attr("choseid");
+  var name = $(_this).html();
+  var channelid = $(_this).attr("channelid");
+  var channelname = $(_this).attr("channelname");
+  $(_this).parent(".search-div").hide().prev("input").val(name).attr("choseid",choseid);
+  $("input[name='channelid']").val(channelname).attr("cid",channelid);
+}
+function closes(_this)
+{
+  $(_this).parent(".search-div").hide();
+}
+</script>
+<form class="definewidth m20" id="editForm">
+  <table class="table table-bordered table-hover m10">
+    <tr>
+      <input type="hidden" class="need_search" name="productid" value="{$info['id']}">
+      <td class="tableleft" style="text-align: center;" colspan="4">选择合作公司
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">合作公司:</td>
+      <td class="tableright" style="position: relative;">
+        <input type="text" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> name="business_company_id" choseid="{$info['business_company_id']}" value="{$info['bus_companyname']}">
+        <div class="search-div"></div>
+      </td>
+      <td width="10%" class="tableleft">渠道名称</td>
+      <td class="tableright" style="position: relative;">
+        <input type="text" name="channelid" cid=""  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> value="{$info['cha_companyname']}" disabled="">
+      </td>
+    </tr>
+    <tr>
+        <td class="tableleft" style="text-align: center;" colspan="4">关联资金方</td>
+      </tr>
+    <tr>
+      <td width="10%" class="tableleft">资金方：</td>
+      <td class="tableright" style="position: relative;">
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> name="capitalid" choseid='' value="{$info['cap_companyname']}">
+        <div class="search-div"></div>
+      </td>
+      <td width="10%" class="tableleft">资金方产品：</td>
+      <td align="center" class="tableright">
+        <select name="loan_list" disabled=""  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>>
+          <empty name="info['cap_l_name']">
+              <option>-- 请选择资金方 --</option>
+          <else/>
+              <option loanid="{$info['capital_loan_id']}">{$info['cap_l_name']}</option>
+          </empty>
+           
+        </select>
+      </td>
+    </tr>
+    <tr>
+        <td class="tableleft" style="text-align: center;" colspan="4">
+         产品配置
+        </td>
+      </tr>
+    <tr>
+      <td width="10%" class="tableleft">产品名称:</td>
+      <td class="tableright">
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> name="loan_name" value="{$info['name']}">
+      </td>
+      <td width="10%" class="tableleft">借款金额：</td>
+      <td>
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> class="short" name="min_loanmoney" value="{$info['min_loanmoney']}">
+        ——
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> class="short" name="max_loanmoney" value="{$info['max_loanmoney']}">
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">借款期限:</td>
+      <td class="tableright" colspan="3">
+        <foreach name="periode" item="vo">
+          <label><input   <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> style="margin:0 5px 0 50px;position: relative;top:-3px;" type="radio" name="loan_periode_id" value="{$vo['id']}" <eq name="vo['id']" value="$info['loan_periode_id']">checked=""</eq>>{$vo['periode']}{$vo['unit']}</label>
+        </foreach>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">借款利率:</td>
+      <td class="tableright">
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> name="periode_rate" value="{$info['periode_rate']}">%(日利率)
+      </td>
+      <td width="10%" class="tableleft">借款逾期利率:</td>
+      <td  class="tableright">
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> name="late_periode_rate" value="{$info['late_periode_rate']}">%(日利率)
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">手续费:</td>
+      <td class="tableright">
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> name="procedure_free" value="{$info['procedure_free']}">
+      </td>
+      <td width="10%" class="tableleft">平台管理费率：</td>
+      <td>
+        <input type="text"  <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> name="plat_free" value="{$info['plat_free_rate']}">%
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">是否自动审核:</td>
+      <td class="tableright" colspan="3">
+        <label><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> style="display: inline-block;" type="radio" name="is_auto" value="1" <eq name="info['is_auto_pass']" value="1">checked=""</eq> >是</label>
+        <label><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> type="radio" name="is_auto" value="0" <eq name="info['is_auto_pass']" value="0">checked=""</eq> >否</label>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">是否启用:</td>
+      <td class="tableright" colspan="3">
+        <label><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> style="display: inline-block;" type="radio" name="status" value="1" <eq name="info['status']" value="1">checked=""</eq> >启用</label>
+        <label><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> type="radio" name="status" value="2" <eq name="info['status']" value="2">checked=""</eq> >停用</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;width: 50px">
+        <notempty name="is_sub">
+          <a class="btn btn-success" id="sub">提交</a>
+        </notempty>
+          <a class="btn btn-error" href="/Product/index" style="margin-left: 20px;">返回
+          </a>
+      </td>
+    </tr>
+  </table>
+</form>
+<script type="text/javascript">
+$(function(){
+  $("#sub").click(function(){
+    var data = {};
+    data.id = $("input[name='productid']").val();
+    data.business_company_id = $("input[name='business_company_id']").attr('choseid');
+    data.channelid = $("input[name='channelid']").attr("cid");
+    data.loanid = $("select[name='loan_list']").find("option:selected").attr("loanid");
+    data.capitalid = $("input[name='capitalid']").attr("choseid");
+    data.loan_name = $("input[name='loan_name']").val();
+    data.min_loanmoney = $("input[name='min_loanmoney']").val();
+    data.max_loanmoney = $("input[name='max_loanmoney']").val();
+    data.loan_periode_id = $("input[name='loan_periode_id']:checked").val();
+    data.periode_rate = $("input[name='periode_rate']").val();
+    data.late_periode_rate = $("input[name='late_periode_rate']").val();
+    data.procedure_free = $("input[name='procedure_free']").val();
+    data.plat_free = $("input[name='plat_free']").val(); 
+    data.is_auto = $("input[name='is_auto']:checked").val();
+    data.status = $("input[name='status']:checked").val();
+    top.jdbox.alert(2);
+    $.post("/Product/editBusiness.html",data,function(F){
+        console.log(F);
+        top.jdbox.alert(F.status,F.info);
+        if(F.status)
+        {
+          window.location.href = "/Product/index";
+        }
+    },'json')
+  })
+})
+</script>
+<include file="Public:footer" />

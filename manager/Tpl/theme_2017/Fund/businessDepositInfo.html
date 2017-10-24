@@ -1,0 +1,29 @@
+<include file="Public:header" />
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>编号</th>
+        <th>资金方名称</th>
+        <th>公司名称</th>
+        <th>本期新增保证金</th>
+        <th>保证金头寸</th>
+        <th>添加人</th>
+        <th>添加时间</th> 
+    </tr>
+    </thead>
+    <tbody> 
+    <foreach name="list" item="vo">
+    <tr>
+      <td>{$vo['capital_number']}</td>
+      <td>{$vo['capCompanyname']}</td>
+      <td>{$vo['busCompanyname']}</td>
+      <td>{$vo['promise_money']}</td>
+      <td>{$vo['promise_money_pos']}</td>
+      <td>{$vo['author']}</td>
+      <td>{$vo['timeadd']}</td>
+    </tr>
+    </foreach>
+    <tr><td colspan="7" style="text-align: center;"><a href="/Fund/businessFund" class="btn btn-success">返回</a></td></tr>
+    </tbody>
+</table>
+<include file="Public:footer" />

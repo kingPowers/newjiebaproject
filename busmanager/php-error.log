@@ -1,0 +1,35 @@
+[05-Jun-2017 09:13:05 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[12-Jun-2017 14:38:29 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\busmanager\Lib\Action\AuthAction.class.php on line 19
+[21-Jun-2017 13:58:50 PRC] PHP Parse error:  syntax error, unexpected ']' in E:\project\newjieba1\busmanager\Lib\Action\PublicAction.class.php on line 27
+[23-Jun-2017 13:42:42 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\busmanager\Lib\Action\MemberAction.class.php on line 52
+[23-Jun-2017 14:10:54 PRC] PHP Parse error:  syntax error, unexpected ':' in E:\project\newjieba1\busmanager\Lib\Action\MemberAction.class.php on line 50
+[23-Jun-2017 14:38:02 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\busmanager\Lib\Action\AuthAction.class.php on line 23
+[23-Jun-2017 16:45:06 PRC] PHP Fatal error:  Cannot use [] for reading in E:\project\newjieba1\busmanager\Lib\Action\AuthAction.class.php on line 88
+[26-Jun-2017 13:49:29 PRC] PHP Parse error:  syntax error, unexpected 'late_periode_rate' (T_STRING), expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\a6ac32474749313b63cba41859734b5f.php on line 47
+[26-Jun-2017 13:50:04 PRC] PHP Parse error:  syntax error, unexpected 'late_periode_rate' (T_STRING), expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\a6ac32474749313b63cba41859734b5f.php on line 47
+[26-Jun-2017 13:50:47 PRC] PHP Parse error:  syntax error, unexpected 'money' (T_STRING), expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\a6ac32474749313b63cba41859734b5f.php on line 48
+[26-Jun-2017 13:51:07 PRC] PHP Parse error:  syntax error, unexpected 'late_periode_rate' (T_STRING), expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\a6ac32474749313b63cba41859734b5f.php on line 47
+[26-Jun-2017 14:06:06 PRC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\0421b7d8159fecde556388bc71a0cddb.php on line 50
+[26-Jun-2017 14:06:12 PRC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\0421b7d8159fecde556388bc71a0cddb.php on line 50
+[26-Jun-2017 14:39:57 PRC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\project\newjieba1\busmanager\Lib\Action\OrderAction.class.php on line 124
+[26-Jun-2017 14:47:18 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 11
+[26-Jun-2017 17:21:24 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 73
+[27-Jun-2017 09:27:00 PRC] PHP Parse error:  syntax error, unexpected '$operate_status' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 7
+[27-Jun-2017 09:29:17 PRC] PHP Parse error:  syntax error, unexpected '$operate_status' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 7
+[27-Jun-2017 09:29:39 PRC] PHP Parse error:  syntax error, unexpected '$operate_status' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 7
+[27-Jun-2017 09:29:40 PRC] PHP Parse error:  syntax error, unexpected '$operate_status' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\busmanager\Lib\Action\OverdueAction.class.php on line 7
+[27-Jun-2017 11:13:48 PRC] PHP Parse error:  syntax error, unexpected '[', expecting ']' in E:\project\newjieba1\busmanager\Runtime\Cache\0c32364d3c6aaddad5de3001bd88b315.php on line 108
+[30-Jun-2017 09:08:22 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:09:11 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 290
+[30-Jun-2017 09:10:47 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 290
+[30-Jun-2017 14:15:39 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:16:16 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:16:36 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:18:16 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:18:45 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:19:37 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[30-Jun-2017 14:20:38 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\PayPlat.class.php on line 69
+[04-Jul-2017 15:50:49 PRC] PHP Fatal error:  Call to a member function hget() on a non-object in E:\project\newjieba1\busmanager\Lib\Action\MemberMsgAction.class.php on line 62
+[04-Jul-2017 15:50:52 PRC] PHP Fatal error:  Call to a member function hget() on a non-object in E:\project\newjieba1\busmanager\Lib\Action\MemberMsgAction.class.php on line 62
+[04-Jul-2017 16:02:57 PRC] PHP Fatal error:  Call to a member function hget() on a non-object in E:\project\newjieba1\busmanager\Lib\Action\MemberMsgAction.class.php on line 62
+[05-Jul-2017 11:06:45 PRC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) or '$' in E:\project\newjieba1\busmanager\Runtime\Cache\654e9999f78b42f900fe8e990ce386be.php on line 72

@@ -1,0 +1,61 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<div class="nav">
+		<ul>
+			<ul>
+			<li class="alink"><a href="/Order/orderInfo/id/{$_GET['id']}/mid/{$_GET['mid']}">贷款明细</a></li>
+			<li class="alink"><a href="/Order/checkResult/id/{$_GET['id']}/mid/{$_GET['mid']}">贷款审核</a></li>
+			<li class="alink" id="bg_blue"><a>还款计划</a></li>
+			<li class="alink"><a href="/Order/repayHistory/id/{$_GET['id']}/mid/{$_GET['mid']}">还款历史</a></li>		
+		</ul>	
+		</ul>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>还款ID</th>
+				<th>期限</th>
+				<th>起始时间</th>
+				<th>应还时间</th>
+				<th>状态</th>
+				<th>还款时间</th>
+				<th>期初余额</th>
+				<th>期末余额</th>
+				<th>应还本金</th>
+				<th>应还利息</th>
+				<th>应还罚息</th>
+				<th>已还本金</th>
+				<th>已还利息</th>
+				<th>已还罚息</th>						
+			</tr>
+			<notempty name="info">
+			<tr>
+				<td>{$info['id']}</td>
+				<td>{$info['lp_name']}</td>
+				<td>{$info['start_time']}</td>
+				<td>{$info['end_time']}</td>
+				<td>{$info['order_status_name']}</td>
+				<td>{$info['back_real_time']}</td>
+				<td><php>echo (float)($info['repayment_money']+$info['late_fee']);</php></td>
+				<td><php>echo (float)($info['repayment_money']+$info['late_fee']-$info['back_real_money']);</php></td>
+				<td>{$info['money']}</td>
+				<td>{$info['total_fee']}</td>
+				<td>{$info['late_fee']}</td>
+				<td>{$info['back_real_money']}</td>
+				<td>
+				<notempty name="info['back_real_money']">
+				{$info['total_fee']}
+				</notempty>
+				</td>
+				<td>
+				<notempty name="info['back_real_money']">
+				{$info['late_fee']}
+				</notempty>
+				</td>			
+			</tr>
+			</notempty>
+		</table>
+	</div>
+</div>
+<include file="Public:pageFooter"/>

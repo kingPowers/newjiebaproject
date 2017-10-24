@@ -1,0 +1,43 @@
+.text_money{float: right; text-align: right;}
+.li_money{padding: 25px 10px 25px 0;}
+.bg_jt{background: url(../image/account/jticon.jpg) no-repeat center right; background-origin: content-box; background-size: 10px 15px; }
+.ico_wh{width: 20px; height: 20px; vertical-align: middle; position: absolute; margin-left: 5%;}
+
+/*loaninfo*/
+.forder_div{width: 70%; margin: 3% auto; text-align: center; line-height: 40px;}
+.forder_div b{font-weight: normal; font-size: 18px;  width: 100%;  display: block;}
+.forder_div h2{font-weight: normal; color: #4e96e8;  font-size: 32px; letter-spacing: 3px;  width: 100%;}
+.forder_div span{font-size: 14px;  width: 100%;  display: block; color: #4e96e8;}
+.con-li{position: relative; border-bottom: 1px #e3e3e3 solid; border-top: 1px #e3e3e3 solid;  padding: 15px 3%; overflow: hidden;}
+.con-li font{float: left;}
+.con-li span{float: right;}
+.con-li span b{color: #4e96e8; font-weight: normal;}
+.btn_lj{padding: 10px 3%; display: block; color: #4e96e8; text-align: center;}
+.forder_details{background: #fbfbfb; padding: 10px; color: #b6b6b6; margin-top: 10px; position: relative;}
+.forder-view-cell{font-size: 14px; line-height: 25px;}
+.forder-view-cell font{float: right;}
+.forder-view-cell a{float: right; color: #4e96e8;}
+#f_gray{color: #4c4c4c; opacity: 0.5; margin: 0;}
+
+/*check_sign*/
+.agree{position: relative; color: #b6b6b6; text-align: center; height: 23px; line-height: 23px;}
+.agree input{margin-right: 5px; width: 20px; height: 20px; display: inline-block; vertical-align: middle;}
+.middle_div{position: relative; margin-top: 50px; color: #000; text-align: center;}
+.middle_div font{color: #5495e6;} 
+.btn_div{width: 94%; margin: 0 auto; top: 10px; position: relative;overflow: hidden;}
+.input_yzmb{width: 56%;border:0; outline: none; border-radius: 5px; display: inline-block; height: 40px; text-align: center;}
+.btn_yzmb{margin-left: 4%; width: 40%; background: #63abe8; border-radius: 5px; text-align: center; letter-spacing: 1px; font-size: 14px; display: inline-block; height: 40px; line-height: 40px;color: #fff; border:0; -webkit-appearance:none;  font-family:'微软雅黑';}
+
+/*loan_history*/
+nav{height: 40px; line-height: 40px; width: 100%; margin: 40px auto 10px; text-align: center; font-size: 14px; color: #4e96e8; background: #fff;}
+.listyle{height: 40px; width: 33%; float: left; display: inline-block;}
+.blue_bg{border-bottom: 3px solid #5495e6; width: 19%; margin: 0 7% 0;}
+.history_one{margin-bottom: 10px; font-size: 14px;}
+.history_one span{float: left; display: inline-block;}
+.history_one font{float: right; display: inline-block; color: #5495e6;}
+.history_one ul{border-top: 1px solid #efefef;}
+.history_one ul li{width: 33%; float: left; text-align: center; margin: 10px 0; border-right: 1px solid #efefef;}
+.history_one ul li:nth-child(3){border:0;}
+.history_one b{font-weight: normal; color: #4c4c4c; opacity: 0.5; font-size: 12px;}
+.hShow{display: block;}
+.hHide{display: none;}

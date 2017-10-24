@@ -1,0 +1,7 @@
+[ 2017-06-05T09:08:51+08:00 ] 127.0.0.1 /
+[ 2017-06-05T09:08:51+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-06-05T09:08:51+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000726s ]
+[ 2017-06-05T09:08:51+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000857s ]
+
+[ 2017-06-05T09:11:55+08:00 ]  127.0.0.1 /login.html | ERR: (ThinkException) 无法加载模块Public
+[ 2017-06-05T11:38:13+08:00 ]  127.0.0.1 /index/index | ERR: (ThinkException) 无法加载模块index

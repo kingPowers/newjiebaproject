@@ -1,0 +1,3 @@
+<?php
+//000000259200s:624:"a:21:{s:2:"id";s:1:"8";s:19:"business_company_id";s:2:"25";s:8:"username";s:11:"18952732576";s:8:"password";s:32:"f99b268d35ed38d3097f50fcdf1fe39d";s:6:"mobile";s:11:"18952732576";s:9:"wx_openid";N;s:15:"mobile_location";s:19:"江苏-中国电信";s:6:"lastip";s:9:"127.0.0.1";s:14:"last_useragent";N;s:5:"regip";s:9:"127.0.0.1";s:13:"source_client";s:2:"h5";s:16:"source_useragent";N;s:6:"status";s:1:"1";s:10:"invitecode";s:6:"942405";s:10:"recintcode";N;s:7:"timeadd";s:19:"2017-06-27 16:24:42";s:8:"lasttime";s:19:"2017-06-28 13:39:10";s:10:"nameStatus";s:1:"0";s:5:"names";N;s:11:"certiNumber";N;s:10:"bankStatus";i:0;}";
+?>

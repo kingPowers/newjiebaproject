@@ -1,0 +1,38 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>选择合作公司</span>
+		</div>
+		<ul class="info_list">
+			<li>合作公司:{$info['bus_companyname']}</li>
+			<li>所属渠道:{$info['cha_companyname']}</li>
+		</ul>		
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>关联资金方</span>
+		</div>
+		<ul class="info_list">
+			<li>资金方:{$info['cap_companyname']}</li>
+			<li>资金方产品:{$info['cap_l_name']}<a onclick="javascript:return top.jdbox.iframe('/Loan/detail/id/{$info.cap_l_id}');">产品明细</a></li>
+		</ul>		
+	</div>
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>产品配置</span>
+		</div>
+		<ul class="info_list">
+			<li>产品名称:{$info['name']}</li>
+			<li>借款金额:{$info['min_loanmoney']}元-{$info['max_loanmoney']}元</li>
+			<li>借款期限:{$periode[$info['loan_periode_id']]['periode']}{$periode[$info['loan_periode_id']]['unit']}</li>
+			<li>借款利率:{$info['periode_rate']}%(日利率)</li>
+			<li>借款逾期利率:{$info['late_periode_rate']}%(日利率)</li>
+			<li>手续费:{$info['procedure_free']}元</li>
+			<li>平台管理费率:{$info['plat_free_rate']}%</li>
+			<li>是否自动审核:<eq name="info['is_auto_pass']" value="1">是<else/>否</eq></li>
+		</ul>		
+	</div>
+</div>
+<include file="Public:pageFooter"/>

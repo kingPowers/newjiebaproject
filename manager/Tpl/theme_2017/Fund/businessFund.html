@@ -1,0 +1,54 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".add-deposit").click(function(){
+         return top.jdbox.iframe("/Fund/addBusinessDeposit");
+    })
+})
+</script>
+<form class="form-inline definewidth m20" action="/Fund/businessFund" method="get">
+    <span>资金方名称：</span>
+    <input type="text" name="channelname" value="{$_GET['channelname']}">&nbsp;&nbsp;
+    <span>公司名称：</span>
+    <input type="text" name="businessname" value="{$_GET['businessname']}">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<a class="btn btn-primary add-deposit" style="margin-left: 20px;">新增保证金信息</a>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>资金方编号</th>
+        <th>资金方名称</th>
+        <th>公司名称</th>
+        <th>保证金比例</th>
+		<th>授信额度</th>
+		<th>实际额度</th>
+        <th>贷款余额</th>
+        <th>实际可用额度</th>
+        <th>保证金余额</th>
+        <th>保证金头寸</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <foreach name="list" item="vo">
+    <tr>
+    	<td>{$vo['capital_number']}</td>
+    	<td>{$vo['cap_companyname']}</td>
+    	<td>{$vo['bus_companyname']}</td>
+    	<td>{$vo['deposit_percent']}%</td>
+    	<td>{$vo['first_credit_money']}</td>
+    	<td>{$vo['real_quota_money']}</td>
+    	<td>{$vo['noRepayment']}</td>
+    	<td>{$vo['realAvailQuotaMoney']}</td>
+    	<td>{$vo['total_promise_money']}</td>
+    	<td>{$vo['promiseMoneyPos']}</td>
+    	<td><a href="/Fund/businessDepositInfo/bid/{$vo['business_company_id']}/cid/{$vo['capital_company_id']}">查看</a></td>
+    </tr>
+    </foreach>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

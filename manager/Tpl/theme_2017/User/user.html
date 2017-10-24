@@ -1,0 +1,132 @@
+<include file="Public:header" />
+<script language="javascript">
+var uid = "{$uid}";
+$(function(){
+  $("select[name='user_belong']").change(function(){
+     var company_id = $(this).find("option:selected").val();
+     var groupid = $("input[name='groupid']").val();
+      if(company_id == '')return false;
+      getUserType(company_id,groupid);
+  })
+})
+function getUserType(company_id,groupid)
+{
+  $.post("/User/edit",{"company_id":company_id,"groupid":groupid,"is_type":1},function(F){
+      console.log(F);
+      var user_str = '';
+      var base_str = '';
+      base_str = (!F.data)?"<option>--该公司尚未创建角色--</option>":"<option>--请选择用户角色--</option>";
+      $("select[name='typeid']").html(base_str);
+      if (!F.data)$("select[name='typeid']").attr("disabled","disabled");
+      $.each(F.data,function(i,item){
+        user_str += "<option value='" + item.id + "'>" + item.title +"</option>";
+      })
+      $("select[name='typeid']").removeAttr("disabled").append(user_str);
+  },'json')
+}
+</script>
+<form id="userForm" class="definewidth m20">
+  <input type="hidden" name="groupid" value="{$groupid}">
+  <table class="table table-bordered table-hover definewidth m10">
+    <tr>
+      <td style="text-align: center;" colspan="2" class="tableleft">
+        <foreach name="group_list" item="v">
+            <eq name="v['id']" value="$groupid">
+              {$v['title']}
+            </eq>
+        </foreach>
+        用户
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">所属公司：</td>
+      <td>
+        <select name="user_belong">
+          <option>--请选择所属公司--</option>
+          <foreach name="company_list" item="vo">
+            <option value="{$vo['id']}" <eq name="vo['id']" value="$user['company_id']">selected=""</eq> >{$vo['companyname']}</option>
+          </foreach>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">角色：</td>
+      <td>
+        <select name="typeid" disabled="">
+          <empty name="user['typeid']">
+            <option >--请选择用户角色--</option>
+          <else/>
+            <option value="{$user['typeid']}">{$user['title']}</option>
+          </empty>
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">账号</td>
+      <td><input type="text" name="username"  jschecktitle="登录名" jscheckrule="null=0" value="{$user['username']}"/></td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">姓名</td>
+      <td><input type="text" name="names"  jschecktitle="用户姓名" jscheckrule="null=0" value="{$user['names']}"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">密码</td>
+      <td>
+      <empty name="uid">
+      	<input type="password" name="password"  jschecktitle="密码" jscheckrule="null=0;minlencn=6;maxlencn=15" />
+      <else/>
+        <input type="password" name="password"  jschecktitle="密码" jscheckrule="minlencn=6;maxlencn=15" />
+        <font color="#FF0000">留空不修改密码</font>
+      </empty>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">手机号</td>
+      <td><input type="text" name="mobile" value="{$user['mobile']}"  jschecktitle="手机号" jscheckrule="null=0;regexp=^1[3|4|5|8][0-9]{9}$" /></td>
+    </tr>
+    <tr>
+      <td class="tableleft">状态</td>
+      <td><input type="radio" name="status" value="1" <eq name="user['status']" value="1">checked="checked"</eq>/>启用
+        <input type="radio" name="status" value="0" <eq name="user['status']" value="0">checked="checked"</eq>/>禁用 </td>
+    </tr>
+    <tr>
+      <td class="tableleft"></td>
+      <td><button class="btn btn-primary" type="button">保存</button>
+        <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button></td>
+    </tr>
+  </table>
+</form>
+<script language="javascript">
+$(function(){
+	$('button.btn-primary').click(function(){
+
+		var P = 1;//check_form('#userForm');    
+		if(P){
+			var data={};
+			$(data).attr('uid',uid);
+      $(data).attr('groupid',$("input[name='groupid']").val());
+      $(data).attr('company_id',$("select[name='user_belong']").find("option:selected").val());
+			$(data).attr('username',$("input[name='username']").val());
+      $(data).attr('names',$("input[name='names']").val());
+			$(data).attr('password',$("input[name='password']").val());
+			$(data).attr('mobile',$("input[name='mobile']").val());
+			//$(data).attr('type',$("input[name='type']:checked").val());
+			$(data).attr('typeid',$("select[name='typeid']").find("option:selected").val());
+			$(data).attr('status',$("input[name='status']:checked").val());
+      $(data).attr('is_edit','1');
+			top.jdbox.alert(2);
+			$.post('/User/edit.html',data,function(F){
+				top.jdbox.alert(F.status,F.info);
+				if(F.status){
+					window.location.href= "{:U('User/index')}";
+				}
+			},'json');
+		}
+	});
+	$('button#backid').click(function(){
+		window.location.href= "{:U('User/index')}";
+	})
+})
+</script>
+<include file="Public:footer" />

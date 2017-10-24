@@ -1,0 +1,37 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+
+<form class="form-inline definewidth m20" action="/Settlement/clear" method="get">
+    <span>合作公司：</span>
+    <input type="text" name="businessname" value="{$_GET['businessname']}" >&nbsp;&nbsp;
+    <span>时间：</span>
+    <input type="text" name="starttime" id="starttime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['starttime']}">&nbsp;&nbsp;
+    <input type="text" name="endtime" id="endtime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['endtime']}">&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>合作公司编号</th>
+        <th>合作公司名称</th>
+        <th>营销短信数量</th>
+        <th>营销短信费用</th>
+		<th>验证码短信数量</th>
+		<th>验证码短信费用</th>
+        <th>征信费用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    </tr>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

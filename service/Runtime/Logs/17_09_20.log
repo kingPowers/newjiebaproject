@@ -1,0 +1,144 @@
+[ 2017-09-20T14:15:25+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:24+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:24+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:24+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000458s ]
+[ 2017-09-20T14:15:24+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000507s ]
+[ 2017-09-20T14:15:24+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:24+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006246s ]
+[ 2017-09-20T14:15:24+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.008404s ]
+[ 2017-09-20T14:15:24+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:24+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `mobile` = '18952732576' ) AND ( `business_company_id` = '35' ) AND ( `password` = 'f99b268d35ed38d3097f50fcdf1fe39d' ) LIMIT 1   [ RunTime:0.007173s ]
+[ 2017-09-20T14:15:24+08:00 ] / | SQL: SHOW COLUMNS FROM `member_token` [ RunTime:0.006957s ]
+[ 2017-09-20T14:15:24+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:24+08:00 ] / | SQL: SELECT * FROM `member_token` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.006521s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: UPDATE `member_token` SET `token`='5980dde2027697400fe53870930b7213',`login_time`='2017-09-20 14:15:24',`autologin`=1 WHERE ( `id` = '29' ) [ RunTime:0.006186s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM member_info i,member m [ RunTime:0.006398s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT m.id,m.business_company_id,m.username,m.mobile,m.wx_openid,m.timeadd,i.names,i.nameStatus,i.certiNumber FROM member_info i,member m WHERE memberid='8' and m.id=i.memberid LIMIT 1   [ RunTime:0.007014s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.006606s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `id` = '8' ) LIMIT 1   [ RunTime:0.006669s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8] Undefined variable: bankInfo Member.class.php 第 274 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_bindcard` [ RunTime:0.007088s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT * FROM `baofu_bindcard` WHERE memberid='8' LIMIT 1   [ RunTime:0.006802s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_log` [ RunTime:0.008169s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: INSERT INTO `baofu_log` (`memberid`,`data`,`remark`,`timeadd`) VALUES ('8','{\"apply\":{\"version\":\"4.0.0.0\",\"terminal_id\":\"100000990\",\"txn_type\":\"0431\",\"txn_sub_type\":\"03\",\"member_id\":\"100000276\",\"data_type\":\"json\",\"data_content\":\"3d69def08eddf15b4259fbbf03ddcdf80c5d357578b7cb95c071e7a731bcddce5f9052df432c32cef23a83d1f07ca9709b8accf195bbf314c2da7073801467bbe9a32588b413a39e3b1f3ec821125d324baa10a279429adaac0e58393b543cc9430f12c6fb57dd4d652c847115a213c227a1e251e3dd43a3f59ed0b62c386e82c780ae9549c075622b5779291c67a6ce35e133d9cb719d383d91e88e6c61a4413285a0923358bfe129c3bab583a269eb61e188b0389a3b3f8bebb7d4620f748bc25a6a1297045910ec03f1f9f8d4bccd9f7f9fee3cec4f920986c4ea962b5cc53f9a423157abf55bd93778e1107054dd7e9015bc5640cbccc101429918bec2f95d17cfe5c6515da064caa4d5d986012509ee18c2624dce62220d12a51c1b3615b93a9fec86afd434ff7558f2be7faae96d4136abae1c4b0cfb856f41e17d1791a45958b22911638f9dd4165680b7c08ef9cd2b90df919cf12cbf2e5dfa7137f2269511520109b3e38c258a94d2409cda63a6d44dd1bbf548096c27840ed3316b4f7fa69e4a1c5b6a89e7ed84808c9372a0189be1332f910e721915f7b4a5c07a2343e4912530e0974a3256109449d05f873fc5a8063374fd33aab2df84a516ea70790a90da883d40dba20e7aca5beede4a358f2ca13e36e9bb5aa7f8356c9ce5e865eefda8133febdae10c5d2a16eb7fcb0f1ae84f380864e141b0dc6182231f537991e93812d62d17ad83e2e639f2df6316061be2a6763c53341794a5e8a8f410fe9252650650771b91562bc31bfec5308164b7685322225307cb44f19e47f692764d97eebb58cf03bab9f210fb8738a8e73b9bf6742e21d810babebb53a2678d0f4ff6b68d6c1f544c59826def0b76bd13950a614b45ec76801302a15c72f113a89e84a9295cea00d62b7f5de448836136f232379135b4ede7e6ab11bfd49b51a350dc2c5e448f4d9b9a4f8d14f4b20d32df1a7b741752925efe6a31740a2b6d92a2f42d8ff5a712206ce9f70824cad8f2f65fef08a21bec535e69445fa0664fbea02412e2755c04dbf4e73b5c20147fd919a0519d3f7e7bc03e30fe06cce185ac318b4daa03547b63433cee430f0661c14a40e75993242815a7b4d3f2e1ef1fc005adf0725655b5f7cd433d9cb396b4dc1c0a378bc6dd5432a8fbcd8d6b94e36340e74dbb57a032fcf55ace5342e46f0e4af5a1bd90a942f676ffd4ebcadab07085fe2a79f3a650240f6d914bcf16e40c16075c55dd1b49faedfd5d1b5ec75cb2be51a3b0f9fb75b225ed683b6a96fe49c305314058d24e8179d0b18570ae05f79858e019200f43d45e37c3dc30b8a777c941d84b6acf2784b3813258209ccfdc39daf710ca1f530f24570f272f62f02f848d03d2c13c91cab3a4ac7695f2e2b79f829c3d7fc9954930f6e68eb4bea1972a55d3fd5e113a0b1aa8e12c8118\"},\"response\":{\"additional_info\":\"[card_info]card_name:*\\u5bb6\\u946b,card_no:622700***5982,id_card_no:342401***6712,mobile:189***2576[\\/card_info]\",\"bind_id\":\"201706291531241000009904706\",\"biz_type\":\"0000\",\"data_type\":\"json\",\"member_id\":\"100000276\",\"resp_code\":\"0000\",\"resp_msg\":\"\\u4ea4\\u6613\\u6210\\u529f\",\"terminal_id\":\"100000990\",\"trade_date\":\"20170920141525\",\"trans_serial_no\":\"6861505888125\",\"txn_sub_type\":\"03\",\"txn_type\":\"0431\",\"version\":\"4.0.0.0\"}}','认证-绑卡状态-交易成功','2017-09-20 14:15:25') [ RunTime:0.011340s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.007671s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.006991s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT * FROM `business_company` WHERE id='35' LIMIT 1   [ RunTime:0.008302s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM loan_tender tender,loan_allot allot [ RunTime:0.006486s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT SUM(tender.money) AS tp_sum FROM loan_tender tender,loan_allot allot WHERE ( tender.status = 2 ) AND ( allot.status = 0 ) AND ( tender.memberid = '8' ) AND ( tender.id=allot.tender_id ) LIMIT 1   [ RunTime:0.006863s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006856s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.006984s ]
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.007108s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8] Undefined index: _string LoanOrder.class.php 第 267 行.
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   ) LIMIT 1   [ RunTime:0.006647s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SELECT tender.*,allot.id as loan_allot_id,allot.late_fee,allot.start_time,allot.end_time,allot.back_real_time,allot.late_days,allot.back_real_money,allot.repayment_money,allot.status as allot_status,bus.companyname as bus_companyname,bus.id as business_company_id,bus.business_number,cha.companyname as cha_companyname,cha.id as channel_company_id,bus_l.name as bus_l_name,bus_l.capital_loan_id,bus_l.periode_rate,bus_l.late_periode_rate,if(bus_l.loan_repayment_id=2,'本息到付','') as repayment_name,m.mobile,mi.names,concat(lp.periode,lp.unit) as lp_name,mi.certiNumber,case when tender.status=1 and tender.is_sign=0 and tender.is_approve=0 and allot.status=0 then '待审核'  when tender.status=1 and tender.is_sign=0 and tender.is_approve=1 and allot.status=0 then '待签约'  when tender.status=1 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待打款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待还款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=1 then '已结清'  when tender.status=3 then  '已拒单' end as order_status_name FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   )  [ RunTime:0.008746s ]
+
+[ 2017-09-20T14:15:25+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000803s ]
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000874s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:25+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.011078s ]
+
+[ 2017-09-20T14:15:26+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000616s ]
+[ 2017-09-20T14:15:25+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000657s ]
+[ 2017-09-20T14:15:25+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.010799s ]
+
+[ 2017-09-20T14:15:26+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000664s ]
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000700s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005755s ]
+
+[ 2017-09-20T14:15:26+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000559s ]
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000595s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007534s ]
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.007572s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.006008s ]
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006896s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.005791s ]
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_periode` [ RunTime:0.008510s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SELECT periode.*,loan.min_loanmoney,loan.max_loanmoney FROM loan_periode periode,business_loan loan WHERE ( loan.business_company_id = '35' ) AND ( loan.status = 1 ) AND ( periode.id=loan.loan_periode_id ) ORDER BY periode.type asc,periode.periode desc,loan.min_loanmoney asc  [ RunTime:0.007064s ]
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.008229s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM `loan_tender` WHERE ( `status` = 2 ) GROUP BY memberid LIMIT 1   [ RunTime:0.006218s ]
+
+[ 2017-09-20T14:15:26+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000547s ]
+[ 2017-09-20T14:15:26+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000584s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.009264s ]
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SHOW COLUMNS FROM `system` [ RunTime:0.006206s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:26+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM system s LEFT JOIN middle m on m.system_id=s.id and m.memberid='8' WHERE s.status=1 and (s.touserid='0' or s.touserid='8')  and m.id is null  LIMIT 1   [ RunTime:0.007914s ]
+[ 2017-09-20T14:15:26+08:00 ] / | NOTIC: [8] Undefined variable: list LatterMessage.class.php 第 50 行.
+
+[ 2017-09-20T14:15:31+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001044s ]
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001123s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007267s ]
+
+[ 2017-09-20T14:15:31+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000511s ]
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000541s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006278s ]
+
+[ 2017-09-20T14:15:31+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000511s ]
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000543s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005935s ]
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006193s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.005830s ]
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `business_loan` [ RunTime:0.006644s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SELECT bus_l.*,lp.id as lp_id,concat(lp.periode,lp.unit) as periodeName,lr.name as repaymentName FROM business_loan bus_l,loan_periode lp,loan_repayment lr WHERE ( bus_l.business_company_id = '35' ) AND ( bus_l.status = 1 ) AND ( bus_l.loan_periode_id=lp.id and bus_l.loan_repayment_id=lr.id ) ORDER BY lp.type asc,lp.periode asc  [ RunTime:0.007674s ]
+
+[ 2017-09-20T14:15:31+08:00 ] 127.0.0.1 /
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000548s ]
+[ 2017-09-20T14:15:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000581s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006994s ]
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.008163s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.007377s ]
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SHOW COLUMNS FROM `business_loan` [ RunTime:0.007732s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-09-20T14:15:31+08:00 ] / | SQL: SELECT bus_l.*,lp.id as lp_id,concat(lp.periode,lp.unit) as periodeName,lr.name as repaymentName FROM business_loan bus_l,loan_periode lp,loan_repayment lr WHERE ( bus_l.business_company_id = '35' ) AND ( bus_l.status = 1 ) AND ( bus_l.loan_periode_id=lp.id and bus_l.loan_repayment_id=lr.id ) ORDER BY lp.type asc,lp.periode asc  [ RunTime:0.009263s ]
+[ 2017-09-20T14:15:31+08:00 ] / | NOTIC: [8] Undefined variable: feeList LoanOrder.class.php 第 97 行.
+

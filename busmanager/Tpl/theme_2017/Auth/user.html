@@ -1,0 +1,60 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<link rel="stylesheet" href="_STATIC_/2015/box/wbox.css">
+<script type="text/javascript" src="_STATIC_/2015/js/jquery.box.js"></script>
+<script type="text/javascript" src="_STATIC_/2015/js/wbox.js"></script>
+<div class="w98 bgf">
+    <form method="get" action="/Auth/user">
+	<div class="selectdiv">
+		<font>角色姓名:</font>
+		<input type="text" name="names" value="{$_GET['names']}" class="input_text box_round w170">
+		<font>用户手机号:</font>
+		<input type="text" name="mobile" value="{$_GET['mobile']}" class="input_text box_round w170">
+		<input type="submit" name="sub" value="查询" class="btn_css box_round head_blue">		
+	</div>
+	</form>
+	<div class="selectdiv">
+		<a class="btn_func box_round head_blue" id="add"><img src="_STATIC_/manager/image/auth/ico_add.png"> 新增</a>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>编号</th>
+				<th>登录帐号</th>
+				<th>用户姓名</th>
+				<th>用户手机号</th>
+				<th>角色名称</th>
+				<th>用户状态</th>
+				<th>创建人</th>
+				<th>创建时间</th>
+				<th>操作</th>
+			</tr>
+			<foreach name="user_list" item="vo">
+			<tr>
+				<td>{$vo['user_number']}</td>	
+				<td>{$vo['username']}</td>			
+				<td>{$vo['names']}</td>
+				<td>{$vo['mobile']}</td>	
+				<td>{$vo['type_name']}</td>
+				<td><php>echo $user_status[$vo['status']]</php></td>
+				<td>{$vo['adduser_name']}</td>
+				<td>{$vo['timeadd']}</td>		
+				<td><a onclick="edit({$vo['id']});">编辑</a></td>						
+			</tr>
+			</foreach>	
+		</table>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$("#add").click(function(){
+		return top.jdbox.iframe("/Auth/userAdd");
+	})
+})
+var edit = function(id)
+{
+	if (!id)return top.jdbox.alert(0,"用户ID错误");
+	return top.jdbox.iframe("/Auth/userEdit/id/" + id);
+}
+</script>
+<include file="Public:pageFooter"/>

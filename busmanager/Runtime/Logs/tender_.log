@@ -1,0 +1,4 @@
+06/30/17 10:52:14,755181 [LoanOrder.class.php:0378][ERROR] tender_ - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`=null,`author`='百度',`approve_time`='2017-06-30 10:52:14',`lasttime`='2017-06-30 10:52:14' WHERE ( `id` = null )
+06/30/17 10:52:22,006851 [LoanOrder.class.php:0378][ERROR] tender_ - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`=null,`author`='百度',`approve_time`='2017-06-30 10:52:22',`lasttime`='2017-06-30 10:52:22' WHERE ( `id` = null )
+06/30/17 10:52:26,936074 [LoanOrder.class.php:0378][ERROR] tender_ - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`=null,`author`='百度',`approve_time`='2017-06-30 10:52:26',`lasttime`='2017-06-30 10:52:26' WHERE ( `id` = null )
+06/30/17 10:57:15,766376 [LoanOrder.class.php:0378][ERROR] tender_ - 拒单失败sql:UPDATE `loan_tender` SET `status`=3,`remark`=null,`author`='百度',`approve_time`='2017-06-30 10:57:15',`lasttime`='2017-06-30 10:57:15' WHERE ( `id` = null )

@@ -1,0 +1,131 @@
+<include file="Public:header" />
+<style type="text/css">
+input{text-align: center;position: relative;top:3px;margin:0 5px;}
+input[type='radio']{position: relative;top:-3px;}
+.add-dec{font-size: 25px;margin-left: 20px;}
+div{margin:10px 0;}
+</style>
+<script type="text/javascript">
+$(function(){
+  $(".add-stair").click(function(){
+    var level = $(this).parent("div").prev(".stair").find(".stair-content:last").attr('level');//alert(level);
+    var channelid = $(this).attr("cid");
+    if(!level)level = 0;
+    level = parseInt(level)+1;
+    var add_str = '';
+    add_str += "<div class='stair-content' level='" + level +"'>";
+    add_str += level + "级阶梯：<input type='text' name='min_money' class='short'>——<input type='text' name='max_money' class='short'>";
+    add_str += '<input type="radio" name="rule_type_' + channelid + '_' + level + '" onclick="chose_type(this);" value="1">按比例<input type="text" name="rule_percent" disabled="" class="short values">%';
+    add_str += '<input type="radio" name="rule_type_' + channelid + '_' + level + '" onclick="chose_type(this);" value="2">按固定值<input type="text" name="rule_value" disabled="" class="short values">元/笔</div>';
+    $(this).parent("div").prev(".stair").append(add_str);
+  })
+  $(".dec-stair").click(function(){
+    if(false == (confirm("是否确认删除")))return false;
+    var last_node = $(this).parent("div").prev(".stair").find(".stair-content:last");
+    var ruleid = last_node.attr("ruleid");
+    $.post("/BusinessCompany/editRule",{"ruleid":ruleid,"is_desc":1},function(F){
+        console.log(F);
+        top.jdbox.alert(F.status,F.info);
+        if (F.status)
+        {
+          last_node.remove();
+        }
+    },'json')
+  })
+})
+function chose_type(_this)
+{
+    $(_this).parent(".stair-content").find(".values").val("").attr("disabled","disabled");
+    $(_this).next(".values").removeAttr("disabled");
+}
+</script>
+<form class="definewidth m20" id="editForm">
+  <input type="hidden" name="author" value="{$Think.session.user.names}">
+  <table class="table table-bordered table-hover m10">
+    <thead>
+      <tr>
+        <th colspan="4" style="text-align: center;">新增规则</th>
+      </tr>  
+    </thead>
+    <tr>
+      <td width="10%" class="tableleft">合作公司名称：</td>
+      <td colspan="3"><input type="hidden" name="company_id" value="{$info['business']['id']}">{$info['business']['companyname']}</td>
+    </tr>
+    <foreach name="info['channel']" item="cv">
+    <tr class="channel" cid="{$cv['id']}">
+      <td colspan="4" style="padding-left: 50px;">
+        <div>渠道({$cv['companyname']}，级别：{$cv['channel_level']}级)</div>
+        <div>拒单费用：<input type="text" name="refuse_fee"  <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq> value="{$cv['rule'][0]['refuse_money']}">元/笔</div>
+        <div class="stair">
+           <foreach name="cv['rule']" item="cs">
+             <div class="stair-content" level="{$cs['grade']}" ruleid="{$cs['id']}">
+              {$cs['grade']}级阶梯：
+              <input type="text" name="min_money"  <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq> value="{$cs['min_money']}">——<input type="text" name="max_money"  <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq> value="{$cs['max_money']}">
+              <input type="radio" name="rule_type_{$cv['id']}_{$cs['grade']}" onclick="chose_type(this);" value="1" <eq name="cs['rule_type']" value="1">checked=""</eq>>按比例
+              <input type="text" name="rule_percent" value="{$cs['rule_percent']}" <eq name="cs['rule_type']" value="2">disabled=""</eq>   <eq name="is_sub" value="1">class="short values"<else/>class="dis_input_short" disabled=""</eq>>%
+              <input type="radio" name="rule_type_{$cv['id']}_{$cs['grade']}" onclick="chose_type(this);" value="2" <eq name="cs['rule_type']" value="2">checked=""</eq>>按固定值
+              <input type="text" value="{$cs['rule_value']}" name="rule_value"  <eq name="cs['rule_type']" value="1">disabled=""</eq>    <eq name="is_sub" value="1">class="short values"<else/>class="dis_input_short" disabled=""</eq>>元/笔
+            </div>
+           </foreach>  
+        </div>
+        <eq name="is_sub" value="1">
+        <div>
+          增加/较少阶梯
+          <a class="btn btn-primary add-dec add-stair" cid="{$cv['id']}">+</a><a class="btn btn-success add-dec dec-stair" cid="{$cv['id']}">-</a>
+        </div>
+        </eq>
+      </td>
+    </tr>
+    </foreach>
+    <tr>
+      <td colspan="4" style="text-align: center;width: 50px">
+        <notempty name="is_sub">
+          <a class="btn btn-success" id="sub">提交</a>
+        </notempty>
+          <a class="btn btn-error" href="/BusinessCompany/profitRuleList" style="margin-left: 20px;">返回</a>
+      </td>
+    </tr>
+  </table>
+</form>
+<script type="text/javascript">
+$(function(){
+  $("#sub").click(function(){
+    var businessid = $("input[name='company_id']").val();
+    var authorid = $("input[name='author']").val();
+    var data = {};
+    var j = 0;
+    $("table").find(".channel").each(function(i,item){ 
+      var m = 0;
+      var n = {};      
+       $(item).find(".stair-content").each(function(ci,citem){
+            k = {};
+            k.author = authorid;
+            k.business_company_id = businessid;
+            k.channel_company_id = $(item).attr("cid");
+            k.refuse_money = $(item).find("input[name='refuse_fee']").val();
+            k.grade = $(citem).attr("level");
+            k.min_money = $(citem).find("input[name='min_money']").val();
+            k.max_money = $(citem).find("input[name='max_money']").val();
+            k.rule_type = $(citem).find("input[type='radio']:checked").val();
+            k.rule_percent = $(citem).find("input[name='rule_percent']").val();
+            k.rule_value = $(citem).find("input[name='rule_value']").val();
+            $(n).attr(m,k);
+            m++;
+       });
+       $(data).attr(j,n);
+       j++;
+    })
+    console.log(data);
+    top.jdbox.alert(2);
+    $.post("/BusinessCompany/editRule.html",{"data":data,'is_ajax':'1'},function(F){
+        console.log(F);
+        top.jdbox.alert(F.status,F.info);
+        if (F.status)
+        {
+          window.location.href = "/BusinessCompany/profitRuleList";
+        }
+    },'json')
+  })
+})
+</script>
+<include file="Public:footer" />

@@ -1,0 +1,57 @@
+﻿<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<script type="text/javascript">
+$(function(){
+	$(".all_st").click(function(){
+		var status = $(this).attr("value");
+		$("select[name='status']").find("option").removeAttr("selected");
+		$("input[name='orderStatus']").val('');
+		$("select[name='status']").find("option[value='" + status +"']").attr("selected",'selected');
+		$("#search-form").submit();
+	})
+	$(".order_st").click(function(){
+		var orderStatus = $(this).attr("value");
+		$("input[name='orderStatus']").val(orderStatus);
+		$("#search-form").submit();
+	})
+	setInterval(refresh,5000);
+})
+var refresh = function()
+{
+	window.location.reload();
+}
+</script>
+<div class="w98 bgf">
+    <form id="search-form" method="get" action="/Order/index">
+    <input type="hidden" name="orderStatus" value="{$_GET['orderStatus']}">
+	
+	</form>
+	<div class="nav">
+		<ul>
+			<li class="">消息列表</li>
+		</ul>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>用户ID</th>
+				<th>用户名</th>
+				<th>用户姓名</th>
+				<th>用户手机号</th>
+				<th>最后消息时间</th>
+			</tr>
+			<foreach name="messages" item="vo">
+			<tr>
+				<td>{$vo['id']}</td>
+				<td><a onclick="javascript:return top.jdbox.iframe('/MemberMsg/getMessage/id/{$vo.id}',{title:1111});">{$vo['username']}({$vo.num|default=0})</a></td>
+				<td><empty name="vo['names']">客户<else/>{$vo['names']}</empty></td>
+				<td>{$vo['mobile']}</td>
+				<td>{$vo['max_created']}</td>
+							
+			</tr>
+			</foreach>			
+		</table>
+	</div>
+	{$page}
+</div>
+<include file="Public:pageFooter"/>

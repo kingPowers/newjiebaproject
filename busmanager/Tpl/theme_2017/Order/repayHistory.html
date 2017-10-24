@@ -1,0 +1,42 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<div class="nav">
+		<ul>
+			<ul>
+			<li class="alink"><a href="/Order/orderInfo/id/{$_GET['id']}/mid/{$_GET['mid']}">贷款明细</a></li>
+			<li class="alink"><a href="/Order/checkResult/id/{$_GET['id']}/mid/{$_GET['mid']}">贷款审核</a></li>
+			<li class="alink"><a href="/Order/repayPlan/id/{$_GET['id']}/mid/{$_GET['mid']}">还款计划</a></li>
+			<li class="alink" id="bg_blue"><a>还款历史</a></li>		
+		</ul>	
+		</ul>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>还款ID</th>
+				<th>还款单号</th>
+				<th>还款金额</th>
+				<th>还款时间</th>				
+				<th>期初余额</th>
+				<th>期末余额</th>				
+				<th>偿还利息</th>
+				<th>偿还罚息</th>									
+			</tr>
+			<foreach name="list" item="vo">
+			<tr>
+				<td>{$vo['id']}</td>
+				<td>{$vo['tender_number']}</td>
+				<td>{$vo['back_real_money']}</td>
+				<td>{$vo['back_real_time']}</td>
+				<td><php>echo (float)($vo['repayment_money']+$vo['late_fee']);</php></td>
+				<td><php>echo (float)($vo['repayment_money']+$vo['late_fee']-$vo['back_real_money']);</php></td>
+				<td>{$vo['total_fee']}</td>
+				<td>{$vo['late_fee']}</td>								
+			</tr>
+			</foreach>
+		</table>
+		{$page}
+	</div>
+</div>
+<include file="Public:pageFooter"/>

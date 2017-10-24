@@ -1,0 +1,62 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w98 bgf">
+	<form id="search-form" method="get" action="/Overdue/index">
+	<div class="selectdiv">
+		<font>姓名:</font>
+		<input type="text" name="names" value="{$_GET['names']}" class="input_text box_round w170">	
+		<font>手机号:</font>
+		<input type="text" name="mobile" value="{$_GET['mobile']}" class="input_text box_round w170">		
+		<font>状态:</font>
+		<span class="input_text box_round w190">
+		<select name="status">
+			<foreach name="operate_status" item="os">
+				<option value="{$key}" <eq name="key" value="$_GET['status']">selected=""</eq>>{$os}</option>
+			</foreach>
+		</select>
+		</span>
+		<input type="submit" name="sub" value="查询" class="btn_css box_round head_blue">		
+	</div>	
+	</form>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>编号</th>
+				<th>贷款编号</th>
+				<th>贷款金额</th>
+				<th>到期时间</th>
+				<th>逾期金额</th>	
+				<th>逾期天数</th>
+				<th>姓名</th>
+				<th>手机号</th>
+				<th>处理结果</th>
+				<th>操作</th>				
+			</tr> 
+			<foreach name="list" item="vo">
+			<tr>
+				<td><php>echo (int)($key+1);</php></td>
+				<td>{$vo['tender_number']}</td>
+				<td>{$vo['money']}</td>
+				<td>{$vo['end_time']}</td>
+				<td>{$vo['late_fee']}</td>
+				<td>{$vo['late_days']}</td>
+				<td>{$vo['names']}</td>
+				<td>{$vo['mobile']}</td>
+				<td>{$operate_status[$vo['urgeStatus']]}</td>		
+				<td>
+					<if condition="$vo['urgeStatus'] eq 1">
+						<a href="/Overdue/operate/id/{$vo['id']}/is_sub/1">处理</a>
+					<elseif condition="$vo['urgeStatus'] eq 2"/>
+						<a href="/Overdue/operate/id/{$vo['id']}/is_sub/0">查看</a>
+					<elseif condition="$vo['urgeStatus'] eq 3"/>
+						<a href="/Overdue/operate/id/{$vo['id']}/is_sub/1">处理</a>&nbsp;&nbsp;
+						<a href="/Overdue/operate/id/{$vo['id']}/is_sub/0">查看</a>
+					</if>
+				</td>						
+			</tr>	
+			</foreach>
+		</table>
+		{$page}
+	</div>
+</div>
+<include file="Public:pageFooter"/>

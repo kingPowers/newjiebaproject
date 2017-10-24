@@ -1,0 +1,949 @@
+[ 2017-07-18T11:21:40+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:37+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:37+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000393s ]
+[ 2017-07-18T11:21:37+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000468s ]
+[ 2017-07-18T11:21:37+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:38+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007093s ]
+[ 2017-07-18T11:21:38+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.007451s ]
+[ 2017-07-18T11:21:38+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `mobile` = '18952732576' ) AND ( `business_company_id` = '35' ) AND ( `password` = 'f99b268d35ed38d3097f50fcdf1fe39d' ) LIMIT 1   [ RunTime:1.456521s ]
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SHOW COLUMNS FROM `member_token` [ RunTime:0.007299s ]
+[ 2017-07-18T11:21:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SELECT * FROM `member_token` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.006421s ]
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: UPDATE `member_token` SET `token`='7ec06592dfc4e11372a6064cf6c52555',`login_time`='2017-07-18 11:21:39',`autologin`=1 WHERE ( `id` = '23' ) [ RunTime:0.006533s ]
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SHOW COLUMNS FROM member_info i,member m [ RunTime:0.005454s ]
+[ 2017-07-18T11:21:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SELECT m.id,m.business_company_id,m.username,m.mobile,m.wx_openid,m.timeadd,i.names,i.nameStatus,i.certiNumber FROM member_info i,member m WHERE memberid='8' and m.id=i.memberid LIMIT 1   [ RunTime:0.006636s ]
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.007211s ]
+[ 2017-07-18T11:21:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `id` = '8' ) LIMIT 1   [ RunTime:0.006976s ]
+[ 2017-07-18T11:21:39+08:00 ] / | NOTIC: [8] Undefined variable: bankInfo Member.class.php 第 274 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_bindcard` [ RunTime:0.007038s ]
+[ 2017-07-18T11:21:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:39+08:00 ] / | SQL: SELECT * FROM `baofu_bindcard` WHERE memberid='8' LIMIT 1   [ RunTime:0.009989s ]
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_log` [ RunTime:0.007335s ]
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: INSERT INTO `baofu_log` (`memberid`,`data`,`remark`,`timeadd`) VALUES ('8','{\"apply\":{\"version\":\"4.0.0.0\",\"terminal_id\":\"100000990\",\"txn_type\":\"0431\",\"txn_sub_type\":\"03\",\"member_id\":\"100000276\",\"data_type\":\"json\",\"data_content\":\"3d69def08eddf15b4259fbbf03ddcdf80c5d357578b7cb95c071e7a731bcddce5f9052df432c32cef23a83d1f07ca9709b8accf195bbf314c2da7073801467bbe9a32588b413a39e3b1f3ec821125d324baa10a279429adaac0e58393b543cc9430f12c6fb57dd4d652c847115a213c227a1e251e3dd43a3f59ed0b62c386e82c780ae9549c075622b5779291c67a6ce35e133d9cb719d383d91e88e6c61a4413285a0923358bfe129c3bab583a269eb61e188b0389a3b3f8bebb7d4620f748bc25a6a1297045910ec03f1f9f8d4bccd9f7f9fee3cec4f920986c4ea962b5cc53f9a423157abf55bd93778e1107054dd7e9015bc5640cbccc101429918bec2f95d17cfe5c6515da064caa4d5d986012509ee18c2624dce62220d12a51c1b3615b93a9fec86afd434ff7558f2be7faae96d4136abae1c4b0cfb856f41e17d1791a45958b22911638f9dd4165680b7c08ef9cd2b90df919cf12cbf2e5dfa7137f2269511520109b3e38c258a94d2409cda63a6d44dd1bbf548096c27840ed3316b4f7fa69e4a1c5b6a89e7ed84808c9372a0189be1332f910e721915f7b4a5c07a2343e4912530e0974a3256109449d05f873fc5a8063374fd33aab2df84a516ea70790a90da883d40dba20e7aca5beede4a358f2ca13e36e9bb5aa7f8356c9ce5e865eefda8133febdae10c5d2a16eb7fcb0f1ae84f380864e141b0dc6182231fd33d3d36aac15e519b27308296ff4803765fece4b35e9c2a8cb154ff919b8d9e1474790c6641315203486a3ab78c7c640633fc35919bf4577b9d779fecfe974dd003a56b02f1c168a4ea510fdf4c50a582517954bdae766a63473385d27e4c2e98c2578d3bef5a51c413f5b620e016b9eb6bb342ea53a4417d1aa12fb6e5b80b2b933de5ee4f3cf2e63a209559ecc807502d5f90836fa8a5ebbf91af98ceafc8aa48ac84c07abcc842e218ee40f15e2b6bb557ed7d236acb97559140cc9da31f78f72ff30a143847399b212861d76227b9292bd2aba6d9d87282198ba2d9ec477b87c7ad8570beef144f85b6b0440de05e0bdffba8d0fadc78bfcce7449bbd0f85ac318b4daa03547b63433cee430f0661c14a40e75993242815a7b4d3f2e1ef1fc005adf0725655b5f7cd433d9cb396b4dc1c0a378bc6dd5432a8fbcd8d6b94e36340e74dbb57a032fcf55ace5342e46f0e4af5a1bd90a942f676ffd4ebcadab07085fe2a79f3a650240f6d914bcf16e40c16075c55dd1b49faedfd5d1b5ec73483099d68e137517673c2aeb1952ca36e32a962b8f44e1be6235d477a359b46259462cbdbaab1def9b9741a854feca42779b0d15b588b25edf60cc45a8d1ef45a92ad1b6367bd2f44b70aafa38a973b54a8dce2442257330b9ae93ba702e4e5317dd908c0ce8b89dcb7ae87a853c4c2797b933c21276bce464972bf9f537c43\"},\"response\":{\"additional_info\":\"[card_info]card_name:*\\u5bb6\\u946b,card_no:622700***5982,id_card_no:342401***6712,mobile:189***2576[\\/card_info]\",\"bind_id\":\"201706291531241000009904706\",\"biz_type\":\"0000\",\"data_type\":\"json\",\"member_id\":\"100000276\",\"resp_code\":\"0000\",\"resp_msg\":\"\\u4ea4\\u6613\\u6210\\u529f\",\"terminal_id\":\"100000990\",\"trade_date\":\"20170718112139\",\"trans_serial_no\":\"6481500348099\",\"txn_sub_type\":\"03\",\"txn_type\":\"0431\",\"version\":\"4.0.0.0\"}}','认证-绑卡状态-交易成功','2017-07-18 11:21:40') [ RunTime:0.066056s ]
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SHOW COLUMNS FROM loan_tender tender,loan_allot allot [ RunTime:0.005827s ]
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SELECT SUM(tender.money) AS tp_sum FROM loan_tender tender,loan_allot allot WHERE ( tender.status = 2 ) AND ( allot.status = 0 ) AND ( tender.memberid = '8' ) LIMIT 1   [ RunTime:0.005622s ]
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.007615s ]
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.005769s ]
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.006153s ]
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8] Undefined index: _string LoanOrder.class.php 第 267 行.
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   ) LIMIT 1   [ RunTime:0.006299s ]
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SELECT tender.*,allot.id as loan_allot_id,allot.late_fee,allot.start_time,allot.end_time,allot.back_real_time,allot.late_days,allot.back_real_money,allot.repayment_money,allot.status as allot_status,bus.companyname as bus_companyname,bus.id as business_company_id,bus.business_number,cha.companyname as cha_companyname,cha.id as channel_company_id,bus_l.name as bus_l_name,bus_l.capital_loan_id,bus_l.periode_rate,bus_l.late_periode_rate,if(bus_l.loan_repayment_id=2,'本息到付','') as repayment_name,m.mobile,mi.names,concat(lp.periode,lp.unit) as lp_name,mi.certiNumber,case when tender.status=1 and tender.is_sign=0 and tender.is_approve=0 and allot.status=0 then '待审核'  when tender.status=1 and tender.is_sign=0 and tender.is_approve=1 and allot.status=0 then '待签约'  when tender.status=1 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待打款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待还款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=1 then '已结清'  when tender.status=3 then  '已拒单' end as order_status_name FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   )  [ RunTime:0.007968s ]
+
+[ 2017-07-18T11:21:40+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000889s ]
+[ 2017-07-18T11:21:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000942s ]
+[ 2017-07-18T11:21:40+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:40+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007853s ]
+
+[ 2017-07-18T11:21:43+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:42+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:42+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:42+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000493s ]
+[ 2017-07-18T11:21:42+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000523s ]
+[ 2017-07-18T11:21:42+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:43+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.009309s ]
+
+[ 2017-07-18T11:21:49+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:43+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:43+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:43+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001050s ]
+[ 2017-07-18T11:21:43+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001114s ]
+[ 2017-07-18T11:21:43+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:49+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007524s ]
+
+[ 2017-07-18T11:21:51+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:49+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:49+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:49+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000493s ]
+[ 2017-07-18T11:21:49+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000523s ]
+[ 2017-07-18T11:21:49+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008998s ]
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.012899s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.225557s ]
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.011622s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.011546s ]
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_periode` [ RunTime:0.010978s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SELECT periode.*,loan.min_loanmoney,loan.max_loanmoney FROM loan_periode periode,business_loan loan WHERE ( loan.business_company_id = '35' ) AND ( loan.status = 1 ) AND ( periode.id=loan.loan_periode_id ) ORDER BY periode.type asc,periode.periode desc,loan.min_loanmoney asc  [ RunTime:0.014956s ]
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.011877s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM `loan_tender` WHERE ( `status` = 2 ) GROUP BY memberid LIMIT 1   [ RunTime:0.007979s ]
+
+[ 2017-07-18T11:21:51+08:00 ] 127.0.0.1 /
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T11:21:51+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T11:21:51+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001990s ]
+[ 2017-07-18T11:21:51+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.002106s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.011360s ]
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SHOW COLUMNS FROM `system` [ RunTime:0.006611s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T11:21:51+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM system s LEFT JOIN middle m on m.system_id=s.id and m.memberid='8' WHERE s.status=1 and (s.touserid='0' or s.touserid='8')  and m.id is null  LIMIT 1   [ RunTime:0.006323s ]
+[ 2017-07-18T11:21:51+08:00 ] / | NOTIC: [8] Undefined variable: list LatterMessage.class.php 第 50 行.
+
+[ 2017-07-18T16:26:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000405s ]
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000445s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006891s ]
+
+[ 2017-07-18T16:26:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000409s ]
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000444s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006370s ]
+
+[ 2017-07-18T16:26:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000268s ]
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000296s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006910s ]
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.007793s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.006491s ]
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.007551s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.007207s ]
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_periode` [ RunTime:0.007581s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SELECT periode.*,loan.min_loanmoney,loan.max_loanmoney FROM loan_periode periode,business_loan loan WHERE ( loan.business_company_id = '35' ) AND ( loan.status = 1 ) AND ( periode.id=loan.loan_periode_id ) ORDER BY periode.type asc,periode.periode desc,loan.min_loanmoney asc  [ RunTime:0.006785s ]
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.010608s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM `loan_tender` WHERE ( `status` = 2 ) GROUP BY memberid LIMIT 1   [ RunTime:0.017850s ]
+
+[ 2017-07-18T16:26:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000601s ]
+[ 2017-07-18T16:26:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000665s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006354s ]
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SHOW COLUMNS FROM `system` [ RunTime:0.006144s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:05+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM system s LEFT JOIN middle m on m.system_id=s.id and m.memberid='8' WHERE s.status=1 and (s.touserid='0' or s.touserid='8')  and m.id is null  LIMIT 1   [ RunTime:0.005300s ]
+[ 2017-07-18T16:26:05+08:00 ] / | NOTIC: [8] Undefined variable: list LatterMessage.class.php 第 50 行.
+
+[ 2017-07-18T16:26:11+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:11+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000344s ]
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000376s ]
+[ 2017-07-18T16:26:11+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:11+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007494s ]
+
+[ 2017-07-18T16:26:11+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:11+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000293s ]
+[ 2017-07-18T16:26:11+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000326s ]
+[ 2017-07-18T16:26:11+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:11+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005782s ]
+
+[ 2017-07-18T16:26:27+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000297s ]
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000347s ]
+[ 2017-07-18T16:26:27+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:27+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006546s ]
+
+[ 2017-07-18T16:26:27+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000287s ]
+[ 2017-07-18T16:26:27+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000316s ]
+[ 2017-07-18T16:26:27+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:27+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007514s ]
+
+[ 2017-07-18T16:26:29+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:29+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000273s ]
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000304s ]
+[ 2017-07-18T16:26:29+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:29+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007554s ]
+
+[ 2017-07-18T16:26:29+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:29+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000518s ]
+[ 2017-07-18T16:26:29+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000583s ]
+[ 2017-07-18T16:26:29+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:29+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005485s ]
+
+[ 2017-07-18T16:26:31+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000293s ]
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000326s ]
+[ 2017-07-18T16:26:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007704s ]
+
+[ 2017-07-18T16:26:31+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:31+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000256s ]
+[ 2017-07-18T16:26:31+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000284s ]
+[ 2017-07-18T16:26:31+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:31+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005552s ]
+
+[ 2017-07-18T16:26:32+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:32+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000273s ]
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000301s ]
+[ 2017-07-18T16:26:32+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:32+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.004620s ]
+
+[ 2017-07-18T16:26:32+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:32+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000277s ]
+[ 2017-07-18T16:26:32+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000307s ]
+[ 2017-07-18T16:26:32+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:32+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005771s ]
+
+[ 2017-07-18T16:26:33+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000306s ]
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000340s ]
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006439s ]
+
+[ 2017-07-18T16:26:33+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000331s ]
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000361s ]
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005808s ]
+
+[ 2017-07-18T16:26:33+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000303s ]
+[ 2017-07-18T16:26:33+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000334s ]
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006442s ]
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: insert into welive_user(user_id,nickname) select id,names from user where id not in(select user_id from welive_user)  and businessid='35' [ RunTime:0.006188s ]
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 132 行.
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 97 行.
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: SHOW COLUMNS FROM welive_user wu,user u [ RunTime:0.006314s ]
+[ 2017-07-18T16:26:33+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:33+08:00 ] / | SQL: SELECT * FROM welive_user wu,user u WHERE wu.user_id=u.id and u.businessid='35' ORDER BY wu.online_time desc  [ RunTime:0.008025s ]
+
+[ 2017-07-18T16:26:35+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:34+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:34+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:34+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000287s ]
+[ 2017-07-18T16:26:34+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000320s ]
+[ 2017-07-18T16:26:34+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007889s ]
+
+[ 2017-07-18T16:26:35+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000290s ]
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000322s ]
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006663s ]
+
+[ 2017-07-18T16:26:35+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000778s ]
+[ 2017-07-18T16:26:35+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000852s ]
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006879s ]
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8] Undefined index: allUser CustomerMessage.class.php 第 150 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.005875s ]
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE ( msg.type = 0 ) AND ( msg.fro_to_id LIKE '24_8' ) ORDER BY msg.created desc  [ RunTime:0.006300s ]
+[ 2017-07-18T16:26:35+08:00 ] / | NOTIC: [2] Invalid argument supplied for foreach() CustomerMessage.class.php 第 172 行.
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: SHOW COLUMNS FROM `welive_msg` [ RunTime:0.006758s ]
+[ 2017-07-18T16:26:35+08:00 ] / | SQL: UPDATE `welive_msg` SET `type`=1 WHERE ( `id` IN () ) [ RunTime:0.005376s ]
+
+[ 2017-07-18T16:26:37+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000272s ]
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000303s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008964s ]
+
+[ 2017-07-18T16:26:37+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000327s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005783s ]
+
+[ 2017-07-18T16:26:37+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000282s ]
+[ 2017-07-18T16:26:37+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000315s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006724s ]
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.005268s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE (  (msg.fro_to_id ='8_24' or msg.fro_to_id='24_8' )  ) ORDER BY msg.created desc LIMIT 0,12   [ RunTime:0.006309s ]
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.006350s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM member m,member_info mi,business_company bus,business_channel bc,channel_company cha WHERE ( m.id = '8' ) AND ( m.id=mi.memberid and m.business_company_id=bus.id  and  bus.id=bc.business_company_id  and bc.channel_company_id=cha.id ) LIMIT 1   [ RunTime:0.005851s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT m.*,mi.names,mi.certiNumber,mi.nameStatus,cha.companyname as channel_companyname,bus.companyname as business_companyname FROM member m,member_info mi,business_company bus,business_channel bc,channel_company cha WHERE ( m.id = '8' ) AND ( m.id=mi.memberid and m.business_company_id=bus.id  and  bus.id=bc.business_company_id  and bc.channel_company_id=cha.id )  [ RunTime:0.006485s ]
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `member_import` [ RunTime:0.007022s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT * FROM `member_import` WHERE ( `business_company_id` = '35' ) AND ( `certiNumber` = '342401199307236712' ) LIMIT 1   [ RunTime:0.007908s ]
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_bindcard` [ RunTime:0.007473s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT `acc_no` FROM `baofu_bindcard` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.005182s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8] Undefined index: promise_money Member.class.php 第 391 行.
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8] Undefined index: id Member.class.php 第 392 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.006545s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM member m,member_info mi,business_company bus,business_channel bc,channel_company cha WHERE ( m.id = '8' ) AND ( m.id=mi.memberid and m.business_company_id=bus.id  and  bus.id=bc.business_company_id  and bc.channel_company_id=cha.id ) LIMIT 1   [ RunTime:0.009017s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT m.*,mi.names,mi.certiNumber,mi.nameStatus,cha.companyname as channel_companyname,bus.companyname as business_companyname FROM member m,member_info mi,business_company bus,business_channel bc,channel_company cha WHERE ( m.id = '8' ) AND ( m.id=mi.memberid and m.business_company_id=bus.id  and  bus.id=bc.business_company_id  and bc.channel_company_id=cha.id )  [ RunTime:0.013926s ]
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SHOW COLUMNS FROM `member_import` [ RunTime:0.006208s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT * FROM `member_import` WHERE ( `business_company_id` = '35' ) AND ( `certiNumber` = '342401199307236712' ) LIMIT 1   [ RunTime:0.014573s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:37+08:00 ] / | SQL: SELECT `acc_no` FROM `baofu_bindcard` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.009627s ]
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8] Undefined index: promise_money Member.class.php 第 391 行.
+[ 2017-07-18T16:26:37+08:00 ] / | NOTIC: [8] Undefined index: id Member.class.php 第 392 行.
+
+[ 2017-07-18T16:26:39+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000291s ]
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000320s ]
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:39+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006941s ]
+
+[ 2017-07-18T16:26:39+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000286s ]
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000319s ]
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:39+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007507s ]
+
+[ 2017-07-18T16:26:39+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000279s ]
+[ 2017-07-18T16:26:39+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000309s ]
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:39+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005436s ]
+[ 2017-07-18T16:26:39+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.007157s ]
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:39+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE (  (msg.fro_to_id ='8_24' or msg.fro_to_id='24_8' )  ) AND ( msg.id < '94' ) ORDER BY msg.created desc LIMIT 0,12   [ RunTime:0.006713s ]
+[ 2017-07-18T16:26:39+08:00 ] / | NOTIC: [2] Invalid argument supplied for foreach() CustomerMessage.class.php 第 172 行.
+
+[ 2017-07-18T16:26:41+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:40+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000329s ]
+[ 2017-07-18T16:26:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000365s ]
+[ 2017-07-18T16:26:40+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005983s ]
+
+[ 2017-07-18T16:26:41+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000699s ]
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000772s ]
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007188s ]
+
+[ 2017-07-18T16:26:41+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000548s ]
+[ 2017-07-18T16:26:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000606s ]
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006503s ]
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8] Undefined index: allUser CustomerMessage.class.php 第 150 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.005404s ]
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE ( msg.type = 0 ) AND ( msg.fro_to_id LIKE '24_8' ) ORDER BY msg.created desc  [ RunTime:0.006141s ]
+[ 2017-07-18T16:26:41+08:00 ] / | NOTIC: [2] Invalid argument supplied for foreach() CustomerMessage.class.php 第 172 行.
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: SHOW COLUMNS FROM `welive_msg` [ RunTime:0.007202s ]
+[ 2017-07-18T16:26:41+08:00 ] / | SQL: UPDATE `welive_msg` SET `type`=1 WHERE ( `id` IN () ) [ RunTime:0.006056s ]
+
+[ 2017-07-18T16:26:45+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:45+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000580s ]
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000643s ]
+[ 2017-07-18T16:26:45+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:45+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007101s ]
+
+[ 2017-07-18T16:26:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:45+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000631s ]
+[ 2017-07-18T16:26:45+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000708s ]
+[ 2017-07-18T16:26:45+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006438s ]
+
+[ 2017-07-18T16:26:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:46+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:46+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000529s ]
+[ 2017-07-18T16:26:46+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000584s ]
+[ 2017-07-18T16:26:46+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005926s ]
+[ 2017-07-18T16:26:46+08:00 ] / | NOTIC: [8] Undefined index: allUser CustomerMessage.class.php 第 150 行.
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.005581s ]
+[ 2017-07-18T16:26:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE ( msg.type = 0 ) AND ( msg.fro_to_id LIKE '24_8' ) ORDER BY msg.created desc  [ RunTime:0.007132s ]
+[ 2017-07-18T16:26:46+08:00 ] / | NOTIC: [2] Invalid argument supplied for foreach() CustomerMessage.class.php 第 172 行.
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: SHOW COLUMNS FROM `welive_msg` [ RunTime:0.006083s ]
+[ 2017-07-18T16:26:46+08:00 ] / | SQL: UPDATE `welive_msg` SET `type`=1 WHERE ( `id` IN () ) [ RunTime:0.006075s ]
+
+[ 2017-07-18T16:26:48+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000318s ]
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000350s ]
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005645s ]
+
+[ 2017-07-18T16:26:48+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000336s ]
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000368s ]
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006032s ]
+
+[ 2017-07-18T16:26:48+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000272s ]
+[ 2017-07-18T16:26:48+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000302s ]
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005039s ]
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: insert into welive_user(user_id,nickname) select id,names from user where id not in(select user_id from welive_user)  and businessid='35' [ RunTime:0.005847s ]
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 132 行.
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 97 行.
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: SHOW COLUMNS FROM welive_user wu,user u [ RunTime:0.004235s ]
+[ 2017-07-18T16:26:48+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:48+08:00 ] / | SQL: SELECT * FROM welive_user wu,user u WHERE wu.user_id=u.id and u.businessid='35' ORDER BY wu.online_time desc  [ RunTime:0.005742s ]
+
+[ 2017-07-18T16:26:52+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000282s ]
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000314s ]
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:52+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007158s ]
+
+[ 2017-07-18T16:26:52+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000279s ]
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000310s ]
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:52+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006761s ]
+
+[ 2017-07-18T16:26:53+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000290s ]
+[ 2017-07-18T16:26:52+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000323s ]
+[ 2017-07-18T16:26:52+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:53+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005382s ]
+[ 2017-07-18T16:26:53+08:00 ] / | NOTIC: [8] Undefined index: allUser CustomerMessage.class.php 第 150 行.
+[ 2017-07-18T16:26:53+08:00 ] / | SQL: SHOW COLUMNS FROM welive_msg msg [ RunTime:0.006165s ]
+[ 2017-07-18T16:26:53+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:53+08:00 ] / | SQL: SELECT * FROM welive_msg msg WHERE ( msg.type = 0 ) AND ( msg.fro_to_id LIKE '23_8' ) ORDER BY msg.created desc  [ RunTime:0.005282s ]
+[ 2017-07-18T16:26:53+08:00 ] / | NOTIC: [2] Invalid argument supplied for foreach() CustomerMessage.class.php 第 172 行.
+[ 2017-07-18T16:26:53+08:00 ] / | SQL: SHOW COLUMNS FROM `welive_msg` [ RunTime:0.005519s ]
+[ 2017-07-18T16:26:53+08:00 ] / | SQL: UPDATE `welive_msg` SET `type`=1 WHERE ( `id` IN () ) [ RunTime:0.005100s ]
+
+[ 2017-07-18T16:26:54+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000322s ]
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000360s ]
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006560s ]
+
+[ 2017-07-18T16:26:54+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001160s ]
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001318s ]
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007152s ]
+
+[ 2017-07-18T16:26:54+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000345s ]
+[ 2017-07-18T16:26:54+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000379s ]
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006075s ]
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: insert into welive_user(user_id,nickname) select id,names from user where id not in(select user_id from welive_user)  and businessid='35' [ RunTime:0.005462s ]
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 132 行.
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given DbMysql.class.php 第 97 行.
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: SHOW COLUMNS FROM welive_user wu,user u [ RunTime:0.007767s ]
+[ 2017-07-18T16:26:54+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:54+08:00 ] / | SQL: SELECT * FROM welive_user wu,user u WHERE wu.user_id=u.id and u.businessid='35' ORDER BY wu.online_time desc  [ RunTime:0.008121s ]
+
+[ 2017-07-18T16:26:55+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:55+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000286s ]
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000316s ]
+[ 2017-07-18T16:26:55+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:55+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.011660s ]
+
+[ 2017-07-18T16:26:55+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:55+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000302s ]
+[ 2017-07-18T16:26:55+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000335s ]
+[ 2017-07-18T16:26:55+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:55+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005740s ]
+
+[ 2017-07-18T16:26:57+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000301s ]
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000332s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005406s ]
+
+[ 2017-07-18T16:26:57+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000385s ]
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000447s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006771s ]
+
+[ 2017-07-18T16:26:57+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000294s ]
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000327s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005750s ]
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006680s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.006580s ]
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.007169s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.007209s ]
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_periode` [ RunTime:0.006970s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SELECT periode.*,loan.min_loanmoney,loan.max_loanmoney FROM loan_periode periode,business_loan loan WHERE ( loan.business_company_id = '35' ) AND ( loan.status = 1 ) AND ( periode.id=loan.loan_periode_id ) ORDER BY periode.type asc,periode.periode desc,loan.min_loanmoney asc  [ RunTime:0.006633s ]
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.006367s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM `loan_tender` WHERE ( `status` = 2 ) GROUP BY memberid LIMIT 1   [ RunTime:0.006379s ]
+
+[ 2017-07-18T16:26:57+08:00 ] 127.0.0.1 /
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000318s ]
+[ 2017-07-18T16:26:57+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000362s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005228s ]
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SHOW COLUMNS FROM `system` [ RunTime:0.005733s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T16:26:57+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM system s LEFT JOIN middle m on m.system_id=s.id and m.memberid='8' WHERE s.status=1 and (s.touserid='0' or s.touserid='8')  and m.id is null  LIMIT 1   [ RunTime:0.005094s ]
+[ 2017-07-18T16:26:57+08:00 ] / | NOTIC: [8] Undefined variable: list LatterMessage.class.php 第 50 行.
+
+[ 2017-07-18T17:08:03+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:02+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:02+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000464s ]
+[ 2017-07-18T17:08:02+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000497s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.004959s ]
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.005393s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `mobile` = '18952732576' ) AND ( `business_company_id` = '35' ) AND ( `password` = 'f99b268d35ed38d3097f50fcdf1fe39d' ) LIMIT 1   [ RunTime:0.005362s ]
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM `member_token` [ RunTime:0.004826s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SELECT * FROM `member_token` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.004578s ]
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: UPDATE `member_token` SET `token`='fd9ee82c35736f01c52c54dc410820b4',`login_time`='2017-07-18 17:08:02',`autologin`=1 WHERE ( `id` = '23' ) [ RunTime:0.004471s ]
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM member_info i,member m [ RunTime:0.004987s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SELECT m.id,m.business_company_id,m.username,m.mobile,m.wx_openid,m.timeadd,i.names,i.nameStatus,i.certiNumber FROM member_info i,member m WHERE memberid='8' and m.id=i.memberid LIMIT 1   [ RunTime:0.004914s ]
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.005508s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `id` = '8' ) LIMIT 1   [ RunTime:0.004980s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8] Undefined variable: bankInfo Member.class.php 第 274 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_bindcard` [ RunTime:0.005142s ]
+[ 2017-07-18T17:08:02+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:02+08:00 ] / | SQL: SELECT * FROM `baofu_bindcard` WHERE memberid='8' LIMIT 1   [ RunTime:0.005445s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_log` [ RunTime:0.005076s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: INSERT INTO `baofu_log` (`memberid`,`data`,`remark`,`timeadd`) VALUES ('8','{\"apply\":{\"version\":\"4.0.0.0\",\"terminal_id\":\"100000990\",\"txn_type\":\"0431\",\"txn_sub_type\":\"03\",\"member_id\":\"100000276\",\"data_type\":\"json\",\"data_content\":\"3d69def08eddf15b4259fbbf03ddcdf80c5d357578b7cb95c071e7a731bcddce5f9052df432c32cef23a83d1f07ca9709b8accf195bbf314c2da7073801467bbe9a32588b413a39e3b1f3ec821125d324baa10a279429adaac0e58393b543cc9430f12c6fb57dd4d652c847115a213c227a1e251e3dd43a3f59ed0b62c386e82c780ae9549c075622b5779291c67a6ce35e133d9cb719d383d91e88e6c61a4413285a0923358bfe129c3bab583a269eb61e188b0389a3b3f8bebb7d4620f748bc25a6a1297045910ec03f1f9f8d4bccd9f7f9fee3cec4f920986c4ea962b5cc53f9a423157abf55bd93778e1107054dd7e9015bc5640cbccc101429918bec2f95d17cfe5c6515da064caa4d5d986012509ee18c2624dce62220d12a51c1b3615b93a9fec86afd434ff7558f2be7faae96d4136abae1c4b0cfb856f41e17d1791a45958b22911638f9dd4165680b7c08ef9cd2b90df919cf12cbf2e5dfa7137f2269511520109b3e38c258a94d2409cda63a6d44dd1bbf548096c27840ed3316b4f7fa69e4a1c5b6a89e7ed84808c9372a0189be1332f910e721915f7b4a5c07a2343e4912530e0974a3256109449d05f873fc5a8063374fd33aab2df84a516ea70790a90da883d40dba20e7aca5beede4a358f2ca13e36e9bb5aa7f8356c9ce5e865eefda8133febdae10c5d2a16eb7fcb0f1ae84f380864e141b0dc6182231fb4f87d4579cfe41e18762bdf93d9741947b4717d2f9d61cb0ef5b1cbd81afdf63cb1729dec394f64d1ba3f706b8a3036af20954815c196df4b6accd88c1efcd0d6c8c49dbcef0239cae7a7096c693c5fa7de8f4e6001be2e88717c906edb73b921ed79a92241c2f190fd7f142a3f5789356f47cddb2893997a4a7213a4719568b5d6cbef51f07a6d819170e0d3724e23b0d299ea579002fd767a254b619b0a0d2975fb3b177f34d500b88038824185f82a1a42bda09181deb352255c3949d1f1c4cb97aca3672d59630ade29ffbbe11737673c617cec81fad3f6b07c0e890780c8c3dff91a2b7ef3fbd3f6845c737cb5499f0c220d1abe573512de67626ea16e85ac318b4daa03547b63433cee430f0661c14a40e75993242815a7b4d3f2e1ef1fc005adf0725655b5f7cd433d9cb396b4dc1c0a378bc6dd5432a8fbcd8d6b94e36340e74dbb57a032fcf55ace5342e46f0e4af5a1bd90a942f676ffd4ebcadab07085fe2a79f3a650240f6d914bcf16e40c16075c55dd1b49faedfd5d1b5ec77db5815e90380fcde4c139a554a5476971b03d85cebee2458924205fc1addd28e9593fa018097a8e30ab90ec23070596876d822c38d56a9efd3619920eb80fcda8958d35e071121cbcf82e7517828bce0fc3117d01f5ff2055bba302bda779fc669c5fb71ebacdb6aa5f1584d1df1e29cb11f88cdd8fd3fcfc9997701975b169\"},\"response\":{\"additional_info\":\"[card_info]card_name:*\\u5bb6\\u946b,card_no:622700***5982,id_card_no:342401***6712,mobile:189***2576[\\/card_info]\",\"bind_id\":\"201706291531241000009904706\",\"biz_type\":\"0000\",\"data_type\":\"json\",\"member_id\":\"100000276\",\"resp_code\":\"0000\",\"resp_msg\":\"\\u4ea4\\u6613\\u6210\\u529f\",\"terminal_id\":\"100000990\",\"trade_date\":\"20170718170802\",\"trans_serial_no\":\"9621500368882\",\"txn_sub_type\":\"03\",\"txn_type\":\"0431\",\"version\":\"4.0.0.0\"}}','认证-绑卡状态-交易成功','2017-07-18 17:08:03') [ RunTime:0.009968s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.005586s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.006419s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SELECT * FROM `business_company` WHERE id='35' LIMIT 1   [ RunTime:0.263066s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM loan_tender tender,loan_allot allot [ RunTime:0.004599s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SELECT SUM(tender.money) AS tp_sum FROM loan_tender tender,loan_allot allot WHERE ( tender.status = 2 ) AND ( allot.status = 0 ) AND ( tender.memberid = '8' ) AND ( tender.id=allot.tender_id ) LIMIT 1   [ RunTime:0.005221s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006096s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.004770s ]
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.005844s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8] Undefined index: _string LoanOrder.class.php 第 267 行.
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   ) LIMIT 1   [ RunTime:0.004553s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SELECT tender.*,allot.id as loan_allot_id,allot.late_fee,allot.start_time,allot.end_time,allot.back_real_time,allot.late_days,allot.back_real_money,allot.repayment_money,allot.status as allot_status,bus.companyname as bus_companyname,bus.id as business_company_id,bus.business_number,cha.companyname as cha_companyname,cha.id as channel_company_id,bus_l.name as bus_l_name,bus_l.capital_loan_id,bus_l.periode_rate,bus_l.late_periode_rate,if(bus_l.loan_repayment_id=2,'本息到付','') as repayment_name,m.mobile,mi.names,concat(lp.periode,lp.unit) as lp_name,mi.certiNumber,case when tender.status=1 and tender.is_sign=0 and tender.is_approve=0 and allot.status=0 then '待审核'  when tender.status=1 and tender.is_sign=0 and tender.is_approve=1 and allot.status=0 then '待签约'  when tender.status=1 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待打款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待还款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=1 then '已结清'  when tender.status=3 then  '已拒单' end as order_status_name FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   )  [ RunTime:0.265010s ]
+
+[ 2017-07-18T17:08:03+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000398s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:03+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007383s ]
+
+[ 2017-07-18T17:08:04+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001727s ]
+[ 2017-07-18T17:08:03+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001829s ]
+[ 2017-07-18T17:08:03+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:04+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008400s ]
+
+[ 2017-07-18T17:08:04+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:04+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:04+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:04+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000991s ]
+[ 2017-07-18T17:08:04+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001122s ]
+[ 2017-07-18T17:08:04+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:04+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006278s ]
+
+[ 2017-07-18T17:08:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000596s ]
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000665s ]
+[ 2017-07-18T17:08:46+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006755s ]
+
+[ 2017-07-18T17:08:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:08:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000277s ]
+[ 2017-07-18T17:08:46+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000316s ]
+[ 2017-07-18T17:08:46+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:08:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005074s ]
+
+[ 2017-07-18T17:09:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000829s ]
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000911s ]
+[ 2017-07-18T17:09:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006911s ]
+
+[ 2017-07-18T17:09:05+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:05+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000289s ]
+[ 2017-07-18T17:09:05+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000318s ]
+[ 2017-07-18T17:09:05+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:05+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006060s ]
+
+[ 2017-07-18T17:09:19+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:19+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000310s ]
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000341s ]
+[ 2017-07-18T17:09:19+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:19+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006930s ]
+
+[ 2017-07-18T17:09:19+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:19+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000290s ]
+[ 2017-07-18T17:09:19+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000321s ]
+[ 2017-07-18T17:09:19+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:19+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005108s ]
+
+[ 2017-07-18T17:09:20+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:20+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000557s ]
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000668s ]
+[ 2017-07-18T17:09:20+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:20+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005668s ]
+
+[ 2017-07-18T17:09:20+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:20+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000266s ]
+[ 2017-07-18T17:09:20+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000295s ]
+[ 2017-07-18T17:09:20+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:20+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006508s ]
+
+[ 2017-07-18T17:09:21+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:21+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000345s ]
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000379s ]
+[ 2017-07-18T17:09:21+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:21+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007580s ]
+
+[ 2017-07-18T17:09:21+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:21+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000407s ]
+[ 2017-07-18T17:09:21+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000437s ]
+[ 2017-07-18T17:09:21+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:21+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006998s ]
+
+[ 2017-07-18T17:09:24+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:24+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000412s ]
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000464s ]
+[ 2017-07-18T17:09:24+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:24+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006862s ]
+
+[ 2017-07-18T17:09:24+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:24+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2017-07-18T17:09:24+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000328s ]
+[ 2017-07-18T17:09:24+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:24+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007302s ]
+
+[ 2017-07-18T17:09:25+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000279s ]
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000309s ]
+[ 2017-07-18T17:09:25+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:25+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007154s ]
+
+[ 2017-07-18T17:09:25+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000408s ]
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000463s ]
+[ 2017-07-18T17:09:25+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:25+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007479s ]
+
+[ 2017-07-18T17:09:26+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:25+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000324s ]
+[ 2017-07-18T17:09:25+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000359s ]
+[ 2017-07-18T17:09:26+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:26+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007057s ]
+[ 2017-07-18T17:09:26+08:00 ] / | SQL: SHOW COLUMNS FROM `member_token` [ RunTime:0.006593s ]
+[ 2017-07-18T17:09:26+08:00 ] / | SQL: DELETE FROM `member_token` WHERE ( `token` = 'fd9ee82c35736f01c52c54dc410820b4' ) [ RunTime:0.005924s ]
+
+[ 2017-07-18T17:09:28+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:27+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:27+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000292s ]
+[ 2017-07-18T17:09:27+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000324s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006907s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.007372s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `mobile` = '18952732576' ) AND ( `business_company_id` = '35' ) AND ( `password` = 'f99b268d35ed38d3097f50fcdf1fe39d' ) LIMIT 1   [ RunTime:0.005853s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `member_token` [ RunTime:0.006714s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `member_token` WHERE ( `memberid` = '8' ) LIMIT 1   [ RunTime:0.006088s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: INSERT INTO `member_token` (`token`,`memberid`,`username`,`login_time`,`autologin`) VALUES ('070050d2f43fce5eb3be34c4b69e64f2','8','18952732576','2017-07-18 17:09:27',1) [ RunTime:0.005667s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM member_info i,member m [ RunTime:0.006183s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT m.id,m.business_company_id,m.username,m.mobile,m.wx_openid,m.timeadd,i.names,i.nameStatus,i.certiNumber FROM member_info i,member m WHERE memberid='8' and m.id=i.memberid LIMIT 1   [ RunTime:0.006672s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `member` [ RunTime:0.006525s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `member` WHERE ( `id` = '8' ) LIMIT 1   [ RunTime:0.212055s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8] Undefined variable: bankInfo Member.class.php 第 274 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_bindcard` [ RunTime:0.007747s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `baofu_bindcard` WHERE memberid='8' LIMIT 1   [ RunTime:0.006254s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `baofu_log` [ RunTime:0.009416s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: INSERT INTO `baofu_log` (`memberid`,`data`,`remark`,`timeadd`) VALUES ('8','{\"apply\":{\"version\":\"4.0.0.0\",\"terminal_id\":\"100000990\",\"txn_type\":\"0431\",\"txn_sub_type\":\"03\",\"member_id\":\"100000276\",\"data_type\":\"json\",\"data_content\":\"3d69def08eddf15b4259fbbf03ddcdf80c5d357578b7cb95c071e7a731bcddce5f9052df432c32cef23a83d1f07ca9709b8accf195bbf314c2da7073801467bbe9a32588b413a39e3b1f3ec821125d324baa10a279429adaac0e58393b543cc9430f12c6fb57dd4d652c847115a213c227a1e251e3dd43a3f59ed0b62c386e82c780ae9549c075622b5779291c67a6ce35e133d9cb719d383d91e88e6c61a4413285a0923358bfe129c3bab583a269eb61e188b0389a3b3f8bebb7d4620f748bc25a6a1297045910ec03f1f9f8d4bccd9f7f9fee3cec4f920986c4ea962b5cc53f9a423157abf55bd93778e1107054dd7e9015bc5640cbccc101429918bec2f95d17cfe5c6515da064caa4d5d986012509ee18c2624dce62220d12a51c1b3615b93a9fec86afd434ff7558f2be7faae96d4136abae1c4b0cfb856f41e17d1791a45958b22911638f9dd4165680b7c08ef9cd2b90df919cf12cbf2e5dfa7137f2269511520109b3e38c258a94d2409cda63a6d44dd1bbf548096c27840ed3316b4f7fa69e4a1c5b6a89e7ed84808c9372a0189be1332f910e721915f7b4a5c07a2343e4912530e0974a3256109449d05f873fc5a8063374fd33aab2df84a516ea70790a90da883d40dba20e7aca5beede4a358f2ca13e36e9bb5aa7f8356c9ce5e865eefda8133febdae10c5d2a16eb7fcb0f1ae84f380864e141b0dc6182231f721c3cc1bf7dded5048c01033e5dfcdbb31711e384ace58ff2138ea0e201181dba50c11a97058b3f3005e23ed947e20b82e80d1cd2681b776a0430bdf9fe8fd039408fd1d991b02095303a72c5cb53db01dfadc01da25577fca3e6643583d7dbc6e7ea620d9d2c85e96c53fcfa76997f1f43cb54db7dc656aa8f8bec0402c8e452adca81818a007f376898c238fbda45096b42a8ec916cd345006810f6fbbcf0eb66a69ddd87551cbade1c4e1271cb644ee78e8fad8d705e4b810f6b288387fbaafe1f0a4a75d427ad739da25bdb6aa826d118c9a90fa20347faca11e07cd338ebd48e54bf4eae1f7f368d260ad7d533739bf80cdc7e49b0fbbd6629de3d847885ac318b4daa03547b63433cee430f0661c14a40e75993242815a7b4d3f2e1ef1fc005adf0725655b5f7cd433d9cb396b4dc1c0a378bc6dd5432a8fbcd8d6b94e36340e74dbb57a032fcf55ace5342e46f0e4af5a1bd90a942f676ffd4ebcadab07085fe2a79f3a650240f6d914bcf16e40c16075c55dd1b49faedfd5d1b5ec701cc31def6fca86200c3b2e2d25b0f23e565826743bce0a120671a45d22e75994a42be657f77e21906f2bae12c48e90dfed1885b788aff42dd3caacd36c654d7ea8d223cb3fc69a52095e587c40cffa18978dc793d7e399ec08f335b86db91d52d9620ad292b5f548030b94192df086e9f73d8ba801852525350ce8b503b42e3\"},\"response\":{\"additional_info\":\"[card_info]card_name:*\\u5bb6\\u946b,card_no:622700***5982,id_card_no:342401***6712,mobile:189***2576[\\/card_info]\",\"bind_id\":\"201706291531241000009904706\",\"biz_type\":\"0000\",\"data_type\":\"json\",\"member_id\":\"100000276\",\"resp_code\":\"0000\",\"resp_msg\":\"\\u4ea4\\u6613\\u6210\\u529f\",\"terminal_id\":\"100000990\",\"trade_date\":\"20170718170927\",\"trans_serial_no\":\"9511500368967\",\"txn_sub_type\":\"03\",\"txn_type\":\"0431\",\"version\":\"4.0.0.0\"}}','认证-绑卡状态-交易成功','2017-07-18 17:09:27') [ RunTime:0.010272s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.006849s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `business_company` [ RunTime:0.006490s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `business_company` WHERE id='35' LIMIT 1   [ RunTime:0.007731s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM loan_tender tender,loan_allot allot [ RunTime:0.005370s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT SUM(tender.money) AS tp_sum FROM loan_tender tender,loan_allot allot WHERE ( tender.status = 2 ) AND ( allot.status = 0 ) AND ( tender.memberid = '8' ) AND ( tender.id=allot.tender_id ) LIMIT 1   [ RunTime:0.006668s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_config` [ RunTime:0.006892s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SELECT * FROM `loan_config` LIMIT 1   [ RunTime:0.006427s ]
+[ 2017-07-18T17:09:27+08:00 ] / | SQL: SHOW COLUMNS FROM `loan_tender` [ RunTime:0.006847s ]
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8] Undefined index: _string LoanOrder.class.php 第 267 行.
+[ 2017-07-18T17:09:27+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:28+08:00 ] / | SQL: SELECT COUNT(*) AS tp_count FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   ) LIMIT 1   [ RunTime:0.006017s ]
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead Db.class.php 第 660 行.
+[ 2017-07-18T17:09:28+08:00 ] / | SQL: SELECT tender.*,allot.id as loan_allot_id,allot.late_fee,allot.start_time,allot.end_time,allot.back_real_time,allot.late_days,allot.back_real_money,allot.repayment_money,allot.status as allot_status,bus.companyname as bus_companyname,bus.id as business_company_id,bus.business_number,cha.companyname as cha_companyname,cha.id as channel_company_id,bus_l.name as bus_l_name,bus_l.capital_loan_id,bus_l.periode_rate,bus_l.late_periode_rate,if(bus_l.loan_repayment_id=2,'本息到付','') as repayment_name,m.mobile,mi.names,concat(lp.periode,lp.unit) as lp_name,mi.certiNumber,case when tender.status=1 and tender.is_sign=0 and tender.is_approve=0 and allot.status=0 then '待审核'  when tender.status=1 and tender.is_sign=0 and tender.is_approve=1 and allot.status=0 then '待签约'  when tender.status=1 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待打款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=0 then '待还款'  when tender.status=2 and tender.is_sign=1 and tender.is_approve=1 and allot.status=1 then '已结清'  when tender.status=3 then  '已拒单' end as order_status_name FROM loan_tender tender,loan_allot allot,member m,member_info mi,business_loan bus_l,loan_periode lp,business_channel bc,business_company bus,channel_company cha WHERE ( m.id = '8' ) AND ( allot.status = 0 ) AND ( tender.status = 2 ) AND (  tender.business_loan_id=bus_l.id  and tender.id=allot.tender_id and tender.memberid=m.id and m.id=mi.memberid and bus_l.business_company_id=bus.id  and bus_l.loan_periode_id=lp.id and bus.id=bc.business_company_id and bc.channel_company_id=cha.id   )  [ RunTime:0.676904s ]
+
+[ 2017-07-18T17:09:28+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000382s ]
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000420s ]
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:28+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007004s ]
+
+[ 2017-07-18T17:09:28+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000379s ]
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000415s ]
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:28+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006292s ]
+
+[ 2017-07-18T17:09:29+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000687s ]
+[ 2017-07-18T17:09:28+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000754s ]
+[ 2017-07-18T17:09:28+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:29+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.011366s ]
+
+[ 2017-07-18T17:09:38+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:38+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000328s ]
+[ 2017-07-18T17:09:38+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:38+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007530s ]
+
+[ 2017-07-18T17:09:38+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:38+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000437s ]
+[ 2017-07-18T17:09:38+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000487s ]
+[ 2017-07-18T17:09:38+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:38+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006732s ]
+
+[ 2017-07-18T17:09:42+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:41+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:41+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:41+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000416s ]
+[ 2017-07-18T17:09:41+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000465s ]
+[ 2017-07-18T17:09:41+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:42+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005535s ]
+
+[ 2017-07-18T17:09:42+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:42+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:42+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:42+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000290s ]
+[ 2017-07-18T17:09:42+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000319s ]
+[ 2017-07-18T17:09:42+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:42+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006660s ]
+
+[ 2017-07-18T17:09:51+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000298s ]
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000329s ]
+[ 2017-07-18T17:09:51+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:51+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007016s ]
+
+[ 2017-07-18T17:09:51+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:09:51+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000282s ]
+[ 2017-07-18T17:09:51+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000313s ]
+[ 2017-07-18T17:09:51+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:09:51+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006462s ]
+
+[ 2017-07-18T17:10:21+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:10:21+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000523s ]
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000558s ]
+[ 2017-07-18T17:10:21+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:10:21+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.009652s ]
+
+[ 2017-07-18T17:10:21+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:10:21+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000284s ]
+[ 2017-07-18T17:10:21+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000315s ]
+[ 2017-07-18T17:10:21+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:10:21+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006216s ]
+
+[ 2017-07-18T17:11:08+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:08+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000299s ]
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000332s ]
+[ 2017-07-18T17:11:08+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:08+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008793s ]
+
+[ 2017-07-18T17:11:09+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:08+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000369s ]
+[ 2017-07-18T17:11:08+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000437s ]
+[ 2017-07-18T17:11:09+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:09+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005098s ]
+
+[ 2017-07-18T17:11:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000362s ]
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000418s ]
+[ 2017-07-18T17:11:46+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.006332s ]
+
+[ 2017-07-18T17:11:46+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:46+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000317s ]
+[ 2017-07-18T17:11:46+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000349s ]
+[ 2017-07-18T17:11:46+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:46+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.005440s ]
+
+[ 2017-07-18T17:11:58+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:58+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000802s ]
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000864s ]
+[ 2017-07-18T17:11:58+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:58+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.007228s ]
+
+[ 2017-07-18T17:11:58+08:00 ] 127.0.0.1 /
+[ 2017-07-18T17:11:58+08:00 ] / | NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead common.php 第 66 行.
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000282s ]
+[ 2017-07-18T17:11:58+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000311s ]
+[ 2017-07-18T17:11:58+08:00 ] / | NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead DbMysql.class.php 第 67 行.
+[ 2017-07-18T17:11:58+08:00 ] / | SQL: SHOW COLUMNS FROM `common` [ RunTime:0.008402s ]
+

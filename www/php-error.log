@@ -1,0 +1,28 @@
+[27-Jun-2017 13:33:03 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_SERVICE_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\www\Conf\config.php on line 11
+[27-Jun-2017 13:33:03 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_SERVICE_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\www\Conf\config.php on line 11
+[27-Jun-2017 13:34:05 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_SERVICE_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\www\Conf\config.php on line 11
+[27-Jun-2017 13:34:05 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_SERVICE_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\www\Conf\config.php on line 11
+[28-Jun-2017 14:48:40 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\www\Lib\Action\CommonAction.class.php on line 20
+[28-Jun-2017 14:48:41 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\www\Lib\Action\CommonAction.class.php on line 20
+[28-Jun-2017 15:05:41 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:17 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:41 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:42 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:42 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:42 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:42 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:43 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:43 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:43 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:43 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:43 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:44 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 15:06:44 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 98
+[28-Jun-2017 17:41:29 PRC] PHP Fatal error:  Function name must be a string in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 108
+[28-Jun-2017 17:57:52 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\www\Lib\Action\LoanAction.class.php on line 14
+[29-Jun-2017 09:39:12 PRC] PHP Parse error:  syntax error, unexpected ':' in E:\project\newjieba1\www\Lib\Action\LoanAction.class.php on line 44
+[29-Jun-2017 15:19:46 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\www\Lib\Action\IndexAction.class.php on line 36
+[29-Jun-2017 15:47:05 PRC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in E:\project\newjieba1\www\Lib\Action\MemberAction.class.php on line 102
+[30-Jun-2017 16:50:49 PRC] PHP Parse error:  syntax error, unexpected ',' in E:\project\newjieba1\www\Runtime\Cache\0750d0e39114b60d37ff505512be865f.php on line 129
+[03-Jul-2017 10:40:43 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\www\Lib\Action\IndexAction.class.php on line 73
+[04-Jul-2017 13:40:15 PRC] PHP Parse error:  syntax error, unexpected '$parmas' (T_VARIABLE) in E:\project\newjieba1\www\Lib\Action\IndexAction.class.php on line 101

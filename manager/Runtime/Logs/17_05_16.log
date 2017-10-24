@@ -1,0 +1,6 @@
+[ 2017-05-16T15:34:55+08:00 ] 127.0.0.1 /
+[ 2017-05-16T15:34:55+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2017-05-16T15:34:55+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000259s ]
+[ 2017-05-16T15:34:55+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-05-16T15:34:55+08:00 ]  127.0.0.1 /favicon.ico | ERR: (ThinkException) 无法加载模块favicon.ico

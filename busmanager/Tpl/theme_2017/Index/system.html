@@ -1,0 +1,51 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<div class="w100">
+	<ul class="index_list">
+		<li>
+			<div class="in_bg in_bg01">
+				<div class="w480 font_f">
+					<h3>今日新增用户数量</h3>
+					<h1>{$info['todayMemberCount']}</h1>
+					<p>当前用户数量：{$info['totalMemberCount']}</p>
+				</div>
+			</div>
+		</li>
+		<li style="margin-left: 22px;">
+			<div class="in_bg in_bg02">
+				<div class="w480 font_f">
+					<h3>今日新增贷款笔数</h3>
+					<h1>{$info['todayOrderCount']}</h1>
+					<p>当前贷款笔数：{$info['totalOrderCount']}</p>
+				</div>
+			</div>
+		</li>
+		<li style="margin-left: 22px;">
+			<div class="in_bg in_bg03">
+				<div class="w480 font_f">
+					<h3>今日增增贷款金额</h3>
+					<h1>{$info['todayOrderMoney']}</h1>
+					<p>当前贷款金额：{$info['totalOrderMoney']}</p>
+				</div>
+			</div>
+		</li>		
+	</ul>	
+</div>
+<div class="w_index bgf box_round5">
+	<div class="tit_box">
+		<div class="t_box">			
+			<span>我的待办</span>
+		</div>
+	</div>
+	<div class="tablediv" style="margin:0;">
+		<table class="member_table">
+			<tr>
+				<th>待办标题</th>
+				<th>待办内容</th>
+				<th>创建时间</th>
+				<th>操作</th>				
+			</tr>
+		</table>
+	</div>
+</div>
+<include file="Public:pageFooter"/>

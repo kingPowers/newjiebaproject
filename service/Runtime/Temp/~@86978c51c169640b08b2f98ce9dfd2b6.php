@@ -1,0 +1,3 @@
+<?php
+//000000259200s:475:"a:15:{s:2:"id";s:1:"8";s:19:"business_company_id";s:2:"35";s:8:"username";s:11:"18952732576";s:6:"mobile";s:11:"18952732576";s:9:"wx_openid";N;s:7:"timeadd";s:19:"2017-06-27 16:24:42";s:5:"names";s:9:"权家鑫";s:10:"nameStatus";s:1:"1";s:11:"certiNumber";s:18:"342401199307236712";s:10:"bankStatus";i:1;s:6:"acc_no";s:19:"6227**********85982";s:9:"bank_name";s:18:"中国建设银行";s:11:"bank_mobile";s:11:"18952732576";s:10:"loan_money";d:0;s:15:"repayment_money";d:0;}";
+?>

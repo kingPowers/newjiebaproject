@@ -1,0 +1,71 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+
+<form class="form-inline definewidth m20" action="/Member/index" method="get">
+    <span>渠道：</span>
+    <input type="text" class="short" name="channel_name" value="{$_GET['channel_name']}">&nbsp;&nbsp;
+    <span>合作公司：</span>
+    <input type="text" class="short" name="businessname" value="{$_GET['businessname']}">&nbsp;&nbsp;
+    <span>姓名：</span>
+    <input type="text" class="short" name="names" value="{$_GET['names']}">&nbsp;&nbsp;
+    <span>手机号：</span>
+    <input type="text" class="short" name="mobile" value="{$_GET['mobile']}">&nbsp;&nbsp;
+    <span>状态：</span>
+    <select name="status" class="short">
+        <option value="0">全部</option>
+        <foreach name="status" item="v" key="key">
+            <option value="{$key}" <eq name="key" value="$_GET['status']">selected=""</eq>>{$v}</option>
+        </foreach>
+    </select>
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>用户ID</th>
+        <th>所属渠道</th>
+        <th>合作公司</th>
+        <th>姓名</th>
+		<th>身份证号</th>
+		<th>银行卡号</th>
+        <th>手机号</th>
+        <th>预授信额度</th>
+        <th>实名状态</th>
+        <th>用户状态</th>
+        <th>创建时间</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <foreach name="list" item="vo">
+    	<td>{$vo['id']}</td>
+    	<td>{$vo['channel_companyname']}</td>
+    	<td>{$vo['business_companyname']}</td>
+    	<td>{$vo['names']}</td>
+    	<td>{$vo['certiNumber']}</td>
+    	<td>{$vo['acc_no']}</td>
+    	<td>{$vo['mobile']}</td>
+    	<td>{$vo['promise_money']}</td>
+    	<td>
+            <if condition="$vo['nameStatus' eq 0]">
+             未认证
+             <elseif condition="$vo['nameStatus'] eq 1"/>
+             成功
+             <elseif condition="$vo['nameStatus'] eq 2"/>
+             失败
+             </if>
+        </td>
+        <td>
+            <if condition="$vo['status'] eq 1">
+            新注册
+            <elseif condition="$vo['status'] eq 9"/>
+            冻结
+            </if>
+        </td>
+    	<td>{$vo['timeadd']}</td>      
+    </tr>
+    </foreach>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

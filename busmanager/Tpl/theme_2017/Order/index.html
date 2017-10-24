@@ -1,0 +1,141 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/manager/css/index.css">
+<script type="text/javascript">
+$(function(){
+	$(".all_st").click(function(){
+		var status = $(this).attr("value");
+		$("select[name='status']").find("option").removeAttr("selected");
+		$("input[name='orderStatus']").val('');
+		$("select[name='status']").find("option[value='" + status +"']").attr("selected",'selected');
+		$("#search-form").submit();
+	})
+	$(".order_st").click(function(){
+		var orderStatus = $(this).attr("value");
+		$("input[name='orderStatus']").val(orderStatus);
+		$("#search-form").submit();
+	})
+})
+</script>
+<div class="w98 bgf">
+    <form id="search-form" method="get" action="/Order/index">
+    <input type="hidden" name="orderStatus" value="{$_GET['orderStatus']}">
+	<div class="selectdiv">
+		<font>姓名:</font>
+		<input type="text" name="names" style="width: 100px;" value="{$_GET['names']}" class="input_text box_round w170">	
+		<font>手机号:</font>
+		<input type="text" name="mobile" style="width: 150px;" value="{$_GET['mobile']}" class="input_text box_round w170">			
+		<font>时间:</font>
+		<input type="text" name="starttime" value="{$_GET['starttime']}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input_text box_round w170">
+		<input type="text" name="endtime" value="{$_GET['endtime']}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" class="input_text box_round w170">
+		<font>状态:</font>
+		<span class="input_text box_round w190" style="width: 100px;">
+		<select name="status" style="width: 100px;">
+			<foreach name="status" item="os">
+				<option value="{$key}" <eq name="key" value="$_GET['status']">selected=""</eq>>{$os}</option>
+			</foreach> 
+		</select>
+		</span>
+		<input type="submit" name="sub" value="查询" class="btn_css box_round head_blue">		
+	</div>
+	</form>
+	<div class="nav">
+		<ul>
+			<foreach name="status" item="st">
+			<li class="alink all_st" value="{$key}" <eq name='key' value="$_GET['status']">id="bg_blue"</eq>><a>{$st}贷款</a></li>
+			</foreach>
+			<!--<li class="alink order_st" value="4" <if condition="$_GET['orderStatus'] eq 3">id="bg_blue"</if>><a>已结清贷款</a></li>-->
+		</ul>
+	</div>
+	<div class="tablediv" style="margin-top: 5px;">
+		<table class="member_table">
+			<tr>
+				<th>贷款编号</th>
+				<th>用户ID</th>
+				<th>产品</th>
+				<th>姓名</th>
+				<th>贷款金额</th>
+				<th>费用</th>
+				<th>到账金额</th>
+				<th>贷款时间</th>
+				<th>贷款期限</th>
+				<th>还款时间</th>
+				<th>贷款状态</th>
+				<th>操作</th>
+			</tr>
+			<foreach name="list" item="vo">
+			<tr>
+				<td>{$vo['tender_number']}</td>
+				<td>{$vo['memberid']}</td>
+				<td>{$vo['bus_l_name']}</td>
+				<td>{$vo['names']}</td>
+				<td>{$vo['money']}</td>
+				<td>{$vo['total_fee']}</td>
+				<td>{$vo['pay_money']}</td>
+				<td>{$vo['timeadd']}</td>
+				<td>{$vo['lp_name']}</td>
+				<td>{$vo['back_real_time']}</td>
+				<td>{$vo['order_status_name']}</td>
+				<td>
+					<if condition="$vo['order_status_name'] eq '待审核'">
+						<a href="/Order/checkOrder/id/{$vo['id']}">审核</a>
+					<elseif condition="$vo['order_status_name'] eq '待签约'"/>
+						<a onclick="refuseOrder({$vo['id']});">拒单</a>
+					<elseif condition="$vo['order_status_name'] eq '待打款'"/>
+						<a onclick="refuseOrder({$vo['id']});">拒单</a>&nbsp;&nbsp;
+					    <a onclick="payMoney({$vo['id']});">打款</a>
+					<else/>
+						<a href="/Order/orderInfo/id/{$vo['id']}/mid/{$vo['memberid']}">查看</a>
+					</if>
+				</td>				
+			</tr>
+			</foreach>			
+		</table>
+	</div>
+	{$page}
+</div>
+<include file="Public:pageFooter"/>
+<script type="text/javascript">
+	$(function () {            
+     	$(".alink").click(function(){  
+	        $(this).attr("id","bg_blue");  
+	        $(this).siblings().removeAttr("id"); 	      
+	  	});  
+    });
+var refuseOrder = function(id)
+{
+	if (!id)return top.jdbox.alert(0,"订单ＩＤ错误");
+	var data = {};data.order_id = id;
+	conAlert("是否确定拒单",refuse,data)
+	
+} 
+var refuse = function(data)
+{
+	$.DialogByZ.Close();
+	top.jdbox.alert(2);
+	$.post("/Order/refuseOrder",data,function(F){
+		//console.log(F);
+		top.jdbox.alert(F.status,F.info);
+		if (F.status) {
+			window.location.reload();  
+		}
+	},'json')
+}
+var payMoney = function(id) 
+{
+	if (!id)return top.jdbox.alert(0,"订单ＩＤ错误");
+	var data = {};data.order_id = id;
+	conAlert("是否确定放款",pay,data)
+}
+var pay = function(data)
+{
+	$.DialogByZ.Close();
+	top.jdbox.alert(2);
+	$.post("/Order/payMoney",data,function(F){
+		//console.log(F);
+		top.jdbox.alert(F.status,F.info);
+		if (F.status) {
+			window.location.reload();  
+		}
+	},'json')
+}
+</script>

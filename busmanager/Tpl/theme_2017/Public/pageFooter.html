@@ -1,0 +1,22 @@
+   </div>
+    <div style="clear:both;"></div>
+    <input type="hidden" name="moduleid" value="">
+    <input type="hidden" name="actionid" value="">
+</div>
+<script type="text/javascript">
+	var resize = function()
+	{
+		var all_h = $(window).height();
+		var head_h = $(".header").height();
+		var left_height = $(".table_body").height();
+		var all_w = $(window).width();
+		var head_w = $(".header").width();
+		var left_w = $(".left_menu").width();
+		$("iframe[name='content-body']").attr("height","100%").attr("width","99%");	
+	}
+var refreshTime = function() 
+{
+	$.post("/Public/refreshTime.html",{},function(F){
+	},'josn')
+}
+</script>

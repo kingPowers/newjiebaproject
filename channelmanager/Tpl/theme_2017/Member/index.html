@@ -1,0 +1,42 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/2015/index/css/index.css">
+<div class="w98 bgf">
+	<div class="selectdiv">
+	<form method="get" action="/Member/index">
+		<font>合作公司:</font>
+		<input type="text" name="businessname" value="{$_GET['businessname']}" class="input_text box_round w238">
+		<input type="submit" name="" value="查询" class="btn_css box_round head_blue">
+	</form>
+	</div>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>合作公司编号</th>
+				<th>合作公司名称</th>
+				<th>负责人姓名</th>
+				<th>手机号</th>
+				<th>状态</th>
+				<th>合作公司地址</th>
+				<th>操作</th>
+			</tr>
+			<foreach name="list" item="vo">
+			<tr>
+				<td>{$vo['business_number']}</td>
+				<td>{$vo['companyname']}</td>
+				<td>{$vo['legal_name']}</td>
+				<td>{$vo['legal_mobile']}</td>
+				<td>
+					<if condition="$vo['status'] eq 1">
+					启用
+					<else/>
+					禁用
+					</if>
+				</td>
+				<td>{$vo['company_address']}</td>
+				<td><a>查看明细</a></td>				
+			</tr>
+			</foreach>
+		</table>
+	</div>
+</div>
+<include file="Public:pageFooter"/>

@@ -1,0 +1,42 @@
+ <include file="Public:header"/> 
+<link rel="stylesheet" href="_STATIC_/2015/index/css/index.css">
+<div class="w100">
+	<ul class="index_list">
+		<li>
+			<div class="in_bg in_bg01">
+				<div class="w480 font_f">
+					<h3>今日新增用户数量</h3>
+					<h1>{$data['todayMemberCount']}</h1>
+					<p>当前用户数量：{$data['totalMemberCount']}</p>
+				</div>
+			</div>
+		</li>
+		<li style="margin-left: 1%;">
+			<div class="in_bg in_bg02">
+				<div class="w480 font_f">
+					<h3>今日新增贷款笔数</h3>
+					<h1>{$data['todayOrderCount']}</h1>
+					<p>当前贷款笔数：{$data['totalOrderCount']}</p>
+				</div>
+			</div>
+		</li>
+		<li style="margin-top: 40px;">
+			<div class="in_bg in_bg03">
+				<div class="w480 font_f">
+					<h3>今日新增贷款金额</h3>
+					<h1>{$data['todayOrderMoney']}</h1>
+					<p>当前贷款金额：{$data['totalOrderMoney']}</p>
+				</div>
+			</div>
+		</li>
+		<li style="margin:40px 0 0 1%;">
+			<div class="in_bg in_bg04">
+				<div class="w480 font_f">
+					<h3>昨日新增分润</h3>
+					<h1>{$data['todayProfitMoney']}</h1>
+					<p>分润总额：{$data['totalProfitMoney']}</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

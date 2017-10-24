@@ -1,0 +1,88 @@
+<include file="Public:header" />
+<style type="text/css">
+.tableright{width: 200px;text-align: center;padding-left:100px; }
+.search-div{border:1px solid #bbb;width: 207px;margin-top: 0px;position: absolute;top:32px;z-index: 100;background: #fff;border-radius: 2px;display: none;}
+.search-div p{cursor: pointer;margin: 0 auto;padding: 5px 10px;}
+.search-div p:hover{background: #ccc}
+.close{display: inline-block;float: right;font-size: 5px;color: #666;padding-right: 10px;}
+label{display: inline-block;}
+</style>
+<script type="text/javascript">
+</script>
+<form class="definewidth m20" id="editForm">
+  <table class="table table-bordered table-hover m10">
+    <tr>
+      <input type="hidden" name="productid" value="{$info['id']}">
+      <input type="hidden" name="capital_company_id" value="<php>echo $_REQUEST['cid']?$_REQUEST['cid']:$info['capital_company_id'];</php>">
+      <td class="tableleft" style="text-align: center;" colspan="4">产品信息</td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">产品名称：</td>
+      <td class="tableright"><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> type="text" name="name" value="{$info['name']}"></td>
+      <td width="10%" class="tableleft">备注：</td>
+      <td class="tableright">
+        <input type="text" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq> name="remark" value="{$info['remark']}">
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">金额：</td>
+      <td class="tableright"><input <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> type="text"  name="min_loanmoney" value="{$info['min_loanmoney']}">——<input  type="text" name="max_loanmoney" value="{$info['max_loanmoney']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq>></td>
+      <td width="10%" class="tableleft">还款方式：</td>
+      <td class="tableright">
+        <select name="loan_repayment" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input" disabled=""</eq>>
+          <foreach name="pay_type" item="vo" key="k">
+            <option value="{$k}" <eq name="k" value="$info['loan_repayment']">selected=""</eq>>{$vo}</option>
+          </foreach>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">期限：</td>
+      <td class="tableright"><input type="text"  <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq> name="min_loan_periode" value="{$info['min_loan_periode']}">——<input  <eq name="is_sub" value="1">class="short"<else/>class="dis_input_short" disabled=""</eq> type="text" name="max_loan_periode" value="{$info['max_loan_periode']}"></td>
+      <td width="10%" class="tableleft">利率：</td>
+      <td class="tableright">
+        <input type="text" name="periode_rate" value="{$info['periode_rate']}" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq>>(日利率)
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">是否需要芝麻信用分：</td>
+      <td class="tableright"><label><input type="radio" class="short" name="is_sesame_credit" value="1" <eq name="info['is_sesame_credit']" value="1">checked=""</eq>>需要</label><label><input class="short" type="radio" name="is_sesame_credit" value="0" <eq name="info['is_sesame_credit']" value="0">checked=""</eq>>不需要</label></td>
+      <td width="10%" class="tableleft">芝麻信用分通过标准：</td>
+      <td class="tableright">
+        <input type="text" name="sesame_credit_score" <eq name="is_sub" value="1">class="search-input"<else/>class="dis_input_short" disabled=""</eq> value="{$info['sesame_credit_score']}">分以上
+      </td>
+    </tr>
+    <tr><td colspan="4" style="text-align: center;width: 50px"><notempty name="is_sub"><a class="btn btn-success" id="sub_info">提交</a></notempty><a class="btn btn-error" href="/Product/capitalProduct" style="margin-left: 20px;">返回</a></td>
+      </tr>
+  </table>
+</form>
+<script type="text/javascript">
+$(function(){
+  $("#sub_info").click(function(){
+    var data = {};
+    data.capital_company_id = $("input[name='capital_company_id']").val();
+    data.productid = $("input[name='productid']").val();
+    data.name = $("input[name='name']").val();
+    data.remark = $("input[name='remark']").val();
+    data.min_loanmoney = $("input[name='min_loanmoney']").val();
+    data.max_loanmoney = $("input[name='max_loanmoney']").val();
+    data.loan_repayment = $("select[name='loan_repayment']").find("option:selected").attr("value");
+    data.min_loan_periode = $("input[name='min_loan_periode']").val();
+    data.max_loan_periode = $("input[name='max_loan_periode']").val();
+    data.periode_rate = $("input[name='periode_rate']").val();
+    data.is_sesame_credit = $("input[name='is_sesame_credit']:checked").val();
+    data.sesame_credit_score = $("input[name='sesame_credit_score']").val();
+    // data.deposit_percent = $("input[name='deposit_percent']").val();
+    top.jdbox.alert(2);
+    $.post("/Product/editCapital.html",data,function(F){
+        console.log(F);
+        top.jdbox.alert(F.status,F.info);
+        if(F.status)
+        {
+          window.location.href = "/Product/capitalProduct";
+        }
+    },'json')
+  })
+})
+</script>
+<include file="Public:footer" />

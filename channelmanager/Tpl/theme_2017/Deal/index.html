@@ -1,0 +1,92 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="_STATIC_/2015/index/css/index.css">
+<script type="text/javascript">
+$(function(){
+	$(".all_st").click(function(){
+		var status = $(this).attr("value");
+		$("select[name='status']").find("option").removeAttr("selected");
+		$("input[name='orderStatus']").val('');
+		$("select[name='status']").find("option[value='" + status +"']").attr("selected",'selected');
+		$("#search-form").submit();
+	})
+	$(".order_st").click(function(){
+		var orderStatus = $(this).attr("value");
+		$("input[name='orderStatus']").val(orderStatus);
+		$("#search-form").submit();
+	})
+})
+</script>
+<form id="search-form" method="get" accept="/Deal/index" >
+<input type="hidden" name="orderStatus" value="{$_GET['orderStatus']}">
+<div class="w98 bgf">
+	<div class="selectdiv">
+		<font>姓名:</font>
+		<input type="text" name="names" value="{$_GET['names']}" class="input_text box_round w190">
+		<font>手机号码:</font>
+		<input type="text" name="mobile" value="{$_GET['mobile']}" class="input_text box_round w190">
+		<font>时间:</font>
+		<input type="text" name="starttime" id="starttime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['starttime']}" class="input_text box_round w170">
+		<input type="text" name="endtime" id="endtime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['endtime']}" class="input_text box_round w170">
+		<font>状态:</font>
+		<span class="input_text box_round w190">
+		<select name="status">
+			<foreach name="status" item="s">
+			<option value="{$key}" <eq name="key" value="$_GET['status']">selected=""</eq>>{$s}</option>
+			</foreach>
+		</select>
+		</span>
+		<input type="submit" name="btn" value="查询" class="btn_css box_round head_blue">
+	</div>
+
+	<div class="nav">
+		<ul>
+		<foreach name="status" item="st">
+			<li class="alink all_st" value="{$key}" <eq name='key' value="$_GET['status']">id="bg_blue"</eq>><a>{$st}贷款</a></li>
+		</foreach>
+		<!--<li class="alink order_st" value="3" <if condition="$_GET['orderStatus'] eq 3">id="bg_blue"</if>><a>已结清贷款</a></li>-->
+		</ul>
+	</div>
+</form>
+	<div class="tablediv">
+		<table class="member_table">
+			<tr>
+				<th>贷款编号</th>
+				<th>用户ＩＤ</th>
+				<th>产品</th>
+				<th>姓名</th>
+				<th>贷款金额</th>
+				<th>费用</th>
+				<th>到账金额</th>
+				<th>贷款时间</th>
+				<th>贷款期限</th>
+				<th>还款时间</th>
+				<th>贷款状态</th>
+			</tr>
+			<foreach name="list" item="vo">
+			<tr>
+				<td>{$vo['tender_number']}</td>
+				<td>{$vo['memberid']}</td>
+				<td>{$vo['bus_l_name']}</td>
+				<td>{$vo['names']}</td>
+				<td>{$vo['money']}</td>
+				<td>{$vo['total_fee']}</td>
+				<td>{$vo['pay_money']}</td>
+				<td>{$vo['timeadd']}</td>
+				<td>{$vo['lp_name']}</td>
+				<td>{$vo['back_real_time']}</td>
+				<td>{$status[$vo['status']]}</td>				
+			</tr>
+			</foreach>			
+		</table>
+	</div>
+	{$page}
+</div>
+
+<script type="text/javascript">
+	$(function () {            
+     	$(".alink").click(function(){  
+	        $(this).attr("id","bg_blue");  
+	        $(this).siblings().removeAttr("id"); 	      
+	  	});  
+    }); 
+</script>

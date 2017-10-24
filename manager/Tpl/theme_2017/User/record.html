@@ -1,0 +1,46 @@
+<include file="Public:header" />
+
+<form class="form-inline definewidth m20" action="/User/record/id/{$_REQUEST['id']}" method="get">    <span>开始时间：</span>
+    <input type="text" name="starttime" id="starttime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['starttime']}">&nbsp;&nbsp;
+    <span>截止时间：</span>
+    <input type="text" name="endtime" id="endtime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" value="{$_GET['endtime']}">&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>  
+            <th>用户名</th>
+            <th>操作</th>
+			<th>操作类型</th>
+            <th>IP地址</th>
+            <th>状态</th>
+            <th>创建时间</th>
+        </tr>
+    </thead>
+    <tbody>
+    <foreach name="list" item="vo">
+        <tr>  
+            <td>{$vo['username']}</td>
+            <td>{$vo['remark']}</td>
+			<td>
+             <if condition="$vo['type'] eq 1">
+                系统管理
+             <else/>
+                其他
+             </if>
+            </td>
+            <td>{$vo['ip']}</td>
+            <td>
+                <if condition="$vo['status'] eq 1">
+                    成功
+                <else/>
+                    失败
+                </if>
+            </td>
+            <td>{$vo['timeadd']}</td>
+        </tr>
+     </foreach>
+     </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

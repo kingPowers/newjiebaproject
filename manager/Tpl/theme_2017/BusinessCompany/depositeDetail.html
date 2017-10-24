@@ -1,0 +1,29 @@
+<include file="Public:header" />
+<style type="text/css">
+.title{display: inline-block;width: 150px;height: 30px;text-align: center;line-height: 30px;margin: 20px 0 0 0px;position: relative;top :9px;}
+</style>
+<script type="text/javascript" src="_STATIC_/2015/js/wdate/WdatePicker.js"></script>
+<span class='title btn btn-primary' style="margin-left: 10px;">新增</span><a href="{:U('BusinessCompany/outDetail',array('company_id'=>$_REQUEST['company_id']))}" class="btn title">支出</a>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>本期新增预存金额</th>
+            <th>预存余额</th>
+            <th>添加人</th>
+            <th>添加时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <foreach name="list" item="vo" key="k">
+          <tr>
+            <td>{$vo['deposit_number']}</td>
+            <td>{$vo['money']}</td>
+            <td>{$vo['total_balance']}</td>
+            <td>{$vo['author']}</td>
+            <td>{$vo['timeadd']}</td> 
+        </tr>
+       </foreach>
+     </tbody>
+</table>
+<include file="Public:footer" />

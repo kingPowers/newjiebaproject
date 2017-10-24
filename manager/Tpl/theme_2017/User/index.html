@@ -1,0 +1,59 @@
+<include file="Public:header" />
+<form class="form-inline definewidth m20" action="index.html" method="get">    
+    用户名称：
+    <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="{$username}">&nbsp;&nbsp;
+    <span>用户类型：</span>
+    <select name="groupid" class="short">
+        <foreach name="group_list" item="vg">
+            <option value="{$vg['id']}" <eq name="vg['id']" value="$_REQUEST['groupid']">selected=""</eq>>{$vg['title']}用户</option>
+        </foreach>
+    </select>
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; 
+</form>
+<foreach name="group_list" item="g">
+  <a style="margin-left: 10px;" href="/User/add/groupid/{$g['id']}" class="btn btn-success" >新增{$g['title']}用户</a>
+</foreach>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>  
+            <th>登录账号</th>
+            <th>用户姓名</th>
+			 <th>用户角色</th>
+            <th>手机号码</th>
+            <th>状态</th>
+            <th>创建人</th>
+            <th>最后登录时间</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+    <foreach name="list" item="vo">
+        <tr>  
+            <td>{$vo['username']}</td>
+            <td>{$vo['names']}</td>
+			<td>{$vo['title']}</td>
+            <td>{$vo['mobile']}</td>
+            <td>
+            <if condition="$vo['status'] eq 1">
+                正常
+                <else/>
+                禁用
+            </if></td>
+            <td>{$vo['addusername']}</td>
+            <td>{$vo['lasttime']}</td>
+            <td>{$vo['timeadd']}</td>
+            <td><a href="{:U('User/edit',array('id'=>$vo['id']))}">编辑</a>&nbsp;&nbsp;<a href="{:U('User/record',array('id'=>$vo['id']))}">查看记录</a></td>
+        </tr>
+     </foreach>
+     </tbody>
+</table>
+<div>{$page}</div>
+<script language="javascript">
+$(function(){
+	$('#addnew').click(function(){
+		window.location.href="{:U('User/add')}";
+	});
+})
+</script>
+<include file="Public:footer" />

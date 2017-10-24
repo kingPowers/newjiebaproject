@@ -1,0 +1,83 @@
+[27-Jun-2017 15:02:07 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:02:54 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:03:16 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:03:39 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:03:59 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:04:23 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:08:32 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[27-Jun-2017 15:10:15 PRC] PHP Fatal error:  Class 'version\Sms' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 65
+[28-Jun-2017 10:50:29 PRC] PHP Fatal error:  Call to a member function encPassword() on a non-object in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 119
+[28-Jun-2017 11:10:52 PRC] PHP Fatal error:  Class 'version\Index' not found in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 69
+[28-Jun-2017 14:26:52 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in E:\project\newjieba1\service\Lib\Model\CommonModel.class.php on line 78
+[29-Jun-2017 14:16:33 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 238
+[29-Jun-2017 14:17:37 PRC] PHP Fatal error:  Class 'version\Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 238
+[29-Jun-2017 14:21:19 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:34 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:34 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:34 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:35 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:35 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:35 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:36 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:36 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:36 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:37 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:37 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:37 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:38 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:38 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:38 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:39 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:39 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:39 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:40 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:40 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:21:40 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:22:06 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:22:58 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:23:50 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:24:22 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:25:09 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:26:35 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:27:10 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:27:12 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:27:13 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:27:15 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[29-Jun-2017 14:27:32 PRC] PHP Fatal error:  Class 'Baofu' not found in E:\project\newjieba1\service\Lib\Model\version\Member.class.php on line 239
+[30-Jun-2017 09:07:28 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:31 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:32 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:33 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:34 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:36 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:52 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:55 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:07:56 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:08:11 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:08:12 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:08:13 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:08:13 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 09:08:15 PRC] PHP Fatal error:  Method name must be a string in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 292
+[30-Jun-2017 14:39:40 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 277
+[30-Jun-2017 14:40:02 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 277
+[30-Jun-2017 15:31:27 PRC] PHP Fatal error:  Class 'LoanAllotModel' not found in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 529
+[30-Jun-2017 15:31:46 PRC] PHP Fatal error:  Class 'LoanAllotModel' not found in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 529
+[30-Jun-2017 15:44:45 PRC] PHP Fatal error:  Class 'version\Exception' not found in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 548
+[30-Jun-2017 15:45:01 PRC] PHP Fatal error:  Class 'version\Exception' not found in E:\project\newjieba1\service\Lib\Model\version\LoanOrder.class.php on line 548
+[04-Jul-2017 14:09:40 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:09:53 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:10:18 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:10:33 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:10:51 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:13:48 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[04-Jul-2017 14:14:57 PRC] PHP Fatal error:  Unsupported operand types in E:\project\newjieba1\service\Lib\Model\version\CustomerMessage.class.php on line 152
+[10-Jul-2017 10:05:49 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:05:50 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:06:45 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:06:45 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:06:53 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:06:54 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:07:06 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:07:07 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:07:39 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89
+[10-Jul-2017 10:07:40 PRC] PHP Fatal error:  Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in E:\project\newjieba1\service\Lib\Model\version\Object.class.php on line 89

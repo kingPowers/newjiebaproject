@@ -1,0 +1,44 @@
+/*login*/
+.bg_login{background: url(../image/login/bg_login.jpg)no-repeat; width:100%; height: 1080px; position: relative; background-position: center center; overflow: hidden;}
+.tit_login{width: 650px; margin:8% 0 0 -305px;}
+.pm_center{position: absolute; left: 50%; z-index: 10;}
+.round5{border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+.login_box{font-family: '微软雅黑'; width: 624px; height: 503px; margin:20% 0 0 -312px; position: absolute; background: url(../image/login/box_login.png); overflow: hidden;}
+.login_box h2{font-size: 30px; text-align: center; color: #707070; margin: 60px auto 20px;}
+.login_sbox{width: 406px; height: 340px; overflow: hidden; margin: 0 auto; }
+.login_sbox p{width: 358px; font-size: 18px; color: #000; margin: 0 auto;}
+.login_sbox p span{margin-left: 69px; display: inline-block;}
+.login_sbox p span:nth-child(1){margin-left: 0;}
+.box_round5{border-radius: 5px; border:1px #ddd solid;}
+.box_y{box-shadow: 0px 0px 5px 0px #40a7ff; border:1px #40a7ff solid;}
+.login_input{width: 395px; height: 48px; line-height: 48px; margin:0 auto 20px; background: #fcfcfc;}
+.yzm_input{width: 200px; height: 48px; line-height: 48px; margin:0 auto; padding-left: 10px; background: #fcfcfc;}
+.sbox_inp{width: 350px; height: 30px; line-height: 30px; border:0; background: #fcfcfc; padding-left: 10px; font-size: 16px;}
+.login_input img{vertical-align: middle; display: inline-block; margin: 5px;}
+.login_input span{display: inline-block; width:170px; height: 48px; background: #fcfcfc; text-align: center; margin-left: 6px;}
+.btn_forget{font-size: 14px; float: right; cursor: pointer;}
+.btn_login{cursor: pointer; margin-top: 40px; display:block; font-size: 16px; color: #fff; width: 398px; height: 48px; line-height: 48px; text-align: center;}
+/*blogin*/
+.bg_blogin{background: url(../image/login/bg_blogin.jpg)no-repeat; width:100%; height: 516px; position: relative; background-position: center center; overflow: hidden;}
+.blogin_box{font-family: '微软雅黑'; width: 500px; height: 418px; margin:-205px 0 0 -250px; background: #fff; overflow: hidden;}
+/*recoverpwd*/
+.box_pwd{background: #fff; width: 1198px; height: 494px; border: 1px solid #ddd; margin:40px auto 0; position: relative;}
+.tit_pwd{height: 54px; border-bottom: 1px #ddd solid; }
+.t_pwd{ height: 30px; padding:12px 30px; line-height: 30px;}
+.t_pwd span{font-size: 20px; color: #000; display: inline-block; border-left: 4px #40a7ff solid; padding-left: 10px;}
+.for_prog{width: 582px; height: 55px; margin: 40px auto 0; overflow: hidden; background: url(../image/login/tit_forget.png)no-repeat;}
+.fored_prog{width: 582px; height: 55px; margin: 40px auto 0; overflow: hidden; background: url(../image/login/tit_forgeted.png)no-repeat;}
+.forget_box > .for_b{width: 350px; margin: 40px auto 30px; float: none;}
+.for_b .login_b_ul>li{height:32px;margin-bottom:14px;font-size:12px;}
+.for_b .login_b_ul>li>span{display:block;float:left;text-align:right;width:90px;height:32px;line-height:32px;}
+.for_b .login_b_ul>li>span>em{color:#af4040;}
+.for_b .login_b_ul>li>input{border-radius: 5px; height:30px;width:240px;border:1px #dbdbdb solid;text-indent:10px;font-size:12px;}
+.for_b .login_b_ul>li>input.obtain_ipt{width:112px;}
+.for_b .login_b_ul>li>input:hover{box-shadow: 0px 0px 5px 0px #40a7ff; border:1px #40a7ff solid;}
+.login_b_ul .obtain{cursor: pointer;border-radius: 5px; width:115px;height:32px;border:none;color:#fff;background:#40a7ff;font-size:12px;margin-left:5px;}
+.login_b .login_b_ul>li.last{padding-left:90px;margin-top:18px;}
+.login_b_ul .for_next{cursor: pointer; width:240px;height:32px;color:#fff;background:#40a7ff;border:none;border-radius: 5px;margin-right: 18px; float: right;}
+.for_b_la .p_finish{font:24px/50px "微软雅黑";text-align:center;margin:0 auto; padding-top: 80px;}
+.for_b_la .p_finish>img{width:26px;height:26px;vertical-align:text-bottom;margin-right:15px;}
+.for_b_la .for_p_b{text-align:center;font-size:12px;line-height:40px;margin-top:50px;}
+.for_b_la .for_ck{display:block;width:250px;height:33px;background:#40a7ff;text-align:center;line-height:33px;color:#fff;text-decoration:none;border-radius:5px;margin:0 auto;}

@@ -1,0 +1,52 @@
+[05-Jun-2017 09:13:05 PRC] PHP Fatal error:  Call to a member function get() on a non-object in E:\project\newjieba1\ThinkPHP\Lib\Core\Action.class.php on line 177
+[05-Jun-2017 11:37:36 PRC] PHP Parse error:  syntax error, unexpected '"首页"' (T_CONSTANT_ENCAPSED_STRING) in E:\project\newjieba1\channelmanager\Lib\Action\MemberAction.class.php on line 10
+[12-Jun-2017 10:13:23 PRC] PHP Fatal error:  Class 'BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 6
+[12-Jun-2017 10:18:29 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ',' or ';' in E:\project\newjieba1\channelmanager\Lib\Action\CommonAction.class.php on line 2
+[12-Jun-2017 10:18:43 PRC] PHP Parse error:  syntax error, unexpected '/', expecting ',' or ';' in E:\project\newjieba1\channelmanager\Lib\Action\CommonAction.class.php on line 2
+[12-Jun-2017 10:19:22 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:23 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:23 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 10:19:23 PRC] PHP Fatal error:  Class 'manager\Auth\BaseModel' not found in E:\project\newjieba1\manager\Lib\Model\AuthModel.class.php on line 7
+[12-Jun-2017 11:14:02 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_STATIC_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\channelmanager\Conf\config.php on line 18
+[12-Jun-2017 11:14:02 Asia/Shanghai] PHP Parse error:  syntax error, unexpected ''_STATIC_'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in E:\project\newjieba1\channelmanager\Conf\config.php on line 18
+[12-Jun-2017 14:56:56 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\IndexAction.class.php on line 7
+[13-Jun-2017 09:19:46 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 15
+[13-Jun-2017 09:20:25 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 16
+[13-Jun-2017 09:28:07 PRC] PHP Parse error:  syntax error, unexpected ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 28
+[13-Jun-2017 09:28:14 PRC] PHP Parse error:  syntax error, unexpected ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 28
+[13-Jun-2017 09:29:24 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 31
+[13-Jun-2017 09:29:42 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 31
+[13-Jun-2017 09:30:39 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 32
+[13-Jun-2017 09:30:40 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 32
+[13-Jun-2017 09:30:40 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 32
+[13-Jun-2017 09:30:40 PRC] PHP Fatal error:  Class 'Login' not found in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 32
+[13-Jun-2017 09:33:28 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 09:34:19 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 09:34:20 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 09:34:20 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 09:34:21 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 09:34:21 PRC] PHP Fatal error:  Call to undefined function gen_password() in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 43
+[13-Jun-2017 17:40:07 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\channelmanager\Lib\Action\IndexAction.class.php on line 6
+[16-Jun-2017 17:17:15 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting identifier (T_STRING) in E:\project\newjieba1\channelmanager\Lib\Action\IndexAction.class.php on line 6
+[19-Jun-2017 09:24:07 PRC] PHP Parse error:  syntax error, unexpected ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 20
+[19-Jun-2017 10:26:47 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 17
+[19-Jun-2017 10:27:22 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 17
+[19-Jun-2017 10:27:49 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 17
+[19-Jun-2017 10:28:18 PRC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in E:\project\newjieba1\ThinkPHP\Lib\ORG\Util\Login.class.php on line 17
+[19-Jun-2017 11:21:36 PRC] PHP Parse error:  syntax error, unexpected '{' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 112
+[20-Jun-2017 15:12:11 PRC] PHP Parse error:  syntax error, unexpected '}' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 65
+[21-Jun-2017 09:15:45 PRC] PHP Parse error:  syntax error, unexpected ')' in E:\project\newjieba1\channelmanager\Lib\Action\CommonAction.class.php on line 20
+[21-Jun-2017 14:39:41 PRC] PHP Fatal error:  Out of memory (allocated -1959788544) (tried to allocate 130968 bytes) in E:\project\newjieba1\ThinkPHP\Common\common.php on line 352
+[21-Jun-2017 15:10:39 PRC] PHP Parse error:  syntax error, unexpected '.' in E:\project\newjieba1\channelmanager\Runtime\Cache\9ca3646d3b37bf04b22458794b5869b7.php on line 4
+[21-Jun-2017 15:13:35 PRC] PHP Parse error:  syntax error, unexpected 'disabled' (T_STRING), expecting ',' or ';' in E:\project\newjieba1\channelmanager\Runtime\Cache\9ca3646d3b37bf04b22458794b5869b7.php on line 4
+[21-Jun-2017 15:49:09 PRC] PHP Parse error:  syntax error, unexpected '3' (T_LNUMBER), expecting variable (T_VARIABLE) or '$' in E:\project\newjieba1\channelmanager\Runtime\Cache\fd384f9d4eb515caf005c82b74cbc12e.php on line 54
+[22-Jun-2017 13:47:30 PRC] PHP Parse error:  syntax error, unexpected '<' in E:\project\newjieba1\channelmanager\Runtime\Cache\558275b28adcab3898d0f24f9c89c31d.php on line 3
+[22-Jun-2017 16:02:25 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:02:27 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:02:28 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:02:42 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:02:43 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:02:48 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:03:04 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:03:05 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25
+[22-Jun-2017 16:03:05 PRC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in E:\project\newjieba1\channelmanager\Lib\Action\PublicAction.class.php on line 25

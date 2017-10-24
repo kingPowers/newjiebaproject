@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+/* css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+header, section, footer, aside, nav, article, figure,hgroup
+{
+display: block;
+}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+ address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; } 
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+html {overflow-y: scroll;} 
+/* css common */
+.clearfix:after clearfix:before{content: ""; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.error {color:#f00 !important;}
+input,select,a,button,textarea{outline:none;}
+body,html{min-width:1200px; position: relative; height: 100%; width: 100%;}
+.w100{width: 100%;}
+.bgg{background: #f1f2f7;}
+.bgf{background: #fff;}
+.login_header{height: 90px; overflow: hidden;}
+.login_header a{display: inline-block; height: 90px;}
+.login_header img{vertical-align: middle;}
+.login_header h2{font-size: 25px; color: #40a7ff; display: inline-block; float: right;}
+.header_center{width: 1200px; margin:0 auto; height: 90px; line-height: 90px;}
+.font_b{color: #40a7ff;}
+.bg_b{background:#40a7ff;}
+.box_round{border-radius:5px; border: 1px solid #ddd;}
+.box_d{box-shadow: 0px 0px 5px 0px #ddd;}

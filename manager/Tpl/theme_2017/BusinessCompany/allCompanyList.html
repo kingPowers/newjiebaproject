@@ -1,0 +1,79 @@
+<include file="Public:header" />
+<script type="text/javascript" src="_STATIC_/2017/js/wdate/WdatePicker.js"></script>
+<form class="form-inline definewidth m20" action="{:U('allCompanyList')}" method="get">
+	<span>公司名称：</span>
+    <input type="text" name="companyname"   value="{$_GET['companyname']}"/>&nbsp;&nbsp;
+	<span>状态：</span>
+    <select name="status" class="short" id="k">
+			<option value="0">选择状态</option>
+       <foreach name="companyStatus" item="v">
+           <option value='{$key}'  <eq name="Think.get.status" value="$key">selected="selected"</eq> >{$v}</option>
+        </foreach>
+    </select> 
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;&nbsp;
+    <a href="addBusinessCompany" class="btn btn-primary">添加</a>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+        <tr>
+            <th>合作公司编号</th>
+            <th>所属渠道</th>
+            <th>合作公司名称</th>
+            <th>合作公司类型</th>
+            <th>联系手机号</th>
+            <th>行业类型</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <foreach name="companyList" item="vo" key="k">
+          <tr>
+            <td>{$vo['business_number']}</td>
+            <td>{$vo['channel_companyname']}</td>
+            <td>{$vo['companyname']}</td>
+            <td>{$vo['company_type']}</td>
+            <td>{$vo['legal_mobile']}</td>
+            <td>{$vo['company_trade']}</td>
+            <td>{$vo['timeadd']}</td>
+            
+            <td>
+				<a href="{:U('editBusinessCompany',array('id'=>$vo['id'],'editType'=>'view'))}"> 查看 </a>
+                <a href="{:U('editBusinessCompany',array('id'=>$vo['id'],'editType'=>'edit'))}"> 编辑 </a>
+				<eq name='vo.status' value='1'>
+					<a href="{:U('editBusinessCompany',array('id'=>$vo['id'],'status'=>2,'editType'=>'status'))}" onclick='javascript:if(!confirm("确定要停用吗？"))return false;'> 停用 </a>
+				<else/>
+					<a href="{:U('editBusinessCompany',array('id'=>$vo['id'],'status'=>1,'editType'=>'status'))}" onclick='javascript:if(!confirm("确定要启用吗？"))return false;'> 启用 </a>
+				</eq>
+				
+				 <a href="{:U('editBusinessCompany',array('id'=>$vo['id'],'editType'=>'capital'))}"> 关联资金方 </a>
+				
+            </td>
+        </tr>
+       </foreach>
+     </tbody>
+</table>
+{$page}
+<script type="text/javascript">
+$(function(){
+    $('#add').click(function(){
+        $(this).attr('href',"/Member/editStaff.html");
+    })
+    $('a.delete').live('click',function(){
+    	$id = $(this).attr('name');
+        var data={};
+        $(data).attr('mid',$id);
+        $.post('/Member/deleteStaff.html',data,function(F){
+            top.jdbox.alert(F.status,F.info);
+              if(F.status){
+                window.location.reload();
+              }
+            },'json');
+
+    })
+    $('#statoexcel').click(function(){
+        $(this).attr('href',"/Member/export_staffInfo.html?k="+$('#k').val()+"&v="+$('#v').val());
+    })
+})
+</script>
+<include file="Public:footer" />

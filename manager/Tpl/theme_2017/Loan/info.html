@@ -1,0 +1,116 @@
+<include file="Public:header" />
+<style type="text/css">
+.tabletop{font-size: 16px;text-align: center;}
+</style>
+<table class="table table-bordered table-hover definewidth m10">
+    <tr><td class="tableleft tabletop" colspan="11" style="text-align: center;" >贷款明细</td></tr>
+    <tr>
+        <th>贷款编号</th>    
+        <th>用户ＩＤ</th>
+        <th>涉及产品</th>
+        <th>申请时间</th>
+        <th>利率</th>
+        <th>逾期利率</th>
+        <th>贷款金额</th>
+        <th>费用</th>
+        <th>罚息金额</th>
+        <th>已还贷款</th>
+        <th>贷款状态</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{$info['tender_number']}</td>
+            <td>{$info['memberid']}</td>
+            <td>{$info['bus_l_name']}</td>
+            <td>{$info['timeadd']}</td>
+            <td>{$info['periode_rate']}</td>
+            <td>{$info['late_periode_rate']}</td>
+            <td>{$info['money']}</td>
+            <td>{$info['total_fee']}</td>
+            <td>{$info['late_fee']}</td>
+            <td>{$info['back_real_money']}</td>
+            <td>{$info['order_status_name']}</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered table-hover definewidth m10">
+    <tr><td class="tableleft tabletop" colspan="14" style="text-align: center;" >还款计划</td></tr>
+    <tr>
+        <th>贷款ＩＤ</th>    
+        <th>期限</th>
+        <th>起始时间</th>
+        <th>应还时间</th>
+        <th>状态</th>
+        <th>还款时间</th>
+        <th>期初余额</th>
+        <th>期末余额</th>
+        <th>应还本金</th>
+        <th>应还利息</th>
+        <th>应还罚息</th>
+        <th>已还本金</th>
+        <th>已还利息</th>
+        <th>已还罚息</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{$plan['id']}</td>
+            <td>{$plan['lp_name']}</td>
+            <td>{$plan['start_time']}</td>
+            <td>{$plan['end_time']}</td>
+            <td>{$plan['order_status_name']}</td>
+            <td>{$plan['back_real_time']}</td>
+            <td><php>echo (float)($plan['repayment_money']+$plan['late_fee']);</php></td>
+            <td><php>echo (float)($plan['repayment_money']+$plan['late_fee']-$plan['back_real_money']);</php></td>
+            <td>{$plan['money']}</td>
+            <td>{$plan['total_fee']}</td>
+            <td>{$plan['late_fee']}</td>
+            <td>{$plan['back_real_money']}</td>
+            <td>
+            <notempty name="plan['back_real_money']">
+                {$plan['total_fee']}
+            </notempty>
+            </td>
+            <td>
+            <notempty name="plan['back_real_money']">
+            {$plan['late_fee']}
+            </notempty>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered table-hover definewidth m10">
+    <tr><td class="tableleft tabletop" colspan="10" style="text-align: center;" >还款历史</td></tr>
+    <tr>
+        <th>贷款ID</th>    
+        <th>还款单号</th>
+        <th>还款金额</th>
+        <th>还款时间</th>
+        <th>还款类型</th>
+        <th>还款状态</th>
+        <th>期初余额</th>
+        <th>期末余额</th>
+        <th>偿还利息</th>
+        <th>偿还罚息</th>
+    </tr>
+    </thead>
+    <tbody>
+    <foreach name="history" item="vo">
+        <tr>
+            <td>{$vo['id']}</td>
+            <td>{$vo['tender_number']}</td>
+            <td>{$vo['money']}</td>
+            <td>{$vo['timeadd']}</td>
+            <td>{$vo['repayment_name']}</td>
+            <td>{$vo['order_status_name']}</td>
+             <td><php>echo (float)($vo['repayment_money']+$vo['late_fee']);</php></td>
+            <td><php>echo (float)($vo['repayment_money']+$vo['late_fee']-$vo['back_real_money']);</php></td>
+            <td>{$vo['total_fee']}</td>
+            <td>{$vo['late_fee']}</td>         
+        </tr>
+    </foreach>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />

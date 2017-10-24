@@ -1,0 +1,21 @@
+06/30/17 15:33:50,680664 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:34:15,069797 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:34:56,540545 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:36:13,313390 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:37:06,714339 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:37:22,010019 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:38:52,634419 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:38:59,625545 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:39:39,395330 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:40:55,172621 [LoanOrder.class.php:0541][ERROR] tender_9 - 还款订单生成失败:订单未创建成功;sqlerror:Duplicate entry 'ten1498723249175851_1' for key 'trans_no'
+ [ SQL语句 ] : INSERT INTO `baofu_order` (`tender_number`,`trans_money`,`trans_no`,`trans_serial_no`,`trans_type`,`trans_content`,`trade_date`,`timeadd`) VALUES ('ten1498723249175851',2000,'ten1498723249175851_1','1498808455409899',2,'【傻逼百度-贷款-还款】','20170630154055','2017-06-30 15:40:55');sql:INSERT INTO `baofu_order` (`tender_number`,`trans_money`,`trans_no`,`trans_serial_no`,`trans_type`,`trans_content`,`trade_date`,`timeadd`) VALUES ('ten1498723249175851',2000,'ten1498723249175851_1','1498808455409899',2,'【傻逼百度-贷款-还款】','20170630154055','2017-06-30 15:40:55')-data:{"tender_number":"ten1498723249175851","trans_money":2000,"trans_type":2,"trans_content":"\u3010\u50bb\u903c\u767e\u5ea6-\u8d37\u6b3e-\u8fd8\u6b3e\u3011"}
+06/30/17 15:44:45,332926 [LoanOrder.class.php:0544][INFO] tender_9 - 还款订单生成成功
+06/30/17 15:44:45,333673 [LoanOrder.class.php:0547][ERROR] tender_9 - 还款失败：订单号不存在
+06/30/17 15:45:01,478214 [LoanOrder.class.php:0544][INFO] tender_9 - 还款订单生成成功
+06/30/17 15:45:01,479012 [LoanOrder.class.php:0547][ERROR] tender_9 - 还款失败：订单号不存在
+06/30/17 15:47:40,906622 [LoanOrder.class.php:0524][INFO] tender_9 - 参数：tenderID：9,params:[]
+06/30/17 15:47:41,016904 [LoanOrder.class.php:0543][INFO] tender_9 - 还款订单生成成功
+06/30/17 15:47:45,677228 [LoanOrder.class.php:0549][INFO] tender_9 - 还款成功：扣款金额：2000
+06/30/17 15:47:49,118009 [LoanOrder.class.php:0524][INFO] tender_9 - 参数：tenderID：9,params:[]
+06/30/17 15:48:22,730925 [LoanOrder.class.php:0524][INFO] tender_9 - 参数：tenderID：9,params:[]
+06/30/17 15:49:42,468640 [LoanOrder.class.php:0524][INFO] tender_9 - 参数：tenderID：9,params:[]

@@ -1,0 +1,81 @@
+<include file="Public:header" />
+<style type="text/css">
+.loan_st{display: inline-block;width: 200px;height: 30px;font-size: 18px;color: #3D4985;border-bottom: 1px solid #666;text-align: center;line-height:30px;cursor: pointer;color: #000;}
+.loan_st:hover{color: #4FB8ED;}
+#chose{color: #4FB8ED;border-bottom: 2px solid #4FB8ED;}
+</style>
+<script type="text/javascript">
+var tender_id = "{$_GET['tender_id']}";
+var memberid = "{$_GET['memberid']}";
+if (tender_id && memberid) {
+    window.location.href = "/Loan/info/id/"+tender_id+"/mid/"+memberid;
+}
+$(function(){
+    $(".loan_st").click(function(){
+        $("select[name='status']").find("option[value='" + $(this).attr("value") +"']").attr("selected","selected");
+        $("#loan_form").submit();
+    })
+})
+    
+</script>
+<form id="loan_form" class="form-inline definewidth m20" action="/Loan/index" method="get">
+    渠道：
+    <input type="text" name="channel" class="abc input-default"  value="{$_GET['channel']}">&nbsp;&nbsp;
+    合作公司：
+    <input type="text" name="business"  class="abc input-default" placeholder="" value="{$_GET['business']}">&nbsp;&nbsp;
+    姓名：
+    <input type="text" name="names"  class="abc input-default" placeholder="" value="{$_GET['names']}">&nbsp;&nbsp;
+    手机号：
+    <input type="text" name="mobile"  class="abc input-default" placeholder="" value="{$_GET['mobile']}">&nbsp;&nbsp;
+    状态：
+    <select name="status" class="short">
+    	<foreach name="status" item="vo" key="k">
+    		<option value="{$k}" <eq name="k" value="$_REQUEST['status']">selected=""</eq>>{$vo}</option>
+    	</foreach>
+    </select>&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>
+</form> 
+<div>
+<foreach name="status" item="vi" key="key">
+    <a class="loan_st" value="{$key}" <eq name='key' value="$_GET['status']">id="chose"</eq>>{$vi}贷款</a>
+</foreach>
+</div>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+       
+    <tr>
+        <th>贷款编号</th>    
+        <th>用户ＩＤ</th>
+        <th>所属渠道</th>
+        <th>合作公司</th>
+        <th>涉及产品</th>
+        <th>姓名</th>
+        <th>贷款金额</th>
+        <th>费用</th>
+        <th>贷款时间</th>
+        <th>贷款期限</th>
+        <th>贷款状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <foreach name="list" item="vo">
+        <tr>
+            <td>{$vo['tender_number']}</td>
+            <td>{$vo['memberid']}</td>
+            <td>{$vo['cha_companyname']}</td>
+            <td>{$vo['bus_companyname']}</td>
+            <td>{$vo['bus_l_name']}</td>
+            <td>{$vo['names']}</td>
+            <td>{$vo['money']}</td>
+            <td>{$vo['total_fee']}</td>
+            <td>{$vo['timeadd']}</td>
+            <td>{$vo['lp_name']}</td>
+            <td><php>echo $status[$vo['status']]</php></td>
+            <td><a href="/Loan/info/id/{$vo['id']}/mid/{$vo['memberid']}">查看</a></td>
+        </tr>
+    </foreach>
+    </tbody>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />
